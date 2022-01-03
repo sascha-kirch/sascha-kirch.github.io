@@ -1,0 +1,9 @@
+---
+layout: page
+title: About me
+permalink: /about
+---
+{% capture about %}{% include about.md %}{% endcapture %}
+<div class="content">
+{{ about | markdownify }}
+</div>

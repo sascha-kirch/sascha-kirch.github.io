@@ -1,0 +1,8 @@
+- name: Publications
+  link: /docs/publications.html
+- name: Projects
+  link: /docs/projects.html
+- name: CV
+  link: /docs/cv.html
+- name: About me
+  link: /docs/about.html
