@@ -1,0 +1,13 @@
+---
+layout: main
+title: Home
+---
+<div>
+    <div>
+      <h1>{{ site.title }}</h1>
+      {% capture description %}{% include description.md %}{% endcapture %}
+      {{ description | markdownify }}
+      <h4>Contact</h4>
+      <p>{{ site.email }} <a href="https://www.linkedin.com/in/sascha-kirch/">LinkedIn</a></p>
+    </div>
+</div>
