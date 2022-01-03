@@ -23,7 +23,6 @@ email: skirch1@alumno.uned.es
 description: Sascha Kirch is a PhD Student in machine learning at UNED
 domain: sascha.kirch.github.io
 baseurl: "" 
-#/docs
 url: https://saki1309.github.io
 twitter_username: jekyllrb
 github_username: SaKi1309
