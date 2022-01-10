@@ -1,9 +1,3 @@
-- name: Research Gate
-  link: https://www.researchgate.net/profile/Sascha-Kirch
-  icon:
-    source: ai
-    name: ai-researchgate-square
-    type: ai
 - name: GitHub
   link: https://github.com/SaKi1309
   icon:
@@ -16,6 +10,24 @@
     source: fa
     name: fa-linkedin-in
     type: fab
+- name: Twitter
+  link: https://twitter.com/sascha_kirch
+  icon:
+    source: fa
+    name: fa-twitter
+    type: fab
+- name: Medium
+  link: https://medium.com/@SaschaKirch
+  icon:
+    source: fa
+    name: fa-medium-m
+    type: fab
+- name: Research Gate
+  link: https://www.researchgate.net/profile/Sascha-Kirch
+  icon:
+    source: ai
+    name: ai-researchgate-square
+    type: ai
 - name: Email
   link: mailto:skirch1@alumno.uned.es
   icon:

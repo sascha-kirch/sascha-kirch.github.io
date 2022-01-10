@@ -1,16 +1,5 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -24,7 +13,7 @@ description: Sascha Kirch is a PhD Student in machine learning at UNED
 domain: sascha.kirch.github.io
 baseurl: "" 
 url: https://saki1309.github.io
-twitter_username: jekyllrb
+twitter_username: sascha_kirch
 github_username: SaKi1309
 
 # Build settings

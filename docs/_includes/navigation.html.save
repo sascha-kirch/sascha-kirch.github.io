@@ -1,19 +1,14 @@
 <div class="hero-head">
-	
   <nav class="navbar container" role=navigation>
-	  <hr>
     <div class="navbar-brand">
       <a class="navbar-item" href={{site.baseurl|append:"/"}}>
-		<figure class="image">
-			<img src={{site.baseurl | append: "/assets/images/me_circle.png"}} width="20" height ="20">
-		</figure>
-		<strong>{{ site.title }}</strong>
+        <strong>{{ site.title }}</strong>
       </a>
-	    <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
-			<span aria-hidden="true"></span>
-    		<span aria-hidden="true"></span>
-    		<span aria-hidden="true"></span>
-  	  </div>
+        <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
+  	  <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+    	  <span aria-hidden="true"></span>
+  	</div>
     </div>
     <div id="navbar-main" class="navbar-menu">
       <div class="navbar-start">

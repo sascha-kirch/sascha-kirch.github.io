@@ -2,12 +2,17 @@
 layout: default
 title: Home
 ---
-<div>
-    <div>
-      <h1>{{ site.title }}</h1>
-      {% capture description %}{% include description.md %}{% endcapture %}
-      {{ description | markdownify }}
-      <h4>Contact</h4>
-      <p>{{ site.email }} <a href="https://www.linkedin.com/in/sascha-kirch/">LinkedIn</a></p>
+<div class="columns is-vcentered">
+	<div class ="column is-one-quarter content">
+		<figure class="image">
+			<img src={{site.baseurl | append: "/assets/images/me_circle.png"}}>
+		</figure>
+	</div>
+    <div class="column is-three-quarters content">
+		<h1>{{ site.title }}</h1>
+		{% capture description %}{% include description.md %}{% endcapture %}
+		{{ description | markdownify }}
+		<h4>Contact</h4>
+		<p>{{ site.email }} <a href="https://www.linkedin.com/in/sascha-kirch/">LinkedIn</a></p>
     </div>
 </div>
