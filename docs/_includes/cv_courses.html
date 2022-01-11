@@ -1,0 +1,32 @@
+{% for item in site.data.cv.courses %}
+<div class="box">
+	<div class="columns">
+		<div class="column is-1">
+			<figure class="image is-48x48">
+				<img class="is-rounded" src="{{site.baseurl}}/assets/images/{{item.logo}}">
+			</figure>
+		</div>
+		<div class="column">
+			
+			<div><b>{{item.title}}</b></div>
+			<div>{{item.initiater}}</div>
+			<div>{{item.date}}</div>
+			<div><a href="{{item.certificate}}">{{item.certificate}}</a></div>
+			{% if item.sub_courses != "none" %}
+			<div><b>Contained Courses:</b></div>
+			<div class="columns is-multiline is-vcentered">
+				{% for sub_course in item.sub_courses %}
+				<div class="column is-half">
+					<div class="box">
+						<div><b>{{sub_course.title}}</b></div>
+						<div><a href="{{item.certificate}}">{{sub_course.certificate}}</a></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+
+</div>
+{% endfor %}

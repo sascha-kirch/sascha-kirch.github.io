@@ -1,0 +1,35 @@
+<div class="column">
+	{% for company in site.data.cv.professional_experience %}
+	<div class="box">
+		<!-- First line with company icon and name -->
+		<div class="columns is-full is-mobile is-vcentered">
+			<div class="column is-one-fifth has-text-centered">
+				<figure class="image is-48x48 is-centered is-inline-block">
+					<img class="is-rounded"  src="{{site.baseurl}}/assets/images/{{company.logo}}">
+				</figure>
+			</div>
+			<div class="column">
+				<p><strong>{{company.company_name}}</strong></p>
+			</div>
+		</div>
+		<!-- Multiple lines with positions and dates -->
+		{% for job in company.positions %}
+		<div class="columns is-full is-mobile">
+			<div class="column is-one-fifth">
+				<div style="text-align: center">{{job.end_date}}<br>|<br>{{job.start_date}}</div>
+			</div>
+			<div class="column">
+				<div class="box">
+					<p>
+						<div><b>{{job.position}}</b></div>
+						<div>{{job.location}}</div>
+						<div>{{job.employment_type}}</div>
+					</p>
+					<p>Description: {{job.description}}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,295 @@
+professional_experience:
+    - company_name: Robert Bosch GmbH
+      logo: bosch_logo.jpeg
+      positions:
+      - position: Technical Project Lead for Automotive Radar
+        employment_type: Full-Time
+        location: Leonberg, Baden-Würtemberg, Germany
+        start_date: Jan 2019
+        end_date: today
+        description: >
+            I am the tech lead for the electronics
+            
+      - position: Hardware Engineer Automotive Radar
+        employment_type: Full-Time
+        location: Leonberg, Baden-Würtemberg, Germany
+        start_date: Oct 2017
+        end_date: Jan 2019
+        description: >
+            Description Text
+      
+      
+    - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
+      logo: hkn_logo.jpeg
+      positions:
+      - position: IEEE Eta Kappa Nu Member
+        employment_type: Full-Time
+        location: Madrid, Spain
+        start_date: Jun 2021
+        end_date: today
+        description: >
+            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE, promotes excellence in the profession and in education with ideals of scholarship, character and attitude.
+      
+      
+    - company_name: Volograms
+      logo: volograms_logo.jpeg
+      positions:
+      - position: Machine Learning Engineer
+        employment_type: Freelancer
+        location: Dublin, Ireland
+        start_date: Nov 2020
+        end_date: today
+        description: >
+          Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
+          Volumetric Video Generator Model
+      
+      
+    - company_name: Bitifeye Digital Test Solutions GmbH
+      logo: bitifeye_logo.jpeg
+      positions:
+      - position: Software and Hardware Engineer
+        employment_type: Full-Time
+        location: Böblingen, Baden-Württemberg, Germany
+        start_date: Okt 2016
+        end_date: Okt 2017
+        description: > 
+            Hardware and Software engineering
+            
+      - position: Copoorate Student Electrical Engineering
+        employment_type: Full-Time
+        location: Böblingen, Baden-Württemberg, Germany
+        start_date: Okt 2013
+        end_date: Okt 2016
+        description: > 
+            description text
+      
+
+education:
+    - university: Universidad Nacional de Educación a Distancia (UNED)
+      location: Madrid, Spain
+      degree: PhD
+      specialization: Machine Learning
+      start_date: 2021
+      end_date: today
+      grade: 
+      thesis: 
+      logo: uned_logo.jpeg
+      
+    - university: Universidad Nacional de Educación a Distancia (UNED)
+      location: Madrid, Spain
+      degree: Master of Engineering (M.Eng.)
+      specialization: Electronic Systems For Communication and Information
+      start_date: 2019
+      end_date: 2021
+      grade: 9.4 (German equivalent 1.0)
+      thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
+      logo: uned_logo.jpeg
+      
+    - university: Duale Hochschule Baden-Württemberg (DHBW)
+      location: Horb am Neckar, Germany
+      degree: Bachelor of Engineering (B.Eng.)
+      specialization: Electrical Engineering
+      start_date: 2013
+      end_date: 2016
+      grade:
+      thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
+      logo: dhbw_logo.jpeg
+
+language_skills:
+    - language: German
+      level: Native
+      logo: flag_germany.png
+      
+    - language: English
+      level: Fluent
+      logo: flag_english.png
+      
+    - language: Spanish
+      level: Advanced
+      logo: flag_spain.png
+      
+awards:
+    - award: Matricula de honor for „Final Master Thesis“
+      date: Oct 2021
+      initiater: UNED - Universidad Nacional de Educación a Distancia
+      
+    - award: Matricula de honor for „Multimedia for Information and Communication Systems“
+      date: Jun 2021
+      initiater: UNED - Universidad Nacional de Educación a Distancia
+      
+    - award: Matricula de honor for "Microprocessor Techniques"
+      date: Jun 2020
+      initiater: UNED - Universidad Nacional de Educación a Distancia
+
+expertises:
+    - expertise: Machine Learning
+    - expertise: Integrated Circuits
+    - expertise: Autonomous Driving
+    - expertise: High-Speed Digital Communication
+    - expertise: HW Engineering
+    - expertise: SW Engineering (Embedded, Apps, Desktop) 
+      
+programming:
+    - language: C++
+      level: Expert
+      logo: programming_c++.png
+      
+    - language: Python
+      level: Expert
+      logo: programming_python.png
+      
+    - language: TensorFlow
+      level: Expert
+      logo: programming_tensorflow.png
+      
+    - language: C#
+      level: Expert
+      logo: programming_csharp.png
+      
+    - language: Java
+      level: Expert
+      logo: programming_java.png
+      
+    - language: JavaScript
+      level: Advanced
+      logo: programming_javascript.png
+      
+    - language: iOS Swift
+      level: Advanced
+      logo: programming_swift.png
+      
+    - language: Verilog
+      level: Advanced
+      logo: programming_v.png
+      
+    - language: VHDL
+      level: Advanced
+      logo: programming_v.png
+      
+    - language: HTML
+      level: Advanced
+      logo: programming_html.png
+      
+    - language: PyTorch
+      level: Advanced
+      logo: programming_pytorch.png
+      
+    - language: PHP
+      level: Advanced
+      logo: programming_php.png
+      
+    - language: MATLAB
+      level: Advanced
+      logo: programming_matlab.png
+      
+courses:
+    - title: Fundamentals of Reinforcement Learning
+      initiater: University of Alberta
+      date: Dec 2021
+      certificate: coursera.org/verify/F8KLW5KWHQ87
+      sub_courses: none
+      logo: course_uni_alberta.jpeg
+      
+    - title: TensorFlow Advanced Techniques Specialization
+      initiater: Deeplearning.ai
+      date: Jan 2021
+      certificate: http://coursera.org/verify/specialization/3YKU3Q7THVX7 
+      sub_courses: 
+      - title: Custom Models, Layers, and Loss Functions with TensorFlow
+        certificate: http://coursera.org/verify/RRKQD8B3BNPJ 
+      - title: Custom and Distributed Training with TensorFlow
+        certificate: http://coursera.org/verify/U88NNYCP54P2
+      - title: Advanced Computer Vision with TensorFlow
+        certificate: http://coursera.org/verify/L84F4K93RKDC 
+      - title: Generative Deep Learning with TensorFlow
+        certificate: http://coursera.org/verify/E44343B8XLJS  
+      logo: course_deeplearning.jpeg
+      
+    - title: Generative Adversarial Networks (GANs) Specialization
+      initiater: Deeplearning.ai
+      date: Nov 2020
+      certificate: http://coursera.org/verify/specialization/DTZCUKPY64LL 
+      sub_courses: 
+      - title: Build Basic Generative Adversarial Networks (GANs)
+        certificate: http://coursera.org/verify/645ZMEFECWA4 
+      - title: Build Better Generative Adversarial Networks (GANs)
+        certificate: http://coursera.org/verify/DW6S8D6C5W63 
+      - title: Apply Generative Adversarial Networks (GANs)
+        certificate: http://coursera.org/verify/X2UEBZ3T9VSY 
+      logo: course_deeplearning.jpeg
+      
+    - title: iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp
+      initiater: Udemy
+      date: Oct 2021
+      certificate: http://ude.my/UC-1004acf8-0a2a-458d-a2aa-2aad570356ef
+      sub_courses: none
+      logo: course_udemy.jpeg
+      
+    - title: TensorFlow Data and Deployment
+      initiater: Deeplearning.ai
+      date: Sep 2020
+      certificate: http://coursera.org/verify/specialization/J7ANVTTZMBRS 
+      sub_courses: 
+      - title: Browser-based Models with TensorFlow.js
+        certificate: http://coursera.org/verify/KJQZ5L82XW4D 
+      - title: Device-based Models with TensorFlow Lite
+        certificate: http://coursera.org/verify/CX3NUM9GXN69 
+      - title: Data Pipelines with TensorFlow Data Services
+        certificate: http://coursera.org/verify/M8LAF4LNBWDR 
+      - title: Advanced Deployment Scenarios with TensorFlow
+        certificate: http://coursera.org/verify/K5DWLR3QTE3J  
+      logo: course_deeplearning.jpeg
+      
+    - title: TensorFlow Developer Specialization
+      initiater: Deeplearning.ai
+      date: Sep 2020
+      certificate: http://coursera.org/verify/professionalcert/B6TFFLN2QUUT 
+      sub_courses: 
+      - title: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
+        certificate: http://coursera.org/verify/WCBZHXSTKSJY 
+      - title: Convolutional Neural Networks in TensorFlow
+        certificate: http://coursera.org/verify/BSV7FTJX3ATW 
+      - title: Natural Language Processing in TensorFlow
+        certificate: http://coursera.org/verify/ZSZ43NA36E5Z 
+      - title: Sequences, Time Series and Prediction
+        certificate: http://coursera.org/verify/7D2UHNHAGEE5  
+      logo: course_deeplearning.jpeg
+      
+    - title: Self-Driving Cars Specialization
+      initiater: University of Toronto
+      date: Aug 2020
+      certificate: http://coursera.org/verify/specialization/DT99UWEMXZ2G 
+      sub_courses: 
+      - title: Introduction to Self-Driving Cars
+        certificate: http://coursera.org/verify/5TMU6ZZBKQE4 
+      - title: State Estimation and Localization for Self-Driving Cars
+        certificate: http://coursera.org/verify/U8NC2PN6F96V 
+      - title: Visual Perception for Self-Driving Cars
+        certificate: http://coursera.org/verify/KRDBHC4UD752 
+      - title: Motion Planning for Self-Driving Cars
+        certificate: http://coursera.org/verify/ZV4LCRBHLPN3 
+      logo: course_toronto.png
+    
+    - title: Deep Learning Specialization
+      initiater: Deeplearning.ai
+      date: Aug 2020
+      certificate: http://coursera.org/verify/specialization/YW5CRA2T45X6 
+      sub_courses: 
+      - title: Neural Networks and Deep Learning
+        certificate: http://coursera.org/verify/XQ9RE5QMDWXC 
+      - title: Convolutional Neural Networks
+        certificate: http://coursera.org/verify/SERT5ZXM4WL6 
+      - title: Structuring Machine Learning Projects
+        certificate: http://coursera.org/verify/3WFSB3QUEL5E 
+      - title: Improving Deep Neural Networks Hyperparameter Tuning, Regularization and Optimization
+        certificate: http://coursera.org/verify/4MN65YES7NV2 
+      - title: Sequence Models
+        certificate: http://coursera.org/verify/J5NF9CZ3E398
+      logo: course_deeplearning.jpeg
+      
+    - title: Machine Learning
+      initiater: Stanford Online
+      date: Jul 2020
+      certificate: http://coursera.org/verify/P9ADSR3ASC64 
+      sub_courses: none
+      logo: course_stanford.jpeg
