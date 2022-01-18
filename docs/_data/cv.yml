@@ -8,7 +8,8 @@ professional_experience:
         start_date: Jan 2019
         end_date: today
         description: >
-            I am the tech lead for the electronics
+            Responsible for the development of electronic modules and concepts 
+            including hardware architecture, safety, thermal design and EMC for automotive radar.
             
       - position: Hardware Engineer Automotive Radar
         employment_type: Full-Time
@@ -16,7 +17,8 @@ professional_experience:
         start_date: Oct 2017
         end_date: Jan 2019
         description: >
-            Description Text
+            Design and validation of electronic modules and concepts, 
+            considering reliability and safety aspects, for automotive radar sensors.
       
       
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
@@ -28,7 +30,9 @@ professional_experience:
         start_date: Jun 2021
         end_date: today
         description: >
-            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE, promotes excellence in the profession and in education with ideals of scholarship, character and attitude.
+            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE, 
+            promotes excellence in the profession and in education with 
+            ideals of scholarship, character and attitude.
       
       
     - company_name: Volograms
@@ -109,15 +113,15 @@ language_skills:
       logo: flag_spain.png
       
 awards:
-    - award: Matricula de honor for „Final Master Thesis“
+    - award: Matrícula de honor for „Final Master Thesis“
       date: Oct 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
       
-    - award: Matricula de honor for „Multimedia for Information and Communication Systems“
+    - award: Matrícula de honor for „Multimedia for Information and Communication Systems“
       date: Jun 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
       
-    - award: Matricula de honor for "Microprocessor Techniques"
+    - award: Matrícula de honor for "Microprocessor Techniques"
       date: Jun 2020
       initiater: UNED - Universidad Nacional de Educación a Distancia
 

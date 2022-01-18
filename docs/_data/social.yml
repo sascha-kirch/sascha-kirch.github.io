@@ -22,6 +22,12 @@
     source: fa
     name: fa-medium-m
     type: fab
+- name: stackoverflow
+  link: https://stackoverflow.com/users/17905764/sascha-kirch
+  icon:
+    source: fa
+    name: fa-stack-overflow
+    type: fab
 - name: Research Gate
   link: https://www.researchgate.net/profile/Sascha-Kirch
   icon:
