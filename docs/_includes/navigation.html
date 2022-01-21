@@ -18,7 +18,7 @@
     <div id="navbar-main" class="navbar-menu">
       <div class="navbar-start">
         {% for item in site.data.navigation %}
-          <a class="navbar-item" href="{{site.baseurl|append: item.link }}" {% if page.url == item.link %}class="is-dark"{% endif %}>
+          <a class="navbar-item" id="{{item.id}}" href="{{site.baseurl|append: item.link }}" {% if page.url == item.link %}class="is-dark"{% endif %}>
             {{ item.name }}
           </a>
         {% endfor %}

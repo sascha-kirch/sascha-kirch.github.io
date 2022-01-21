@@ -1,10 +1,18 @@
 #- name: Publications
 #  link: /publications.html
+#  id: nav_publication
 #- name: Projects
 #  link: /projects.html
+#  id: nav_projects
 - name: CV
   link: /cv.html
+  id: nav_cv
 - name: Blog
   link: /blog.html
+  id: nav_blog
+- name: Social Media
+  link: /social_media.html
+  id: nav_social_media
 - name: About me
   link: /about.html
+  id: nav_about

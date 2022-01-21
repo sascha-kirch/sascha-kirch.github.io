@@ -2,6 +2,7 @@
 layout: page
 title: About me
 permalink: /about
+nav_id: nav_about
 ---
 {% capture about %}{% include about.md %}{% endcapture %}
 {% capture bio %}{% include about_bio.md %}{% endcapture %}
@@ -16,11 +17,9 @@ permalink: /about
 
 	<div class="columns is-vcentered">
 		<div class="column is-half">
-			<div class="column is-half is-offset-one-quarter">
-				<figure class="image">
-					<img src={{site.baseurl | append: "/assets/images/me_circle.png"}}>
-				</figure>
-			</div>
+			<figure class="image">
+				<img src={{site.baseurl | append: "/assets/images/colage_bio.png"}}>
+			</figure>
 		</div>
 		<div class="column is-half ">
 			{{ bio | markdownify }}
@@ -40,11 +39,9 @@ permalink: /about
 	</div>
 	<div class="columns is-vcentered">
 		<div class="column is-half">
-			<div class="column is-half is-offset-one-quarter">
-				<figure class="image">
-					<img src={{site.baseurl | append: "/assets/images/me_circle.png"}}>
-				</figure>
-			</div>
+			<figure class="image">
+				<img src={{site.baseurl | append: "/assets/images/colage_2.png"}}>
+			</figure>
 		</div>
 		<div class="column is-half">
 			{{ private | markdownify }}

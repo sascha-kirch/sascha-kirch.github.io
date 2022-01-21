@@ -2,7 +2,12 @@
 layout: default
 ---
 <div class="content">
-  <h1>{{ page.title }}</h1>
-  <hr>
-  {{ content }}
+	<script>
+		var elem = document.getElementById("{{page.nav_id}}");
+		elem.classList.add("is-active");
+		elem.classList.add("has-background-warning");
+	</script>
+	<h1>{{ page.title }}</h1>
+	<hr>
+	{{ content }}
 </div>

@@ -1,4 +1,4 @@
-const RSS_URL = `https://medium.com/@SaschaKirch/feed`;
+const RSS_URL = `https://cors-anywhere.herokuapp.com/https://medium.com/feed/@SaschaKirch`;
 
 fetch(RSS_URL)
   .then(response => response.text())
@@ -10,7 +10,7 @@ fetch(RSS_URL)
     items.forEach(el => {
       html += `
           <h2>
-          Test HEading 
+          T
             <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
               ${el.querySelector("title").innerHTML}
             </a>

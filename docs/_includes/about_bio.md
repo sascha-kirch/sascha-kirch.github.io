@@ -13,7 +13,10 @@ In the end 2017 I changed to Bosch to become a hardware engineer for [automotive
 electronics and soon after, in 2019 I became the technical project lead for automotive radar electronics. At this time I was only 25 years old and I had felt an internal urge
 to continue studying. Since I had a great job and a hypotheke waiting, I wanted to keep on working and study at the same time. Through my spanish wife, I found the 
 [National University of Distance Education (UNED)](https://www.uned.es/universidad/inicio/en/) in Madrid, Spain. I graduated my master in electronic systems for information 
-and communication in 2021.
+and communication in 2021. 
+
+In June 2021 I got the great honor to be induced into [IEEE Eta Kappa Nu](https://hkn.ieee.org/), the international honor society of the Institute of Electrical and Electronics Engineers (IEEE). 
+The organization promotes excellence in the profession and in education through an emphasis on scholarship, character, and attitude.
 
 It was during that time where I discovered my new passion: machine learning. It combined everything I was interested in: math, software, hardware and complexity.
 This new passion drove me to start my PhD in machine learning in 2021. 

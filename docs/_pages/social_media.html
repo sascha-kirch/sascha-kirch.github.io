@@ -1,0 +1,104 @@
+---
+layout: page
+title: Social Media
+permalink: /social_media
+nav_id: nav_social_media
+---
+
+<div class="content">
+	
+	<div class="columns is-multiline">
+		<div class="column is-half">
+			<div class="box">
+				<h2 class="title">Stack Overflow</h2>
+				<a href="https://stackoverflow.com/users/17905764/sascha-kirch"><img src="https://stackoverflow.com/users/flair/17905764.png?theme=dark" width="208" height="58" alt="profile for Sascha Kirch at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sascha Kirch at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+				<a href="https://stackoverflow.com/users/17905764/sascha-kirch"><img src="https://stackoverflow.com/users/flair/17905764.png?theme=clean" width="208" height="58" alt="profile for Sascha Kirch at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sascha Kirch at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+				<span class="tag is-rounded is-large is-warning">Coming Soon</span>
+			</div>
+		</div>
+		<div class="column is-half">
+			<div class="box">
+				<h2 class="title">LinkedIn</h2>
+				<span class="tag is-rounded is-large is-warning">Coming Soon</span>
+			</div>
+		</div>
+		
+		<div class="column is-half">
+			<div class="box">
+				<h2 class="title">GitHub</h2>
+				<span class="tag is-rounded is-large is-warning">Coming Soon</span>
+				<div class="columns is-vcentered is-multiline">
+					<div class="column is-one-third">
+						<figure id="github_image" class="image is-64x64"></figure>
+					</div>
+					<div class="column is-two-thirds">
+						<div id="github_public_repos"></div>
+						<div id="github_public_gists"></div>
+						<div id="github_followers"></div>
+						<div id="github_following"></div>
+					</div>
+					<div class="column is-full">
+						<div id="github_repos"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column is-half">
+			<div class="box">
+				<h2 class="title">Medium</h2>
+				<span class="tag is-rounded is-large is-warning">Coming Soon</span>
+			</div>
+		</div>
+		
+		<div class="column is-half">
+			<div class="box">
+				<h2 class="title">Twitter</h2>
+				<span class="tag is-rounded is-large is-warning">Coming Soon</span>
+			</div>
+		</div>
+
+
+    </div>
+</div>
+<!--JavaSCript to fetch from GitHub API. Code inspired by: https://stackoverflow.com/a/18395248/17905764 -->
+<!-- TODO: Add Programming Languages and pagination-->
+<script>
+	function updateGithubFields(){
+		var responseObj = JSON.parse(this.responseText);
+		document.getElementById("github_image").innerHTML = "<img src=\""+responseObj.avatar_url+"\">"
+		document.getElementById("github_public_repos").innerHTML = "Public repos: " + "<a href=\"https://github.com/SaKi1309?tab=repositories\">" +  responseObj.public_repos +"</a>";
+		document.getElementById("github_public_gists").innerHTML = "Public gists: " + "<a href=\"https://gist.github.com/SaKi1309\">" +  responseObj.public_gists +"</a>";
+		document.getElementById("github_followers").innerHTML = "Followers: " + "<a href=\"https://github.com/SaKi1309?tab=followers\">" + responseObj.followers +"</a>";
+		document.getElementById("github_following").innerHTML = "Following: " + "<a href=\"https://github.com/SaKi1309?tab=following\">" +  responseObj.following +"</a>";
+	}
+	function updateGithubRepos() {
+		var responseObj = JSON.parse(this.responseText);
+		var container = document.getElementById("github_repos")
+		for (const element of responseObj) {
+			let topic_string = ""
+			for (const topic of element.topics){
+				topic_string += "<span class=\"tag is-rounded is-medium\">"+topic+"</span>"
+			}
+			container.innerHTML += "<div class=\"box\">" + 
+									"<a href=\""+element.html_url+"\">"+element.name+" </a>" +
+									"<div class=\"columns is-multiline\">" +
+									"<div class=\"column is-one-third\">Watchers: " + element.watchers_count + "</div>" +
+									"<div class=\"column is-one-third\">Stars: " + element.stargazers_count + "</div>" +
+									"<div class=\"column is-one-third\">Forks: " + element.forks_count + "</div>" +
+									"<div class=\"column is-full\">" + topic_string + "</div>" +
+									"<div class=\"column is-full\">" + element.description + "</div>" +
+									"</div>" +
+									"</div>"
+		}
+	}
+	var request_basics = new XMLHttpRequest();
+	request_basics.onload = updateGithubFields;
+	request_basics.open('get', 'https://api.github.com/users/saki1309', true)
+	request_basics.send()
+	
+	var request_repos = new XMLHttpRequest();
+	request_repos.onload = updateGithubRepos;
+	request_repos.open('get', 'https://api.github.com/users/saki1309/repos', true)
+	request_repos.send()
+</script>
