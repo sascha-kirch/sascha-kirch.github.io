@@ -16,6 +16,9 @@ url: https://saki1309.github.io
 twitter_username: sascha_kirch
 github_username: SaKi1309
 
+# Google Analytics
+google_analytics: G-XRMXBC1SZV
+
 # Build settings
 theme: minima
 plugins:
