@@ -5,32 +5,7 @@ permalink: /blog
 nav_id: nav_blog
 ---
 <div class="content">
-	<div class="columns">
-		<div class ="column is-full">
-			<!--
-			<div id="retainable-rss-embed" data-rss="https://medium.com/feed/@SaschaKirch,https://medium.com/feed/retainable,https://medium.com/feed/vue-mastery"
-			data-maxcols="3" 
-			data-layout="slider" 
-			data-poststyle="external" 
-			data-readmore="Read full article" 
-			data-buttonclass="button is-dark is-left" 
-			data-offset="-100">
-			</div>
-			-->
-			<!-- Info on macro here:https://www.twilik.com/embed-your-medium-blog -->
-			
-			<div id="retainable-rss-embed" data-rss="https://medium.com/feed/@SaschaKirch"
-			data-maxcols="3" 
-			data-layout="slider" 
-			data-poststyle="external" 
-			data-readmore="Read full article" 
-			data-buttonclass="button is-dark" 
-			data-offset="-100">
-			</div>		
-		</div>
-	</div>
-	<script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>  
-	<!--  <script src={{site.baseurl | append: "/assets/js/rss_feed_reader.js"}}></script> -->
+	<div id="medium_cards" class="columns is-miltiline"></div>
 </div>
 
-
+<script src={{site.baseurl | append: "/assets/js/rss_medium.js"}}></script>
