@@ -4,7 +4,7 @@ title: About me
 permalink: /about
 nav_id: nav_about
 ---
-{% capture about %}{% include about.md %}{% endcapture %}
+{% capture research %}{% include about_research.md %}{% endcapture %}
 {% capture bio %}{% include about_bio.md %}{% endcapture %}
 {% capture private %}{% include about_private.md %}{% endcapture %}
 <div class="content">
@@ -27,20 +27,18 @@ nav_id: nav_about
 	</div>
 	<div class="columns is-vcentered">
 		<div class="column is-half">
-			{{ about | markdownify }}
+			{{ research | markdownify }}
 		</div>
 		<div class="column is-half">
-			<div class="column is-half is-offset-one-quarter">
-				<figure class="image">
-					<img src={{site.baseurl | append: "/assets/images/me_avatar.png"}}>
-				</figure>
-			</div>
+			<figure class="image">
+				<img src={{site.baseurl | append: "/assets/images/emojos.png"}}>
+			</figure>
 		</div>
 	</div>
 	<div class="columns is-vcentered">
 		<div class="column is-half">
 			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/colage_2.png"}}>
+				<img src={{site.baseurl | append: "/assets/images/colage.png"}}>
 			</figure>
 		</div>
 		<div class="column is-half">

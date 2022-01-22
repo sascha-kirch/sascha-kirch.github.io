@@ -1,7 +1,7 @@
 Welcome to my personal space! 
 
 On this page you will encounter updates on my academic and professional life. 
-Furthermore I linked all my social media channels and my medium blog. 
+Furthermore, I linked all my social media channels and my medium blog. 
 
 
 #### Current Activities
