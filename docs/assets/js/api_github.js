@@ -16,16 +16,16 @@ function updateGithubRepos() {
 		let topic_string = ""
 		//Get topic of each public repo and represent as tag
 		for (const topic of element.topics){
-			topic_string += "<span class=\"tag is-rounded is-small\">"+topic+"</span>"
+			topic_string += "<span class=\"tag is-rounded is-small is-info is-light\" >"+topic+"</span>"
 		}
 		//Get Infor of each public Repo
 		let repo_info_string = ""
 		repo_info_string += "<div class=\"box\">"  
-		repo_info_string +=	"<strong><a href=\""+element.html_url+"\">"+element.name+" </a></strong>"
+		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\">"+element.name+" </a>"
 		repo_info_string +=	"<div class=\"columns is-multiline\">"
-		repo_info_string +=	"<div class=\"column is-one-third\">Watchers: " + element.watchers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-one-third\">Stars: " + element.stargazers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-one-third\">Forks: " + element.forks_count + "</div>"
+		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + " watching</div>"
+		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"far fa-star\"></i> " + element.stargazers_count + " stars</div>"
+		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + " forks</div>"
 		//empty container for languages. If element.languages is null, the API also does not return languages. e.g. Githubpage or only markdown repos
 		if (element.language != null){
 			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full\"></div>" 
@@ -43,7 +43,7 @@ function updateGithubRepos() {
 				var responseObj = JSON.parse(this.responseText);
 				let languages_string = ""
 				for (const [key, value] of Object.entries(responseObj)) {
-				  languages_string += "<span class=\"tag is-rounded is-small\">"+key+"</span>"
+				  languages_string += "<span class=\"tag is-rounded is-small is-success is-light\">"+key+"</span>"
 				}
 				document.getElementById("github_repo_"+element.name).innerHTML += languages_string
 			}
