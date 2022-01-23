@@ -38,7 +38,7 @@ function updateStackoverflowUserData(){
 	document.getElementById("stackoverflow_rss_user").innerHTML = "<div>"+object_string+"</div>"
 }
 
-function updateStackoverflowActivities(){
+function updateStackoverflowTopAnswers(){
 	var responseObj = JSON.parse(this.responseText);
 	for(const answer of responseObj.items){
 		let object_string = ""
@@ -48,18 +48,18 @@ function updateStackoverflowActivities(){
 			tag_score_color = "is-success"
 		}
 		object_string += "<div>"
-		object_string += "<div class=\"columns is-vcentered\">"
-		object_string += "<div class=\"column is-1\">"
+		object_string += "<div class=\"columns is-vcentered is-multiline is-mobile\">"
+		object_string += "<div class=\"column is-2\">"
 		object_string += "<span class=\"tag is-medium "+tag_score_color+"\">"+answer.score+"  </span>"
 		object_string += "</div>"
-		object_string += "<div class=\"column is-8\" id=\"question_title_"+answer.question_id+"\"></div>"
+		object_string += "<div class=\"column is-8\" id=\"top_question_title_"+answer.question_id+"\"></div>"
 		var answerDate = new Date(answer.creation_date*1000)
-		object_string += "<div class=\"column is-3\">"+answerDate.toDateString()+" </div>"		
+		object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
 		object_string += "</div>"
 		object_string += "</div>"
 		
 		//add content to page
-		document.getElementById("stackoverflow_rss_activities").innerHTML += object_string
+		document.getElementById("stackoverflow_rss_top_answers").innerHTML += object_string
 		
 		//fetch text of question and replace with question_title container
 		//https://api.stackexchange.com/docs/questions-by-ids
@@ -67,7 +67,7 @@ function updateStackoverflowActivities(){
 		var request_question = new XMLHttpRequest();
 		request_question.onload = function(){
 			var questionResponse = JSON.parse(this.responseText);
-			document.getElementById("question_title_"+answer.question_id).innerHTML = "<a href=\""+questionResponse.items[0].link+"\" target=\"blank\"> "+questionResponse.items[0].title+"</a>"	
+			document.getElementById("top_question_title_"+answer.question_id).innerHTML = "<a href=\""+questionResponse.items[0].link+"\" target=\"blank\"> "+questionResponse.items[0].title+"</a>"	
 		}
 		request_question.open('get', questionFeed, true)
 		request_question.send()
@@ -75,13 +75,13 @@ function updateStackoverflowActivities(){
 	
 }
 
-function updateStackoverflowTags(){
+function updateStackoverflowTopTags(){
 	var responseObj = JSON.parse(this.responseText);
 	
 	for(const tag of responseObj.items){
 		let object_string = ""
 		object_string += "<div>"
-		object_string += "<nav class=\"level\">"
+		object_string += "<nav class=\"level is-mobile\">"
 		object_string += "<div class=\"level-left\">"
 		object_string += "<div class=\"level-item\"><span class=\"tag is-rounded is-medium\">"+tag.tag_name+"</span></div>"
 		object_string += "</div>"
@@ -92,10 +92,44 @@ function updateStackoverflowTags(){
 		object_string += "</div>"
 		object_string += "</nav>"
 		//add content to page
-		document.getElementById("stackoverflow_rss_tags").innerHTML += object_string
-		
+		document.getElementById("stackoverflow_rss_top_tags").innerHTML += object_string	
 	}
-	
+}
+
+function updateStackoverflowRecentAnswers(){
+	var responseObj = JSON.parse(this.responseText);
+	for(const answer of responseObj.items){
+		let object_string = ""
+		
+		tag_score_color = "is-light"
+		if (answer.is_accepted){
+			tag_score_color = "is-success"
+		}
+		object_string += "<div>"
+		object_string += "<div class=\"columns is-vcentered is-multiline is-mobile\">"
+		object_string += "<div class=\"column is-2\">"
+		object_string += "<span class=\"tag is-medium "+tag_score_color+"\">"+answer.score+"  </span>"
+		object_string += "</div>"
+		object_string += "<div class=\"column is-8\" id=\"recent_question_title_"+answer.question_id+"\"></div>"
+		var answerDate = new Date(answer.creation_date*1000)
+		object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
+		object_string += "</div>"
+		object_string += "</div>"
+		
+		//add content to page
+		document.getElementById("stackoverflow_rss_recent_answers").innerHTML += object_string
+		
+		//fetch text of question and replace with question_title container
+		//https://api.stackexchange.com/docs/questions-by-ids
+		questionFeed = 'https://api.stackexchange.com/2.3/questions/'+answer.question_id+'?order=desc&sort=activity&site=stackoverflow'
+		var request_question = new XMLHttpRequest();
+		request_question.onload = function(){
+			var questionResponse = JSON.parse(this.responseText);
+			document.getElementById("recent_question_title_"+answer.question_id).innerHTML = "<a href=\""+questionResponse.items[0].link+"\" target=\"blank\"> "+questionResponse.items[0].title+"</a>"	
+		}
+		request_question.open('get', questionFeed, true)
+		request_question.send()
+	}
 	
 }
 
@@ -110,13 +144,20 @@ request_user.send()
 //https://api.stackexchange.com/docs/answers-on-users
 activityFeed = 'https://api.stackexchange.com/2.3/users/17905764/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow'
 var request_activities = new XMLHttpRequest();
-request_activities.onload = updateStackoverflowActivities;
+request_activities.onload = updateStackoverflowTopAnswers;
 request_activities.open('get', activityFeed, true)
 request_activities.send()
 
 //https://api.stackexchange.com/docs/top-answer-tags-on-users
 tagsFeed = 'https://api.stackexchange.com/2.3/users/17905764/top-answer-tags?pagesize=5&site=stackoverflow'
 var request_tags = new XMLHttpRequest();
-request_tags.onload = updateStackoverflowTags;
+request_tags.onload = updateStackoverflowTopTags;
+request_tags.open('get', tagsFeed, true)
+request_tags.send()
+
+//https://api.stackexchange.com/docs/answers-on-users
+tagsFeed = 'https://api.stackexchange.com/2.3/users/17905764/answers?pagesize=5&order=desc&sort=activity&site=stackoverflow'
+var request_tags = new XMLHttpRequest();
+request_tags.onload = updateStackoverflowRecentAnswers;
 request_tags.open('get', tagsFeed, true)
 request_tags.send()

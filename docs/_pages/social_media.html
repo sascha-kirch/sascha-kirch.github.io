@@ -9,16 +9,19 @@ nav_id: nav_social_media
 	<div class="columns is-multiline">
 		<div class="column is-half">
 			<div class="box">
-				<h2 class="title">Stack Overflow</h2>
+				<h2 class="title"><i class="fab fa-stack-overflow"></i> Stack Overflow</h2>
 				<div id="stackoverflow_rss_user"></div>
-				<br>
+				<br/>
 				<h4 class="title">Top Answers</h4>
-				<div id="stackoverflow_rss_activities"></div>
+				<div id="stackoverflow_rss_top_answers"></div>
 				<a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=answers&sort=votes" target="blank">Show all answers</a>
-				<br>
+				<br/>
 				<h4 class="title">Top Tags</h4>
-				<div id="stackoverflow_rss_tags"></div>
+				<div id="stackoverflow_rss_top_tags"></div>
 				<a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=tags" target="blank">Show all tags</a>
+				<h4 class="title">Recent Answers</h4>
+				<div id="stackoverflow_rss_recent_answers"></div>
+				<a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=answers&sort=votes" target="blank">Show all answers</a>
 			</div>
 		</div>
 		<!--
@@ -32,31 +35,11 @@ nav_id: nav_social_media
 		
 		<div class="column is-half">
 			<div class="box">
-				<h2 class="title">GitHub</h2>
-				<div class="columns is-vcentered is-multiline">
-					<div class="column is-one-third">
-						<figure id="github_image" class="image is-64x64"></figure>
-					</div>
-					<div class="column is-two-thirds">
-						<div>
-							<i class="fas fa-book"></i>
-							<span id="github_public_repos"></span>
-						</div>
-						<div>
-							<i class="fas fa-code"></i>
-							<span id="github_public_gists"></span>
-						</div>
-						<div>
-							<i class="fas fa-users"></i>
-							<span id="github_followers"></span>
-							<span id="github_following"></span>
-						</div>
-						
-					</div>
-					<div class="column is-full">
-						<div id="github_repos"></div>
-					</div>
-				</div>
+				<h2 class="title"><i class="fab fa-github"></i> GitHub</h2>
+				<div id="github_user"></div>
+				<br/>
+				<h4 class="title">Repos</h4>
+				<div id="github_repos"></div>
 			</div>
 		</div>
 		

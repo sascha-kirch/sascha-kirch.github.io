@@ -1,12 +1,64 @@
 //JavaScript to fetch from GitHub API. Code inspired by: https://stackoverflow.com/a/18395248/17905764 
 // TODO: Add Programming Languages and pagination
+//function updateGithubFields(){
+//	var responseObj = JSON.parse(this.responseText);
+//	let user_info_string = ""
+//	user_info_string += "<div class=\"box\">"  
+//	user_info_string += "<div class=\"columns is-vcentered is-mobile\">"
+//    user_info_string += "<div class=\"column is-one-third\">"
+//	user_info_string += "<figure class=\"image is-64x64\"><img src=\""+responseObj.avatar_url+"\"></figure>"
+//	user_info_string += "</div>"
+//	user_info_string += "<div class=\"column is-two-thirds\">"
+//	user_info_string += "<div>"
+//	user_info_string += "<i class=\"fas fa-book\"></i>"
+//	user_info_string += "<span>Public repos: <a href=\"https://github.com/SaKi1309?tab=repositories\">" +  responseObj.public_repos +"</a></span>"
+//	user_info_string += "</div>"
+//	user_info_string += "<div>"
+//	user_info_string += "<i class=\"fas fa-code\"<></i>"
+//	user_info_string += "<span>Public gists: <a href=\"https://gist.github.com/SaKi1309\">" +  responseObj.public_gists +"</a></span>"
+//	user_info_string += "</div>"
+//	user_info_string += "<div>"
+//	user_info_string += "<i class=\"fas fa-users\"></i>"
+//	user_info_string += "<span>Followers: <a href=\"https://github.com/SaKi1309?tab=followers\">" + responseObj.followers +"</a></span>"
+//	user_info_string += "<span>Following: <a href=\"https://github.com/SaKi1309?tab=following\">" +  responseObj.following +"</a></span>"
+//	user_info_string += "</div>"
+//	user_info_string += "</div>"
+//	user_info_string += "</div>"
+//	user_info_string += "</div>"
+//	
+//	document.getElementById("github_user").innerHTML = user_info_string
+//}
+
 function updateGithubFields(){
 	var responseObj = JSON.parse(this.responseText);
-	document.getElementById("github_image").innerHTML = "<img src=\""+responseObj.avatar_url+"\">"
-	document.getElementById("github_public_repos").innerHTML = "Public repos: " + "<a href=\"https://github.com/SaKi1309?tab=repositories\">" +  responseObj.public_repos +"</a>";
-	document.getElementById("github_public_gists").innerHTML = "Public gists: " + "<a href=\"https://gist.github.com/SaKi1309\">" +  responseObj.public_gists +"</a>";
-	document.getElementById("github_followers").innerHTML = "Followers: " + "<a href=\"https://github.com/SaKi1309?tab=followers\">" + responseObj.followers +"</a>";
-	document.getElementById("github_following").innerHTML = "Following: " + "<a href=\"https://github.com/SaKi1309?tab=following\">" +  responseObj.following +"</a>";
+	let user_info_string = ""
+	user_info_string += "<div class=\"box\">"  
+	user_info_string += "<article class=\"media\">"
+    user_info_string += "<div class=\"media-left\">"
+	user_info_string += "<figure class=\"image is-64x64\"><img src=\""+responseObj.avatar_url+"\"/></figure>"
+	user_info_string += "</div>"
+	user_info_string += "<div class=\"media-content\">"
+	user_info_string += "<div class=\"content\">"
+	user_info_string += "<div>"
+	user_info_string += "<i class=\"fas fa-book\"></i>"
+	user_info_string += "<span> Public repos: <a href=\"https://github.com/SaKi1309?tab=repositories\">" +  responseObj.public_repos +"</a></span>"
+	user_info_string += "</div>"
+	user_info_string += "<div>"
+	user_info_string += "<i class=\"fas fa-code\"></i>"
+	user_info_string += "<span> Public gists: <a href=\"https://gist.github.com/SaKi1309\">" +  responseObj.public_gists +"</a></span>"
+	user_info_string += "</div>"
+	user_info_string += "<div>"
+	user_info_string += "<i class=\"fas fa-users\"></i>"
+	user_info_string += "<span> Followers: <a href=\"https://github.com/SaKi1309?tab=followers\">" + responseObj.followers +"</a></span>"
+	user_info_string += "<span> Following: <a href=\"https://github.com/SaKi1309?tab=following\">" +  responseObj.following +"</a></span>"
+	user_info_string += "</div>"  //div
+	user_info_string += "</div>"  //content
+	user_info_string += "</div>"  //media-content
+	user_info_string += "</article>"  //media
+	user_info_string += "</div>"  //box
+	
+	document.getElementById("github_user").innerHTML = user_info_string
+	console.log(user_info_string)
 }
 
 function updateGithubRepos() {
