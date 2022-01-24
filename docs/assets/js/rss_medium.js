@@ -17,7 +17,7 @@ function updateMediumCard(){
 		object_string += "<div class=\"card-content\">"
 
 		object_string += "<p class=\"title is-4\">"+item.title+"</p>"
-		object_string += "<p class=\"subtitle is-6\">by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+" </a>"
+		object_string += "<p class=\"subtitle is-6\">by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
 		dateTime = item.pubDate.split(" ")
 		object_string += "<time><span class=\"tag is-dark is-small\">"+dateTime[0]+"</span></time></p>"
 		
@@ -47,7 +47,6 @@ function updateMediumCard(){
 		object_string += "</div>"
 		object_string += "<footer class=\"card-footer\">"
 		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" class=\"card-footer-item\">Read full post</a>"
-		object_string += "<a href=\""+profileLink+"\" target=\"_blank\" class=\"card-footer-item\">Open author's profile</a>"
 		object_string += "</footer>"
 		object_string += "</div>"
 		object_string += "</div>"
