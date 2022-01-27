@@ -9,20 +9,20 @@ nav_id: nav_about
 {% capture private %}{% include about_private.md %}{% endcapture %}
 <div class="content">
 
-<!-- TODO:
-
-- beautyfy mobile view.
-
--->
-
 	<div class="columns is-vcentered">
-		<div class="column is-half">
+		<!--Hack to change order of image when column is wrapped on mobile devices!-->
+		<div class="column is-half is-hidden-mobile">
 			<figure class="image">
 				<img src={{site.baseurl | append: "/assets/images/colage_bio.png"}}>
 			</figure>
 		</div>
 		<div class="column is-half ">
 			{{ bio | markdownify }}
+		</div>
+		<div class="column is-half is-hidden-tablet"><!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
+			<figure class="image">
+				<img src={{site.baseurl | append: "/assets/images/colage_bio.png"}}>
+			</figure>
 		</div>
 	</div>
 	<div class="columns is-vcentered">
@@ -36,13 +36,19 @@ nav_id: nav_about
 		</div>
 	</div>
 	<div class="columns is-vcentered">
-		<div class="column is-half">
+		<!--Hack to change order of image when column is wrapped on mobile devices!-->
+		<div class="column is-half is-hidden-mobile">
 			<figure class="image">
 				<img src={{site.baseurl | append: "/assets/images/colage.png"}}>
 			</figure>
 		</div>
 		<div class="column is-half">
 			{{ private | markdownify }}
+		</div>
+		<div class="column is-half is-hidden-tablet"> <!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
+			<figure class="image">
+				<img src={{site.baseurl | append: "/assets/images/colage.png"}}>
+			</figure>
 		</div>
 	</div>
 </div>

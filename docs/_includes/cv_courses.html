@@ -12,14 +12,14 @@
 			<div>{{item.initiater}}</div>
 			<div><small>{{item.date}}</small></div>
 			<div><small><a href="{{item.certificate}}">{{item.certificate}}</a></small></div>
-			{% if item.sub_courses != "none" %}
+			{% if item.sub_courses != false %}
 			<div><b>Contained Courses:</b></div>
 			<div class="columns is-multiline is-vcentered">
 				{% for sub_course in item.sub_courses %}
 				<div class="column is-half">
 					<div class="box">
 						<div><b>{{sub_course.title}}</b></div>
-						<div><small><a href="{{item.certificate}}">{{sub_course.certificate}}</a></small></div>
+						<div style="word-break: break-all;"><small><a href="{{item.certificate}}">{{sub_course.certificate}}</a></small></div>
 					</div>
 				</div>
 				{% endfor %}

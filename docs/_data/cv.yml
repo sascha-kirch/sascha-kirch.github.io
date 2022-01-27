@@ -19,7 +19,7 @@ professional_experience:
         description: >
             Design and validation of electronic modules and concepts, 
             considering reliability and safety aspects, for automotive radar sensors.
-      
+     
       
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
       logo: hkn_logo.jpeg
@@ -45,7 +45,7 @@ professional_experience:
         end_date: today
         description: >
           Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
-          Volumetric Video Generator Model
+          Volumetric Video Generator Model.
       
       
     - company_name: Bitifeye Digital Test Solutions GmbH
@@ -54,18 +54,23 @@ professional_experience:
       - position: Software and Hardware Engineer
         employment_type: Full-Time
         location: Böblingen, Baden-Württemberg, Germany
-        start_date: Okt 2016
-        end_date: Okt 2017
+        start_date: Oct 2016
+        end_date: Oct 2017
         description: > 
-            Hardware and Software engineering
+            Development of FPGA designs in VHDL and Verilog. 
+            Circuit design and high-speed digital design.
+            Programming of automated pre-compliance tests for 
+            high-speed digital standards such as MIPI C-Phy, D-Phy und M-Phy.
+            Firmware programming in C++.
             
       - position: Copoorate Student Electrical Engineering
         employment_type: Full-Time
         location: Böblingen, Baden-Württemberg, Germany
-        start_date: Okt 2013
-        end_date: Okt 2016
+        start_date: Oct 2013
+        end_date: Oct 2016
         description: > 
-            description text
+            Design and test of electronic circuits. Programming of test software in C#.
+            Cable testing using netvork analyzer.
       
 
 education:
@@ -73,18 +78,18 @@ education:
       location: Madrid, Spain
       degree: PhD
       specialization: Machine Learning
-      start_date: 2021
+      start_date: Oct 2021
       end_date: today
-      grade: 
-      thesis: 
+      grade: false
+      thesis: false
       logo: uned_logo.jpeg
       
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
       degree: Master of Engineering (M.Eng.)
-      specialization: Electronic Systems For Communication and Information
-      start_date: 2019
-      end_date: 2021
+      specialization: Electronic Systems for Communication and Information
+      start_date: Oct 2019
+      end_date: Jun 2021
       grade: 9.4 (German equivalent 1.0)
       thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
       logo: uned_logo.jpeg
@@ -93,9 +98,9 @@ education:
       location: Horb am Neckar, Germany
       degree: Bachelor of Engineering (B.Eng.)
       specialization: Electrical Engineering
-      start_date: 2013
-      end_date: 2016
-      grade:
+      start_date: Sep 2013
+      end_date: Aug 2016
+      grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
 
@@ -132,7 +137,7 @@ expertises:
     - expertise: Autonomous Driving
     - expertise: High-Speed Digital Communication
     - expertise: HW Engineering
-    - expertise: SW Engineering (Embedded, Apps, Desktop) 
+    - expertise: SW Engineering (Embedded, Mobile, Desktop) 
       
 programming:
     - language: C++
@@ -192,7 +197,7 @@ courses:
       initiater: University of Alberta
       date: Dec 2021
       certificate: coursera.org/verify/F8KLW5KWHQ87
-      sub_courses: none
+      sub_courses: false
       logo: course_uni_alberta.jpeg
       
     - title: TensorFlow Advanced Techniques Specialization
@@ -227,10 +232,10 @@ courses:
       initiater: Udemy
       date: Oct 2021
       certificate: http://ude.my/UC-1004acf8-0a2a-458d-a2aa-2aad570356ef
-      sub_courses: none
+      sub_courses: false
       logo: course_udemy.jpeg
       
-    - title: TensorFlow Data and Deployment
+    - title: TensorFlow Data and Deployment Specialization
       initiater: Deeplearning.ai
       date: Sep 2020
       certificate: http://coursera.org/verify/specialization/J7ANVTTZMBRS 
@@ -296,5 +301,5 @@ courses:
       initiater: Stanford Online
       date: Jul 2020
       certificate: http://coursera.org/verify/P9ADSR3ASC64 
-      sub_courses: none
+      sub_courses: false
       logo: course_stanford.jpeg

@@ -20,10 +20,14 @@
 					<div style="text-align: center">{{item.end_date}}<br>|<br>{{item.start_date}}</div>
 				</div>
 				<div class="column">
-					<div>Degree: {{item.degree}}</div>
-					<div>Specialization: {{item.specialization}}</div>
-					<div>Grade: {{item.grade}}</div>
-					<div>Thesis: {{item.thesis}}</div>
+					<div><b>Degree:</b> {{item.degree}}</div>
+					<div><b>Specialization:</b> {{item.specialization}}</div>
+					{% if item.grade != false %}
+					<div><b>Grade:</b> {{item.grade}}</div>
+					{% endif %}
+					{% if item.thesis != false %}
+					<div><b>Thesis:</b> {{item.thesis}}</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
