@@ -70,7 +70,7 @@ professional_experience:
         end_date: Oct 2016
         description: > 
             Design and test of electronic circuits. Programming of test software in C#.
-            Cable testing using netvork analyzer.
+            High-speed digital cable testing using network analyzer.
       
 
 education:
@@ -81,7 +81,7 @@ education:
       start_date: Oct 2021
       end_date: today
       grade: false
-      thesis: false
+      thesis: Under evaluation
       logo: uned_logo.jpeg
       
     - university: Universidad Nacional de Educación a Distancia (UNED)
