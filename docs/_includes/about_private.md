@@ -5,8 +5,8 @@ Joke aside, I am a proud dad of my recently born son and a grateful husband of m
 I tried many sports ranging from soccer over bouldern to thai-boxing. But two sports have been around with me for years: basketball and hitting the gym. I always loved basketball because of the high dynamic games and the team spirit. 
 However, I stopped playing basketball because the fixed schedule of a team didn't match the schedule of my studies. I was looking for more flexibility and that's what the gym offered me.
 
-Probably, the highest adrenalin bursts I've experienced, were a parachute jump where I had to land by my own or the day I went bungy jumping. If you haven’t done it yet, you should absolutely try it! 
+Probably, the highest adrenalin bursts I've experienced were a parachute jump where I had to land by my own and the day I went bungy jumping. If you haven’t done it yet, you should absolutely try it! 
 
-I am lucky I had the chance to travel quite some countries before the pandemic hit us. Without any doubt, my favorite trip was to Argentina. The variety of these beautiful landscapes, the colorfulness of Buenos Aires
+I am lucky I had the chance to travel quite some countries before the pandemic hit us. Without any doubt, my favorite trip was to Argentina. The variety of the beautiful landscapes, the colorfulness of Buenos Aires,
 the mind-blowing masses of water in Iguazú or the impressive vastness of Patagonia stick in my mind like photographs.
 
