@@ -24,6 +24,16 @@ professional_experience:
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
       logo: hkn_logo.jpeg
       positions:
+      - position: Corresponding Secretary
+        employment_type: Full-Time
+        location: Madrid, Spain
+        start_date: 2022
+        end_date: today
+        description: >
+            Among other tasks, the corresponding secretary, in general, 
+            conducts correspondence with IEEE-HKN Headquarters. It is his/her 
+            duty to confer with the president in all matters that concern IEEE-HKN 
+            Headquarters to ensure that action is taken and to report back to IEEE-HKN Headquarters without delay.
       - position: IEEE Eta Kappa Nu Member
         employment_type: Full-Time
         location: Madrid, Spain
