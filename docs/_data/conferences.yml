@@ -1,0 +1,41 @@
+- name: ICLR - International Conference on Learning Representations
+  date: April 2022
+  description: >
+   ICLR is the premier gathering of professionals dedicated to the 
+   advancement of the branch of artificial intelligence called 
+   representation learning, but generally referred to as deep learning.
+  homepage: https://iclr.cc/Conferences/2022
+ 
+- name: Nvidia GTC22 - GPU Technology Conference
+  date: March 2022
+  description: > 
+   Nvidia GTC is a global AI conference for developers that brings 
+   together developers, engineers, researchers, inventors, and IT professionals. Topics focus 
+   on artificial intelligence, computer graphics, data science, machine learning and autonomous machines.
+  homepage: https://www.nvidia.com/gtc/
+  
+- name: WACV - Winter Conference on Applications of Computer Vision
+  date: January 2022
+  description: >
+   WACV is the premier international computer vision event comprising the main conference and 
+   several co-located workshops and tutorials. With its high quality and low cost, it provides 
+   an exceptional value for students, academics and industry researchers.
+  homepage: https://wacv2021.thecvf.com/home
+  
+- name: NeurIPS - Neural Information Processing Systems
+  date: December 2021
+  description: >
+   NeurIPS is a multi-track interdisciplinary annual meeting 
+   that includes invited talks, demonstrations, symposia, and oral and poster presentations of 
+   refereed papers. Along with the conference is a professional exposition focusing on machine 
+   learning in practice, a series of tutorials, and topical workshops that provide a less formal 
+   setting for the exchange of ideas.
+  homepage: https://nips.cc/Conferences/2021
+  
+- name: Nvidia GTC21 - GPU Technology Conference
+  date: November 2021
+  description: > 
+   Nvidia GTC is a global AI conference for developers that brings 
+   together developers, engineers, researchers, inventors, and IT professionals. Topics focus 
+   on artificial intelligence, computer graphics, data science, machine learning and autonomous machines.
+  homepage: https://www.nvidia.com/gtc/

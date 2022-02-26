@@ -1,0 +1,60 @@
+---
+layout: page
+title: Attended Conferences
+permalink: /conferences
+nav_id: nav_conferences
+---
+<div class="content">
+	<div class="timeline is-centered">
+
+	  
+	  <!--%s is the date format for the unix timestamp, %B for the fully written month and %Y for the current year with century -->
+	  
+	  {% assign firstRun = true %}
+	  {% assign todaySet = false %}
+	  {% assign currentDate = "today" | date: "%s" %}
+	  
+	  {% for item in site.data.conferences %}
+	  
+		  {% if firstRun %}
+			{% assign date = item.date | date: "%s" %}
+			{% assign firstRun = false %}
+		  {% endif %}
+		  
+		  {% assign itemDateYear = item.date | date: "%Y" %}
+		  {% assign dateYear = date | date: "%Y" %}
+		  {% if itemDateYear < dateYear %}
+			  <header class="timeline-header">
+				<span class="tag {% if todaySet == true %} is-success {% else %} is-warning {% endif %}">{{date | date: "%Y"}}</span>
+			  </header>
+			  {% assign date = item.date | date: "%s" %}
+		  {% endif %}
+		  
+		  {% assign itemDate = item.date | date: "%s" %}
+		  {% if currentDate > itemDate and todaySet == false %}
+			  <header class="timeline-header">
+				<span class="tag is-success">Today </span>
+			  </header>
+			  {% assign todaySet = true %}
+		  {% endif %}
+		  <div class="timeline-item {% if todaySet == true %} is-success {% else %} is-warning {% endif %}">
+			  <div class="timeline-marker {% if todaySet == true %} is-success {% else %} is-warning {% endif %} is-icon">
+				 <i class="{% if todaySet == true %}fas fa-check {% else %} fas fa-clock {% endif %}"></i>
+			  </div>
+			  <div class="timeline-content">
+				  <p class="heading">{{item.date}}</p>
+				  <p><b>{{item.name}}</b></p>
+				  {% if item.description %}
+				  <p class="is-hidden-mobile"><small>{{item.description}}</small></p>
+				  {% endif %}
+				  {% if item.homepage %}
+				  <p class="button is-small"><a href="{{item.homepage}}" target="_blank">Visit homepage</a></p>
+				  {% endif %}
+			  </div>
+		  </div>
+	  {% endfor %}
+	  <header class="timeline-header">
+		<span class="tag is-medium is-success">Start PhD 2021</span>
+	  </header>
+	</div>
+</div>

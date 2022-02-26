@@ -13,6 +13,10 @@
 - name: Programming Sites
   link: /programming_sites.html
   id: nav_programming_sites
+- name: Conferences
+  link: /conferences.html
+  id: nav_conferences
 - name: About me
   link: /about.html
   id: nav_about
+
