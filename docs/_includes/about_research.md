@@ -1,5 +1,5 @@
 ### Research
-Together with the Irish company [Volograms](https://www.volograms.com/) I have worked on adversarial domain adaptation of 3D data to train a volumetric video generator.
+Together with the Irish company <a href="https://www.volograms.com/" target="_blank">Volograms</a> I have worked on adversarial domain adaptation of 3D data to train a volumetric video generator.
 We implemented a novel CycleGAN architecture to synthetically generate training samples, which we then used to train a model that reconstructs 3D data from single images.
 We are currently writing a research paper and plan to publish soon.
  
