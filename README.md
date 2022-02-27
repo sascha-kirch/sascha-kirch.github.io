@@ -1,6 +1,8 @@
 # saki1309.github.io
 Website: [https://saki1309.github.io](https://saki1309.github.io)
 
+[![pages-build-deployment](https://github.com/SaKi1309/saki1309.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SaKi1309/saki1309.github.io/actions/workflows/pages/pages-build-deployment)
+
 # General Highlights
 - Google Analytics support
 - GitHub API access
