@@ -42,7 +42,7 @@ nav_id: nav_conferences
 				 <i class="{% if todaySet == true %}fas fa-check {% else %} fas fa-clock {% endif %}"></i>
 			  </div>
 			  <div class="timeline-content">
-				  <p class="heading">{{item.date}}</p>
+				  <p class="heading">{{item.date | date: "%B %Y"}}</p>
 				  <p><b>{{item.name}}</b></p>
 				  {% if item.description %}
 				  <p class="is-hidden-mobile"><small>{{item.description}}</small></p>
