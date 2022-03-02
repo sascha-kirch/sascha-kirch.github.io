@@ -78,7 +78,7 @@ function updateStackoverflowTopTags(){
 	
 	for(const tag of responseObj.items){
 		let object_string = ""
-		object_string += "<div>"
+		object_string += "<div class=\"pb-1\">"
 		object_string += "<nav class=\"level is-mobile\">"
 		object_string += "<div class=\"level-left\">"
 		object_string += "<div class=\"level-item\"><span class=\"tag is-rounded is-medium\">"+tag.tag_name+"</span></div>"
