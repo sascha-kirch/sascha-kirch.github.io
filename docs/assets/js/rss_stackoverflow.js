@@ -10,16 +10,12 @@ function updateStackoverflowUserData(){
     object_string += "<div class=\"media-content\">"
     object_string += "<div class=\"content\">"
     object_string += "<p>"
+    object_string += "<strong>"+responseObj.items[0].display_name+"</strong> <br><small>Reputation: "+responseObj.items[0].reputation + "</small>"
     var monthlyGrowth = responseObj.items[0].reputation_change_month
-    let grothColor = "has-text-black"
     if(monthlyGrowth > 0){
-		growthColor = "has-text-success"
-	} else if (monthlyGrowth == 0){
-		growthColor = "has-text-warning"
-	} else {
-		growthColor = "has-text-danger"
+		object_string += "<small> (<span class=\"has-text-success has-text-weight-bold\">+"+monthlyGrowth+"</span> this month)</small>"
 	}
-    object_string += "<strong>"+responseObj.items[0].display_name+"</strong> <br><small>Reputation: "+responseObj.items[0].reputation+" (<span class=\""+growthColor+" has-text-weight-bold\">+"+monthlyGrowth+"</span> this month)</small>"
+    
     object_string += "<br>"
     object_string += "<small>"
     object_string += "<span><i class=\"fas fa-circle\" style=\"color:gold;\"></i> "+responseObj.items[0].badge_counts.gold+" </span>"
