@@ -23,7 +23,7 @@
     name: fa-medium-m
     type: fab
 - name: stackoverflow
-  link: https://stackoverflow.com/users/17905764/sascha-kirch
+  link: https://stackoverflow.com/users/17905764/sascha-kirch?tab=profile
   icon:
     source: fa
     name: fa-stack-overflow
