@@ -1,3 +1,12 @@
+- name: Hot Chips
+  date: 21 August 2022
+  description: >
+   Since it started in 1989, HOT CHIPS has been known as one of the semiconductor industry’s 
+   leading conferences on high-performance microprocessors and related integrated circuits. 
+   The conference is held once a year in August in the center of the world’s capital of 
+   electronics activity, Silicon Valley.
+  homepage: https://hotchips.org/
+
 - name: ICLR - International Conference on Learning Representations
   date: 25 April 2022
   description: >
