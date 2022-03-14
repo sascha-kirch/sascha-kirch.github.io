@@ -91,7 +91,7 @@ education:
       start_date: Oct 2021
       end_date: today
       grade: false
-      thesis: Under evaluation
+      thesis: false
       logo: uned_logo.jpeg
       
     - university: Universidad Nacional de Educación a Distancia (UNED)
