@@ -1,18 +1,22 @@
 ---
-layout: default
+layout: page
 title: Sascha Kirch
 ---
+
 <div class="columns is-vcentered">
 	<div class ="column is-one-quarter content">
 		<figure class="image">
 			<img src="{{site.baseurl}}/assets/images/me_circle.png">
 		</figure>
+		<div>
+			<small>🚙 Technical Project Lead for Automotive Radar at Bosch <br> 🎓 Doctoral Student Machine Learning at UNED <br> 🤖 Deep Learning Freelancer <br> ⚡️ IEEE Eta Kappa Nu Nu Alpha </small>
+		</div>
 	</div>
     <div class="column is-three-quarters content">
-		<h1>{{ site.title }}</h1>
-		{% capture description %}{% include description.md %}{% endcapture %}
-		{{ description | markdownify }}
+		{% capture index %}{% include index.md %}{% endcapture %}
+		{{ index | markdownify }}
 		<h4>Contact</h4>
 		Please feel free to contact me through any of my social media channels or approach me via <a href="mailto:{{site.email}}?subject=Contact via personal space">E-Mail</a>. I am open to discussions and colaborations!
 	</div>
 </div>
+
