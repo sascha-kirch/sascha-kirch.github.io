@@ -1,4 +1,4 @@
-Welcome to my personal space! 
+#### Welcome to my personal space! 
 
 Here you will find information about my academic and professional activities. 
 My social media profiles are linked to the navigation menu. I also added feeds to my GitHub, Stackoverflow and Medium Blog to this website. 
