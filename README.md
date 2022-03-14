@@ -15,7 +15,7 @@ Website: [https://saki1309.github.io](https://saki1309.github.io)
 # Start Page
 Link to [Start Page](https://saki1309.github.io/).
 
-![image](https://user-images.githubusercontent.com/72045951/155887428-51ffc87d-83e7-45fb-9f56-8e33fe109872.png)
+![image](https://user-images.githubusercontent.com/72045951/158271330-39848e01-6d4f-4634-8721-8329d254ecbe.png)
 
 # Curriculum Vitae
 Link to [Curriculum Vitae](https://saki1309.github.io/cv.html).
