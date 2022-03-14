@@ -1,5 +1,8 @@
-### Biography
-
+---
+title: Biography
+order: 1
+image: colage_bio.png
+---
 I was born in 1993 in <a href="https://en.wikipedia.org/wiki/Baden-Baden" target="_blank">Baden-Baden</a>, southern Germany. 
 
 In 2013, I moved to Stuttgart area to study electrical engineering and in 2016 I graduated my bachelor at 

@@ -3,16 +3,13 @@ layout: page
 title: Projects
 permalink: /projects
 nav_id: nav_projects
+image_width: is-one-third
+text_width: is-two-thirds
+view_mode: excerpt
 ---
 
-<div class="content">
-	<div class="column is-half is-offset-one-quarter">
-		<figure class="image">
-			<img class="is-rounded" src="{{site.baseurl}}/assets/images/research.png">
-		</figure>
-	</div>
-	<div class="column is-half is-offset-one-quarter">
-		<div style="text-align: center"><b><big>I just started my PhD. Content is added soon!</big></b></div>
-	</div>
-</div>
-
+{% assign items = site.projects | sort: 'order' %}
+{% for item in items %}
+{% assign side = forloop.index0 | modulo: 2 %}
+{% include left_right.html %}
+{% endfor %}

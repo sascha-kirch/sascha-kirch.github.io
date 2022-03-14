@@ -3,52 +3,12 @@ layout: page
 title: About me
 permalink: /about
 nav_id: nav_about
+image_width: is-half
+text_width: is-half
+view_mode: content
 ---
-{% capture research %}{% include about_research.md %}{% endcapture %}
-{% capture bio %}{% include about_bio.md %}{% endcapture %}
-{% capture private %}{% include about_private.md %}{% endcapture %}
-<div class="content">
-
-	<div class="columns is-vcentered">
-		<!--Hack to change order of image when column is wrapped on mobile devices!-->
-		<div class="column is-half is-hidden-mobile">
-			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/colage_bio.png"}}>
-			</figure>
-		</div>
-		<div class="column is-half ">
-			{{ bio | markdownify }}
-		</div>
-		<div class="column is-half is-hidden-tablet"><!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
-			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/colage_bio.png"}}>
-			</figure>
-		</div>
-	</div>
-	<div class="columns is-vcentered">
-		<div class="column is-half">
-			{{ research | markdownify }}
-		</div>
-		<div class="column is-half">
-			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/emojos.png"}}>
-			</figure>
-		</div>
-	</div>
-	<div class="columns is-vcentered">
-		<!--Hack to change order of image when column is wrapped on mobile devices!-->
-		<div class="column is-half is-hidden-mobile">
-			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/colage.png"}}>
-			</figure>
-		</div>
-		<div class="column is-half">
-			{{ private | markdownify }}
-		</div>
-		<div class="column is-half is-hidden-tablet"> <!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
-			<figure class="image">
-				<img src={{site.baseurl | append: "/assets/images/colage.png"}}>
-			</figure>
-		</div>
-	</div>
-</div>
+{% assign items = site.about | sort: 'order' %}
+{% for item in items %}
+{% assign side = forloop.index0 | modulo: 2 %}
+{% include left_right.html %}
+{% endfor %}

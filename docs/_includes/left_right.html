@@ -1,0 +1,46 @@
+<div class="content">
+	<div class="columns is-vcentered">
+	{% if side == 0 %}
+	<!--image left-->
+		<!--Hack to change order of image when column is wrapped on mobile devices!-->
+		<div class="column {{page.image_width}} is-hidden-mobile">
+			<figure class="image">
+				<img src="{{site.baseurl}}/assets/images/{{ item.image }}">
+			</figure>
+		</div>
+		<div class="column {{page.text_width}} ">
+			<h3>{{ item.title }}</h3>
+			{% if page.view_mode == "excerpt" %}
+			{{ item.excerpt }}
+			<a href="{{ item.url }}"><em>Read more</em></a>
+			{% else %}
+			{{ item.content }}
+			{% endif %}
+		</div>
+		<div class="column {{page.image_width}} is-hidden-tablet"><!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
+			<figure class="image">
+				<img src="{{site.baseurl}}/assets/images/{{ item.image }}">
+			</figure>
+		</div>
+				
+	{% else %}
+	<!--image right-->
+		<div class="column {{page.text_width}}">
+			<h3>{{ item.title }}</h3>
+			{% if page.view_mode == "excerpt" %}
+			{{ item.excerpt }}
+			<a href="{{ item.url }}"><em>Read more</em></a>
+			{% else %}
+			{{ item.content }}
+			{% endif %}
+		</div>
+		<div class="column {{page.image_width}}">
+			<figure class="image">
+				<img src= "{{site.baseurl}}/assets/images/{{ item.image }}">
+			</figure>
+		</div>
+
+	{% endif %}
+	
+	</div>
+</div>

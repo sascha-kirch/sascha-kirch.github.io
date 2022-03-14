@@ -1,4 +1,8 @@
-### Private Life
+---
+title: Private Life
+order: 3
+image: colage.png
+---
 To this point, you may be thinking that all my activities are related to my academic and professional career or my geeky hobbies. I also like doing sports, traveling, and changing diapers. 
 Joke aside, I am a proud dad of my recently born son and a grateful husband of my lovely wife! 
 
