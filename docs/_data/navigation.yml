@@ -1,9 +1,9 @@
 #- name: Publications
 #  link: /publications.html
 #  id: nav_publication
-#- name: Projects
-#  link: /projects.html
-#  id: nav_projects
+- name: Projects
+  link: /projects.html
+  id: nav_projects
 - name: CV
   link: /cv.html
   id: nav_cv
