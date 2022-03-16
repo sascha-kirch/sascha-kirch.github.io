@@ -13,16 +13,16 @@ function updateGithubFields(){
 	user_info_string += "<div class=\"content\">"
 	user_info_string += "<div>"
 	user_info_string += "<i class=\"fas fa-book\"></i>"
-	user_info_string += "<span> Public repos: <a href=\"https://github.com/SaKi1309?tab=repositories\">" +  responseObj.public_repos +"</a></span>"
+	user_info_string += "<span> Public repos: <a href=\"https://github.com/sascha-kirch?tab=repositories\" target=\"_blank\">" +  responseObj.public_repos +"</a></span>"
 	user_info_string += "</div>"
 	user_info_string += "<div>"
 	user_info_string += "<i class=\"fas fa-code\"></i>"
-	user_info_string += "<span> Public gists: <a href=\"https://gist.github.com/SaKi1309\">" +  responseObj.public_gists +"</a></span>"
+	user_info_string += "<span> Public gists: <a href=\"https://gist.github.com/sascha-kirch\" target=\"_blank\">" +  responseObj.public_gists +"</a></span>"
 	user_info_string += "</div>"
 	user_info_string += "<div>"
 	user_info_string += "<i class=\"fas fa-users\"></i>"
-	user_info_string += "<span> Followers: <a href=\"https://github.com/SaKi1309?tab=followers\">" + responseObj.followers +"</a></span>"
-	user_info_string += "<span> Following: <a href=\"https://github.com/SaKi1309?tab=following\">" +  responseObj.following +"</a></span>"
+	user_info_string += "<span> Followers: <a href=\"https://github.com/sascha-kirch?tab=followers\" target=\"_blank\">" + responseObj.followers +"</a></span>"
+	user_info_string += "<span> Following: <a href=\"https://github.com/sascha-kirch?tab=following\" target=\"_blank\">" +  responseObj.following +"</a></span>"
 	user_info_string += "</div>"  //div
 	user_info_string += "</div>"  //content
 	user_info_string += "</div>"  //media-content
@@ -45,7 +45,7 @@ function updateGithubRepos() {
 		//Get Infor of each public Repo
 		let repo_info_string = ""
 		repo_info_string += "<div class=\"box\">"  
-		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\">"+element.name+" </a>"
+		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\" target=\"_blank\">"+element.name+" </a>"
 		repo_info_string +=	"<div class=\"columns is-multiline\">"
 		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + " watching</div>"
 		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"far fa-star\"></i> " + element.stargazers_count + " stars</div>"
@@ -79,10 +79,10 @@ function updateGithubRepos() {
 
 var request_basics = new XMLHttpRequest();
 request_basics.onload = updateGithubFields;
-request_basics.open('get', 'https://api.github.com/users/saki1309', true)
+request_basics.open('get', 'https://api.github.com/users/sascha-kirch', true)
 request_basics.send()
 
 var request_repos = new XMLHttpRequest();
 request_repos.onload = updateGithubRepos;
-request_repos.open('get', 'https://api.github.com/users/saki1309/repos', true)
+request_repos.open('get', 'https://api.github.com/users/sascha-kirch/repos', true)
 request_repos.send()
