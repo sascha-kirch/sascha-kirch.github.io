@@ -1,9 +1,18 @@
 function updateMediumCard(){
+	try{
+		updateMediumCardStandard()
+	} catch (e){
+		updateMediumCardOnError()
+	}
+}
+
+function updateMediumCardStandard(){
+
 	var responseObj = JSON.parse(this.responseText);
 	let object_string = ""
 	//hack to obtain link to prifile by removing /feed
 	var profileLink = responseObj.feed.url.replace("/feed", "")
-	
+
 	//Go through all posts
 	for (const item of responseObj.items){
 		
@@ -52,6 +61,20 @@ function updateMediumCard(){
 		object_string += "</div>"
 
 	}
+
+	//add content to page
+	document.getElementById("medium_cards").innerHTML = "<div>"+object_string+"</div>"
+}
+
+function updateMediumCardOnError(){
+	let object_string = ""
+	object_string += "<div class=\"column\">"
+	object_string += "<div class=\"box\">"
+	object_string += "<h4>Oops...</h4>"
+	object_string += "<p>Medium's RSS feed is currently not available, hence data cannot be pulled. <br> Please visit my blog on Medium to see all my posts.</p>"
+	object_string += "<p><a href=\"https://medium.com/@SaschaKirch\" target=\"_blank\">https://medium.com/@SaschaKirch</a></p>"
+	object_string += "</div>"
+	object_string += "</div>"
 	
 	//add content to page
 	document.getElementById("medium_cards").innerHTML = "<div>"+object_string+"</div>"
@@ -61,7 +84,9 @@ function updateMediumCard(){
 feed_url = 'https://medium.com/feed/@SaschaKirch'
 request_url = "https://api.rss2json.com/v1/api.json?rss_url=" + feed_url
 
+
 var request_basics = new XMLHttpRequest();
 request_basics.onload = updateMediumCard;
 request_basics.open('get', request_url, true)
 request_basics.send()
+

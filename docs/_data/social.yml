@@ -4,36 +4,42 @@
     source: fa
     name: fa-github
     type: fab
+    
 - name: LinkedIn
   link: https://www.linkedin.com/in/sascha-kirch/
   icon:
     source: fa
     name: fa-linkedin-in
     type: fab
+    
 - name: Twitter
   link: https://twitter.com/sascha_kirch
   icon:
     source: fa
     name: fa-twitter
     type: fab
+    
 - name: Medium
   link: https://medium.com/@SaschaKirch
   icon:
     source: fa
     name: fa-medium-m
     type: fab
+    
 - name: stackoverflow
   link: https://stackoverflow.com/users/17905764/sascha-kirch?tab=profile
   icon:
     source: fa
     name: fa-stack-overflow
     type: fab
+    
 - name: Research Gate
   link: https://www.researchgate.net/profile/Sascha-Kirch
   icon:
     source: ai
     name: ai-researchgate-square
     type: ai
+    
 - name: Email
   link: mailto:skirch1@alumno.uned.es
   icon:
