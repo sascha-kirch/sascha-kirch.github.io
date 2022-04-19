@@ -63,3 +63,5 @@ Link to [About Me](https://sascha-kirch.github.io/about.html).
 
 https://user-images.githubusercontent.com/72045951/155887380-bf191614-22e7-4d0c-8c80-18273e36a834.mp4
 
+# Repo Stats
+![](https://komarev.com/ghpvc/?username=saschakirchgithubio&color=yellow) since 16.04.2022
