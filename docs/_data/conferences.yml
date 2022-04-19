@@ -1,3 +1,10 @@
+- name: LOG - Learning on Graphs Conference
+  date: 9 December 2022
+  description: >
+   The LoG Conference covers research from areas broadly related to 
+   machine learning on graphs and geometry.
+  homepage: https://logconference.github.io/
+  
 - name: Hot Chips
   date: 21 August 2022
   description: >
