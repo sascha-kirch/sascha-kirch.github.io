@@ -44,6 +44,16 @@ professional_experience:
             promotes excellence in the profession and in education with 
             ideals of scholarship, character and attitude.
       
+    - company_name: Towards Data Science
+      logo: tds_logo.jpeg
+      positions:
+      - position: Technical Writer
+        employment_type: false
+        location: false
+        start_date: Apr 2022
+        end_date: today
+        description: >
+          Writing on deep learning theory and implementation guides.
       
     - company_name: Volograms
       logo: volograms_logo.jpeg

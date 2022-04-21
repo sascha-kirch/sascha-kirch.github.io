@@ -23,8 +23,12 @@
 					<div class="box">
 						<p>
 							<div><b>{{job.position}}</b></div>
+							{% if job.location != false %}
 							<div>{{job.location}}</div>
+							{% endif %}
+							{% if job.employment_type != false %}
 							<div>{{job.employment_type}}</div>
+							{% endif %}
 						</p>
 						<p>Description:<br>{{job.description}}</p>
 					</div>
