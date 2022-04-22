@@ -28,10 +28,10 @@ function updateMediumCardStandard(responseText){
 		object_string += "</div>"
 		object_string += "<div class=\"card-content\">"
 
-		object_string += "<p class=\"title is-4\">"+item.title+"</p>"
-		object_string += "<p class=\"subtitle is-6\">by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
+		object_string += "<p class=\"title is-5\">"+item.title+"</p>"
+		object_string += "<p class=\"subtitle is-7\">by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
 		dateTime = item.pubDate.split(" ")
-		object_string += "<time><span class=\"tag is-small\">"+dateTime[0]+"</span></time></p>"
+		object_string += "<time><span>, "+dateTime[0]+"</span></time></p>"
 		
 		
 		object_string += "<div class=\"content\">"
