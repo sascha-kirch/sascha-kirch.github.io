@@ -1,14 +1,14 @@
 function updateMediumCard(){
 	try{
-		updateMediumCardStandard()
+		updateMediumCardStandard(this.responseText)
 	} catch (e){
 		updateMediumCardOnError()
 	}
 }
 
-function updateMediumCardStandard(){
+function updateMediumCardStandard(responseText){
 
-	var responseObj = JSON.parse(this.responseText);
+	var responseObj = JSON.parse(responseText);
 	let object_string = ""
 	//hack to obtain link to prifile by removing /feed
 	var profileLink = responseObj.feed.url.replace("/feed", "")
