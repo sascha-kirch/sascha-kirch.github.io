@@ -4,6 +4,7 @@ function updateMediumCard(){
 	} catch (e){
 		updateMediumCardOnError()
 	}
+	reloadCss()
 }
 
 function updateMediumCardStandard(responseText){
@@ -12,11 +13,13 @@ function updateMediumCardStandard(responseText){
 	let object_string = ""
 	//hack to obtain link to prifile by removing /feed
 	var profileLink = responseObj.feed.url.replace("/feed", "")
+	
+	object_string += "<div class=\"columns is-multiline\">"
 
 	//Go through all posts
 	for (const item of responseObj.items){
 		
-		object_string += "<div class=\"column is-three-fifths is-offset-one-fifth\">"
+		object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"card\">"
 		object_string += "<div class=\"card-image\">"
 		object_string += "<figure class=\"image \">"
@@ -61,6 +64,7 @@ function updateMediumCardStandard(responseText){
 		object_string += "</div>"
 
 	}
+	object_string += "</div>"
 
 	//add content to page
 	document.getElementById("medium_cards").innerHTML = "<div>"+object_string+"</div>"
@@ -78,6 +82,17 @@ function updateMediumCardOnError(){
 	
 	//add content to page
 	document.getElementById("medium_cards").innerHTML = "<div>"+object_string+"</div>"
+}
+
+function reloadCss()
+{
+    var links = document.getElementsByTagName("link");
+    for (var cl in links)
+    {
+        var link = links[cl];
+        if (link.rel === "stylesheet")
+            link.href += "";
+    }
 }
 
 //When calling the feed directly, I get CORS errors. There workarround is, redirecting the request over rss2json.com api e.g. https://rss2json.com/#rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40SaschaKirch .
