@@ -58,11 +58,19 @@ professional_experience:
     - company_name: Volograms
       logo: volograms_logo.jpeg
       positions:
-      - position: Machine Learning Engineer
+      - position: Machine Learning Researcher
+        employment_type: Freelancer
+        location: Dublin, Ireland
+        start_date: Jun 2021
+        end_date: today
+        description: >
+          Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
+          Volumetric Video Generator Model.
+      - position: Master Thesis (Machine Learning)
         employment_type: Freelancer
         location: Dublin, Ireland
         start_date: Nov 2020
-        end_date: today
+        end_date: Jun 2021
         description: >
           Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
           Volumetric Video Generator Model.
