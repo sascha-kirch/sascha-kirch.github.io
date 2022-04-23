@@ -4,7 +4,7 @@
 function updateGithubFields(){
 	var responseObj = JSON.parse(this.responseText);
 	let user_info_string = ""
-	user_info_string += "<div class=\"box\">"  
+	user_info_string += "<div>"  
 	user_info_string += "<article class=\"media\">"
     user_info_string += "<figure class=\"media-left\">"
 	user_info_string += "<p class=\"image is-64x64\"><img src=\""+responseObj.avatar_url+"\"/></p>"

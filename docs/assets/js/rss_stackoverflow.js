@@ -2,7 +2,7 @@ function updateStackoverflowUserData(){
 	var responseObj = JSON.parse(this.responseText);
 	let object_string = ""
 	object_string += "<a href=\""+responseObj.items[0].link+"\" target=\"_blank\">"
-	object_string += "<div class=\"box\" >" 
+	object_string += "<div>" 
 	object_string += "<article class=\"media\">"
     object_string += "<figure class=\"media-left\">"
     object_string += "<p class=\"image is-64x64\"><img src=\""+responseObj.items[0].profile_image+"\" alt=\"Image\"></p>"
@@ -42,14 +42,14 @@ function updateStackoverflowTopAnswers(){
 			tag_score_color = "is-success"
 		}
 		object_string += "<div>"
-		object_string += "<div class=\"columns is-vcentered is-multiline is-mobile\">"
-		object_string += "<div class=\"column is-2\">"
+		object_string += "<div class=\"columns is-vcentered is-mobile\">"
+		object_string += "<div class=\"column is-narrow\">"
 		object_string += "<span class=\"tag is-medium "+tag_score_color+"\">"+answer.score+"  </span>"
 		object_string += "</div>"
-		object_string += "<div class=\"column is-8\" id=\"top_question_title_"+answer.question_id+"\"></div>"
-		var answerDate = new Date(answer.creation_date*1000)
-		object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
-		object_string += "</div>"
+		object_string += "<div class=\"column\" id=\"top_question_title_"+answer.question_id+"\"></div>"
+		//var answerDate = new Date(answer.creation_date*1000)
+		//object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
+		//object_string += "</div>"
 		object_string += "</div>"
 		
 		//add content to page
@@ -100,14 +100,14 @@ function updateStackoverflowRecentAnswers(){
 			tag_score_color = "is-success"
 		}
 		object_string += "<div>"
-		object_string += "<div class=\"columns is-vcentered is-multiline is-mobile\">"
-		object_string += "<div class=\"column is-2\">"
+		object_string += "<div class=\"columns is-vcentered is-mobile\">"
+		object_string += "<div class=\"column is-narrow\">"
 		object_string += "<span class=\"tag is-medium "+tag_score_color+"\">"+answer.score+"  </span>"
 		object_string += "</div>"
-		object_string += "<div class=\"column is-8\" id=\"recent_question_title_"+answer.question_id+"\"></div>"
-		var answerDate = new Date(answer.creation_date*1000)
-		object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
-		object_string += "</div>"
+		object_string += "<div class=\"column\" id=\"recent_question_title_"+answer.question_id+"\"></div>"
+		//var answerDate = new Date(answer.creation_date*1000)
+		//object_string += "<div class=\"column is-2\">"+answerDate.toDateString()+" </div>"		
+		//object_string += "</div>"
 		object_string += "</div>"
 		
 		//add content to page
