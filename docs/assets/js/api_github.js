@@ -47,9 +47,9 @@ function updateGithubRepos() {
 		repo_info_string += "<div class=\"box\">"  
 		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\" target=\"_blank\">"+element.name+" </a>"
 		repo_info_string +=	"<div class=\"columns is-multiline is-mobile\">"
-		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"far fa-star\"></i> " + element.stargazers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-one-third\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + "</div>"
+		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + "</div>"
+		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"far fa-star\"></i> " + element.stargazers_count + "</div>"
+		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + "</div>"
 		//empty container for languages. If element.languages is null, the API also does not return languages. e.g. Githubpage or only markdown repos
 		if (element.language != null){
 			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full\"></div>" 
