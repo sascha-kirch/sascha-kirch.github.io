@@ -105,7 +105,7 @@ education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
       degree: PhD
-      specialization: Machine Learning
+      specialization: Multi-Modal Deep Learning
       start_date: Oct 2021
       end_date: today
       grade: false

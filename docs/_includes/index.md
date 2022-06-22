@@ -5,5 +5,5 @@ My social media profiles are linked to the navigation menu. I also added feeds t
 
 
 #### Current Activities
-I recently started my PhD in the domain of generative deep learning at the <a href="https://www.uned.es/universidad/inicio/en/" target="_blank">National University of Distance Education (UNED)</a> in Madrid, Spain.
-At the moment I am focusing on writing my state-of-the-art.
+I am currently pursuing my PhD in the field of generative multi-modal deep learning at the <a href="https://www.uned.es/universidad/inicio/en/" target="_blank">National University of Distance Education (UNED)</a> in Madrid, Spain.
+At the moment I am focusing on writing my state-of-the-art on the depth estimation of a scene from multiple sensor modalities.
