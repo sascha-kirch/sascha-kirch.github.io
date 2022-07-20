@@ -1,9 +1,13 @@
 - title: "VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data"
   authors:
-    - Sascha Kirch
-    - Rafael Pagés
-    - Sergio Arnaldo
-    - Sergio Martín
+    - name: Sascha Kirch
+      orcid: 0000-0002-5578-7555
+    - name: Rafael Pagés
+      orcid: 0000-0002-5691-9580
+    - name: Sergio Arnaldo
+      orcid: false
+    - name: Sergio Martín
+      orcid: 0000-0002-4118-0234
   year: 2022
   journal: false
   tags:

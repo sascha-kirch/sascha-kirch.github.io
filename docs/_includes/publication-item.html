@@ -2,29 +2,21 @@
 	<div class="media-content">
 		<div class="content">
 		<p>
-		<em>{{ item.title }}</em>. 
-		{% for author in item.authors %}
-		{% if author == site.title %}
-      <b>{{ author }}</b>, 	
-		{% else %}
-		{{ author }}, 
-		{% endif %}
-		{% endfor %}
+		<strong>{{ item.title }}</strong>, 
 		{{ item.year }}.
+		<br>
+		{% for author in item.authors %}
+		    <a class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}"{% if author.orcid %} href="https://orcid.org/{{ author.orcid }}" target="_blank"{% endif %}>{{ author.name }}</a>
+		{% endfor %}
 		{% if item.journal != false %}
-		{{ item.journal }}.
+			<br>
+			{{ item.journal }}.
 		{% endif %}
-		{% if item.misc %}
-      <b>{{ item.misc }}</b>
-		{% endif %}
-    {% if item.tags %}
-      {% for tag in item.tags %}
-        {% if tag.link %}
-          <a class="tag is-rounded is-small is-success is-light" href="{{ tag.link }}">{{ tag.tag }}</a>
-        {% else %}
-          <span class="tag">{{ tag.tag }}</span>
-        {% endif %}
-      {% endfor %}
+		{% if item.tags %}
+			<br>
+			{% for tag in item.tags %}
+				<a class="tag is-small is-info is-light" {% if tag.link %}href="{{ tag.link }}" target="_blank"{% endif %}>{{ tag.tag }}</a>
+			{% endfor %}
 		{% endif %}
 		</p>
 		</div>
