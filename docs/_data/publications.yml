@@ -1,0 +1,13 @@
+- title: "VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data"
+  authors:
+    - Sascha Kirch
+    - Rafael Pagés
+    - Sergio Arnaldo
+    - Sergio Martín
+  year: 2022
+  journal: false
+  tags:
+    - tag: arXiv
+      link: https://arxiv.org/abs/2207.09204
+    - tag: GitHub
+      link: https://github.com/sascha-kirch/VoloGAN

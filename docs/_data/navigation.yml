@@ -1,6 +1,6 @@
-#- name: Publications
-#  link: /publications.html
-#  id: nav_publication
+- name: Publications
+  link: /publications.html
+  id: nav_publication
 - name: Projects
   link: /projects.html
   id: nav_projects

@@ -1,0 +1,32 @@
+<article class="media">
+	<div class="media-content">
+		<div class="content">
+		<p>
+		<em>{{ item.title }}</em>. 
+		{% for author in item.authors %}
+		{% if author == site.title %}
+      <b>{{ author }}</b>, 	
+		{% else %}
+		{{ author }}, 
+		{% endif %}
+		{% endfor %}
+		{{ item.year }}.
+		{% if item.journal != false %}
+		{{ item.journal }}.
+		{% endif %}
+		{% if item.misc %}
+      <b>{{ item.misc }}</b>
+		{% endif %}
+    {% if item.tags %}
+      {% for tag in item.tags %}
+        {% if tag.link %}
+          <a class="tag is-rounded is-small is-success is-light" href="{{ tag.link }}">{{ tag.tag }}</a>
+        {% else %}
+          <span class="tag">{{ tag.tag }}</span>
+        {% endif %}
+      {% endfor %}
+		{% endif %}
+		</p>
+		</div>
+	</div>
+</article>
