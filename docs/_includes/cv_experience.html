@@ -5,7 +5,7 @@
 			<!-- First line with company icon and name -->
 			<div class="columns is-full is-mobile is-vcentered">
 				<div class="column is-one-fifth has-text-centered">
-					<figure class="image is-48x48 is-centered is-inline-block">
+					<figure class="image is-48x48 is-centered is-inline-block mx-0">
 						<img class="is-rounded"  src="{{site.baseurl}}/assets/images/{{company.logo}}">
 					</figure>
 				</div>
@@ -21,16 +21,18 @@
 				</div>
 				<div class="column">
 					<div class="box">
-						<p>
-							<div><b>{{job.position}}</b></div>
-							{% if job.location != false %}
-							<div>{{job.location}}</div>
-							{% endif %}
-							{% if job.employment_type != false %}
-							<div>{{job.employment_type}}</div>
-							{% endif %}
-						</p>
-						<p>Description:<br>{{job.description}}</p>
+						
+						<div><b>{{job.position}}</b></div>
+						{% if job.location != false %}
+						<div>{{job.location}}</div>
+						{% endif %}
+						{% if job.employment_type != false %}
+						<div>{{job.employment_type}}</div>
+						{% endif %}
+						
+						<br>
+						<em>{{job.description}}</em>
+						
 					</div>
 				</div>
 			</div>
