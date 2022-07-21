@@ -1,8 +1,8 @@
 {% for item in site.data.cv.courses %}
 <div class="box">
-	<div class="columns">
+	<div class="columns is-mobile">
 		<div class="column is-narrow">
-			<figure class="image is-48x48">
+			<figure class="image is-48x48 mx-0">
 				<img class="is-rounded" src="{{site.baseurl}}/assets/images/{{item.logo}}">
 			</figure>
 		</div>
@@ -12,6 +12,8 @@
 			<div>{{item.initiater}}</div>
 			<div><small>{{item.date}}</small></div>
 			<div><small><a href="{{item.certificate}}" target="_blank">View Certificate</a></small></div>
+		</div>
+	</div>
 			{% if item.sub_courses != false %}
 			<div><b>Contained Courses:</b></div>
 			<div class="columns is-multiline is-vcentered">
@@ -25,8 +27,8 @@
 				{% endfor %}
 			</div>
 			{% endif %}
-		</div>
-	</div>
+		
+	
 
 </div>
 {% endfor %}
