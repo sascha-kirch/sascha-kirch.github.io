@@ -1,10 +1,30 @@
-<div class="columns is-full is-multiline">
+<div class="columns is-full is-multiline is-mobile">
 	{% for item in site.data.cv.programming %}
-	<div class="column is-one-third">
+	<!--Hack to change number of columns when on mobile devices!-->
+	<!-- 4 columns on large screens-->
+	<div class="column is-one-quarter is-hidden-mobile">
 		<div class="box">
 			<div class="columns is-vcentered is-mobile">
 				<div class="column is-narrow">
-					<figure class="image is-32x32">
+					<figure class="image is-32x32 mx-0">
+						<img src="{{site.baseurl}}/assets/images/{{item.logo}}">
+					</figure>
+				</div>
+				<div class="column">
+					<div><b>{{item.language}}</b></div>
+					<div>{{item.level}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
+	<!-- 2 columns on mobile-->
+	<div class="column is-half is-hidden-tablet">
+		<div class="box">
+			<div class="columns is-vcentered is-mobile">
+				<div class="column is-narrow">
+					<figure class="image is-32x32 mx-0">
 						<img src="{{site.baseurl}}/assets/images/{{item.logo}}">
 					</figure>
 				</div>
