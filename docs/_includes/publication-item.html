@@ -6,7 +6,12 @@
 		{{ item.year }}.
 		<br>
 		{% for author in item.authors %}
-		    <a class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}"{% if author.orcid %} href="https://orcid.org/{{ author.orcid }}" target="_blank"{% endif %}>{{ author.name }}</a>
+			{% if author.orcid %}
+				<a class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}" href="https://orcid.org/{{ author.orcid }}" target="_blank">{{ author.name }}<sup><i class="fab fa-orcid"></i></sup></a>
+				
+			{% else %}
+				<span class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}">{{ author.name }}</span>
+			{% endif %}
 		{% endfor %}
 		{% if item.journal != false %}
 			<br>
