@@ -33,12 +33,12 @@
     name: fa-stack-overflow
     type: fab
     
-- name: Research Gate
-  link: https://www.researchgate.net/profile/Sascha-Kirch
+- name: ORCID
+  link: https://orcid.org/0000-0002-5578-7555
   icon:
-    source: ai
-    name: ai-researchgate-square
-    type: ai
+    source: fa
+    name: fa-orcid
+    type: fab
     
 - name: Email
   link: mailto:skirch1@alumno.uned.es
