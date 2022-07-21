@@ -52,9 +52,9 @@ function updateGithubRepos() {
 		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + "</div>"
 		//empty container for languages. If element.languages is null, the API also does not return languages. e.g. Githubpage or only markdown repos
 		if (element.language != null){
-			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full\"></div>" 
+			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full pt-0 pb-0\"></div>" 
 		}
-		repo_info_string +=	"<div class=\"column is-full\">" + topic_string + "</div>"
+		repo_info_string +=	"<div class=\"column is-full pt-0 pb-0\">" + topic_string + "</div>"
 		repo_info_string +=	"<div class=\"column is-full\">" + element.description + "</div>"
 		repo_info_string +=	"</div>"
 		repo_info_string +=	"</div>"
