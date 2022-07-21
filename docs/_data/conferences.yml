@@ -1,18 +1,12 @@
-- name: LOG - Learning on Graphs Conference
-  date: 9 December 2022
+- name: NeurIPS - Neural Information Processing Systems
+  date: 28 November 2022
   description: >
-   The LoG Conference covers research from areas broadly related to 
-   machine learning on graphs and geometry.
-  homepage: https://logconference.github.io/
-  
-- name: Hot Chips
-  date: 21 August 2022
-  description: >
-   Since it started in 1989, HOT CHIPS has been known as one of the semiconductor industry’s 
-   leading conferences on high-performance microprocessors and related integrated circuits. 
-   The conference is held once a year in August in the center of the world’s capital of 
-   electronics activity, Silicon Valley.
-  homepage: https://hotchips.org/
+   NeurIPS is a multi-track interdisciplinary annual meeting 
+   that includes invited talks, demonstrations, symposia, and oral and poster presentations of 
+   refereed papers. Along with the conference is a professional exposition focusing on machine 
+   learning in practice, a series of tutorials, and topical workshops that provide a less formal 
+   setting for the exchange of ideas.
+  homepage: https://nips.cc/Conferences/2022
 
 - name: ICLR - International Conference on Learning Representations
   date: 25 April 2022
