@@ -14,21 +14,18 @@
 			<div><small><a href="{{item.certificate}}" target="_blank">View Certificate</a></small></div>
 		</div>
 	</div>
-			{% if item.sub_courses != false %}
-			<div><b>Contained Courses:</b></div>
-			<div class="columns is-multiline is-vcentered">
-				{% for sub_course in item.sub_courses %}
-				<div class="column is-half">
-					<div class="box">
-						<div>{{sub_course.title}}</div>
-						<div style="word-break: break-all;"><small><a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></div>
-					</div>
-				</div>
-				{% endfor %}
+	{% if item.sub_courses != false %}
+	<div><b>Contained Courses:</b></div>
+	<div class="columns is-multiline is-vcentered">
+		{% for sub_course in item.sub_courses %}
+		<div class="column is-half">
+			<div class="box">
+				<div>{{sub_course.title}}</div>
+				<div style="word-break: break-all;"><small><a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></div>
 			</div>
-			{% endif %}
-		
-	
-
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
 </div>
 {% endfor %}
