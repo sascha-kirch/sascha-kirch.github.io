@@ -1,3 +1,10 @@
+- name: Google Scholar
+  link: https://scholar.google.com/citations?user=VpdOc2kAAAAJ&hl=de
+  icon:
+    source: ai
+    name: ai-google-scholar
+    type: ai
+    
 - name: GitHub
   link: https://github.com/sascha-kirch
   icon:
