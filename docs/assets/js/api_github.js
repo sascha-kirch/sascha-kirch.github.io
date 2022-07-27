@@ -33,9 +33,23 @@ function updateGithubFields(){
 	console.log(user_info_string)
 }
 
+function sortJSON(arr, key, asc=true) {
+  return arr.sort((a, b) => {
+    let x = a[key];
+    let y = b[key];
+    if (asc) { return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }
+    else { return ((x > y) ? -1 : ((x < y) ? 1 : 0)); }
+  });
+}
+
+
 function updateGithubRepos() {
 	var responseObj = JSON.parse(this.responseText);
-	for (const element of responseObj) {
+
+	//sort according update date
+	sortedResponse = sortJSON(responseObj, "pushed_at", false);
+	
+	for (const element of sortedResponse) {
 		
 		let topic_string = ""
 		//Get topic of each public repo and represent as tag
