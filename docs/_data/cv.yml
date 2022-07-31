@@ -58,14 +58,13 @@ professional_experience:
     - company_name: Volograms
       logo: volograms_logo.jpeg
       positions:
-      - position: Machine Learning Researcher
+      - position: Research Engineer Machine Learning
         employment_type: Freelancer
         location: Dublin, Ireland
         start_date: Jun 2021
         end_date: today
         description: >
-          Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
-          Volumetric Video Generator Model.
+          Investigation and application of machine learning related technologies.
       - position: Master Thesis (Machine Learning)
         employment_type: Freelancer
         location: Dublin, Ireland
@@ -105,7 +104,7 @@ education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
       degree: PhD
-      specialization: Multi-Modal Deep Learning
+      specialization: Multi-Modal Generative Deep Learning
       start_date: Oct 2021
       end_date: today
       grade: false
