@@ -24,7 +24,7 @@ professional_experience:
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
       logo: hkn_logo.jpeg
       positions:
-      - position: Corresponding Secretary
+      - position: Chapter Leadership, Corresponding Secretary
         employment_type: Full-Time
         location: Madrid, Spain
         start_date: 2022
@@ -64,7 +64,7 @@ professional_experience:
         start_date: Jun 2021
         end_date: today
         description: >
-          Investigation and application of machine learning related technologies.
+          Investigation and application of machine learning related technologies for AR/VR applications (e.g. mobile applications and metaverse)
       - position: Master Thesis (Machine Learning)
         employment_type: Freelancer
         location: Dublin, Ireland
@@ -227,6 +227,25 @@ courses:
       sub_courses: false
       logo: course_uni_alberta.jpeg
       
+    - title: TDP - Talent Development Program
+      initiater: Robert Bosch GmbH
+      date: since July 2021
+      certificate: false
+      sub_courses: 
+      - title: Self-Awareness
+        certificate: false 
+      - title: Communication & Cooperation
+        certificate: false
+      - title: Shaping Bosch
+        certificate: false
+      - title: Market my Expertise and Myself
+        certificate: false
+      - title: The Expert Framework
+        certificate: false
+      - title: (SCHEDULED) Self-Efficacy
+        certificate: false
+      logo: bosch_logo.jpeg
+      
     - title: TensorFlow Advanced Techniques Specialization
       initiater: Deeplearning.ai
       date: Jan 2021
@@ -241,6 +260,25 @@ courses:
       - title: Generative Deep Learning with TensorFlow
         certificate: http://coursera.org/verify/E44343B8XLJS  
       logo: course_deeplearning.jpeg
+      
+    - title: LFG - Leadership Focus Group
+      initiater: Robert Bosch GmbH
+      date: 2020 - 2021
+      certificate: false
+      sub_courses: 
+      - title: Module 1 - Creating Values for my Customers
+        certificate: false 
+      - title: Module 2 - Leading Myself and my Team
+        certificate: false
+      - title: Module 3 - Fascinating Customers
+        certificate: false
+      - title: Module 4 - Mastering Complexity
+        certificate: false
+      - title: Module 5 - Keeping the Promise
+        certificate: false
+      - title: Module 6 - Stay on Track
+        certificate: false
+      logo: bosch_logo.jpeg
       
     - title: Generative Adversarial Networks (GANs) Specialization
       initiater: Deeplearning.ai

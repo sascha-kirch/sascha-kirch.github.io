@@ -11,7 +11,9 @@
 			<div><b>{{item.title}}</b></div>
 			<div>{{item.initiater}}</div>
 			<div><small>{{item.date}}</small></div>
+			{% if item.certificate != false %}
 			<div><small><a href="{{item.certificate}}" target="_blank">View Certificate</a></small></div>
+			{% endif %}
 		</div>
 	</div>
 	{% if item.sub_courses != false %}
@@ -21,7 +23,9 @@
 		<div class="column is-half">
 			<div class="box">
 				<div>{{sub_course.title}}</div>
+				{% if sub_course.certificate != false %}
 				<div style="word-break: break-all;"><small><a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></div>
+				{% endif %}
 			</div>
 		</div>
 		{% endfor %}
