@@ -44,6 +44,18 @@ professional_experience:
             promotes excellence in the profession and in education with 
             ideals of scholarship, character and attitude.
       
+    - company_name: Universidad Nacional de Educación a Distancia (UNED)
+      logo: uned_logo.jpeg
+      positions:
+      - position: Lecturer - Neuronal networks in industrial control systems
+        employment_type: false
+        location: Madrid, Spain
+        start_date: Aug 2022
+        end_date: today
+        description: >
+          Lecturer for the subject "Redes neuronales en control industrial" (en: Neuronal networks in industrial control systems) in the department 
+          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (en: Electrical engineering, electronics, control engineering, telematics and chemical engineering) 
+          
     - company_name: Towards Data Science
       logo: tds_logo.jpeg
       positions:
