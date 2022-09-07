@@ -50,7 +50,7 @@ professional_experience:
       - position: Lecturer - Neuronal networks in industrial control systems
         employment_type: false
         location: Madrid, Spain
-        start_date: Aug 2022
+        start_date: Sep 2022
         end_date: today
         description: >
           Lecturer for the subject "Redes neuronales en control industrial" (en: Neuronal networks in industrial control systems) in the department 
@@ -125,7 +125,7 @@ education:
       
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
-      degree: Master of Engineering (M.Eng.)
+      degree: Master of Science (M.Sc.)
       specialization: Electronic Systems for Communication and Information
       start_date: Oct 2019
       end_date: Jun 2021
