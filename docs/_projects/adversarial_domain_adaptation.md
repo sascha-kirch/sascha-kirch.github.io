@@ -1,12 +1,15 @@
 ---
 title: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
-order: 1
+order: 2
 image: domain_adaptation_1.png
 ---
 
 In cooperation with the Irish company <a href="https://www.volograms.com/" target="_blank">Volograms</a> we synthetically generated 
 training data from an existing (similar but different) data distribution by performing adversarial domain adaptation using an improved CycleGAN 
 to train a single-view reconstruction model for VR/AR applications. 
+
+**Paper**: <a href="https://arxiv.org/abs/2207.09204" target="_blank">VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data</a> \\
+**Code**: <a href="https://github.com/sascha-kirch/VoloGAN" target="_blank">https://github.com/sascha-kirch/VoloGAN</a> 
 
 Both data domains consist of RGBD images with the dimensions 512x512x4. Images from the first domain are generated using photogrammetry and 
 images from the second domain are generated from a mobile phone using a LiDAR scanner. The objective of this work has been to translate RGBD images generated using 

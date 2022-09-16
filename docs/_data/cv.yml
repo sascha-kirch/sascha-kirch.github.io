@@ -53,8 +53,8 @@ professional_experience:
         start_date: Sep 2022
         end_date: today
         description: >
-          Lecturer for the subject "Redes neuronales en control industrial" (en: Neuronal networks in industrial control systems) in the department 
-          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (en: Electrical engineering, electronics, control engineering, telematics and chemical engineering) 
+          Lecturer for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department 
+          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering) 
           
     - company_name: Towards Data Science
       logo: tds_logo.jpeg
@@ -171,9 +171,11 @@ awards:
       initiater: UNED - Universidad Nacional de Educación a Distancia
 
 expertises:
-    - expertise: Machine Learning
-    - expertise: Integrated Circuits
+    - expertise: Deep Learning
+    - expertise: Generative Adversarial Networks (GANs)
+    - expertise: Diffusion Models
     - expertise: Autonomous Driving
+    - expertise: Integrated Circuits
     - expertise: High-Speed Digital Communication
     - expertise: HW Engineering
     - expertise: SW Engineering (Embedded, Mobile, Desktop) 

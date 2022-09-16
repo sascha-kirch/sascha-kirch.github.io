@@ -3,17 +3,18 @@ title: Research
 order: 2
 image: emojos.png
 ---
+My research focuses on multi-modal generative deep learning, primerily using generative adversarial networks (GANs) and diffusion models.
+
 Together with the Irish company <a href="https://www.volograms.com/" target="_blank">Volograms</a> I have worked on adversarial domain adaptation of 3D data to train a volumetric video generator.
-We implemented a novel CycleGAN architecture, the VoloGAN, to synthetically generate training samples, which we then used to train a model that reconstructs 3D data from single images. 
+We implemented a novel CycleGAN architecture, the VoloGAN, to synthetically generate training samples, which we then used to train a model for single-view 3D reconstruction. 
 Our results are published in the paper <a href="https://arxiv.org/abs/2207.09204" target="_blank">VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data</a>.
 
- 
-In the scope of my PhD, I am currently working on the state-of-the-art in the field of generative multi-modal deep learning. 
-I have attended several conferences, studied a vast number of papers and evaluated many possible fields to study. It took me some time to come up with a suitable topic since many restrictions apply to my PhD due to limited access to resources.
+I am currently working on two publications. 
 
-At the same time, I see these restrictions as a great chance. I believe creativity and methodology are key to overcome these restrictions. In this way one is challenged to find other ways pushing forward the state-of-the-art. 
+First, we are performing a survey on multi-modal generative deeplearning approaches for the depth estimation of complex scenes such as in autonomous driving scenarios with multiple sensors and multiple views. 
 
-To follow recent trends in the machine learning community and to include my knowledge about electronics and sensors, I focus my work on self-supervised multi-modal generative deep learning. 
-In detail, I study how to estimate the depth of a scene from multiple sensor modalities, whereat not all modalities might be present after deployment. 
+Second, we are investigating denoising diffusion probabilistic models for data generation in the field of augmented/virtual reality applications such as the metaverse.  
 
-Once I proceed with my state-of-the-art, I will post an update.
+I frequently attend conferences to stay up to date with the latest research in the field of deep learning. A reccord of conferences I attended is found <a href="https://sascha-kirch.github.io/conferences.html" target="_blank">here</a>.
+
+Finally, I recently started a new position as lecturer at the spanish distance university UNED for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems). 
