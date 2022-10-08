@@ -256,7 +256,7 @@ courses:
         certificate: false
       - title: The Expert Framework
         certificate: false
-      - title: (SCHEDULED) Self-Efficacy
+      - title: Self-Efficacy - Impacting my team and beyond
         certificate: false
       logo: bosch_logo.jpeg
       
@@ -382,3 +382,18 @@ courses:
       certificate: http://coursera.org/verify/P9ADSR3ASC64 
       sub_courses: false
       logo: course_stanford.jpeg
+      
+    - title: Project Management Fundamentals
+      initiater: Robert Bosch GmbH
+      date: 2018 - 2019
+      certificate: false
+      sub_courses: 
+      - title: Project Management Fundamentals - Basics
+        certificate: false 
+      - title: Project Management Fundamentals - Project team development and communication
+        certificate: false
+      - title: Project Management Fundamentals - Leadership in projects
+        certificate: false
+      - title: Project Management Fundamentals - Combining classic and agile project management
+        certificate: false
+      logo: bosch_logo.jpeg
