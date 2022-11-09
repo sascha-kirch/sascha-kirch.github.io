@@ -15,6 +15,7 @@ baseurl: ""
 url: https://sascha-kirch.github.io
 twitter_username: sascha_kirch
 github_username: sascha-kirch
+mode: dark #bright or dark (in development)
 
 # Google Analytics
 google_analytics: G-KWH5E0QLCH

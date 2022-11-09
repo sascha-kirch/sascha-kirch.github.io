@@ -1,7 +1,7 @@
 ---
 title: Biography
 order: 1
-image: saschas.png
+image: saschas_dark.png
 ---
 I was born in 1993 in <a href="https://en.wikipedia.org/wiki/Baden-Baden" target="_blank">Baden-Baden</a>, southern Germany. 
 

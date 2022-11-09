@@ -1,0 +1,28 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+
+
+
+// Doc: https://bulma.io/documentation/customize/with-node-sass/ 
+
+
+// Test Code: 
+@charset "utf-8";
+
+//-------
+// body
+//-------
+$body-background-color: white;
+
+//-------
+// button
+//-------
+$button-background-color: $body-background-color;
+$button-border-color: $button-background-color;
+$button-hover-border-color: $button-background-color;
+
+
+// import complete bulma
+@import "mybulma/bulma/bulma.sass";

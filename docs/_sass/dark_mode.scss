@@ -1,0 +1,63 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+
+// Doc: https://bulma.io/documentation/customize/with-node-sass/ 
+
+
+// Test Code: 
+@charset "utf-8";
+
+
+// Set your brand colors
+$yellow-sascha: #FDC101;
+$link: $yellow-sascha;
+
+
+//-------
+// body
+//-------
+$body-background-color: #1c1c1d;
+
+//-------
+// text
+//-------
+$text: #e8e8e8;
+$text-strong: $text;
+$link-hover: #ff6c0c;
+
+
+//-------
+// footer
+//-------
+$footer-background-color: #2c3237;
+//$footer-background-color: hsl(205,14%,28%);
+
+//-------
+//box
+//-------
+$box-background-color: $body-background-color;
+//$box-background-color: $footer-background-color;
+$box-shadow: 0 2px 3px rgba(#e8e8e8, 0.1);
+
+//-------
+// button
+//-------
+$button-background-color: $body-background-color;
+$button-border-color: $button-background-color;
+$button-hover-color: $yellow-sascha;
+$button-hover-border-color: $button-background-color;
+
+//-------
+// navbar
+//-------
+$navbar-background-color: $body-background-color;
+$navbar-item-active-color: $yellow-sascha;
+$navbar-item-hover-color: $yellow-sascha;
+$navbar-item-hover-background-color: $navbar-background-color;
+
+
+
+// import complete bulma
+@import "mybulma/bulma/bulma.sass";

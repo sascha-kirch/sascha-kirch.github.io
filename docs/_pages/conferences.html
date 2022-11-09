@@ -25,7 +25,7 @@ nav_id: nav_conferences
 		  {% assign dateYear = date | date: "%Y" %}
 		  {% if itemDateYear < dateYear %}
 			  <header class="timeline-header">
-				<span class="tag {% if todaySet == true %} is-success {% else %} is-warning {% endif %}">{{date | date: "%Y"}}</span>
+				<span class="{% if todaySet == true %} is-success {% else %} is-warning {% endif %}">{{date | date: "%Y"}}</span>
 			  </header>
 			  {% assign date = item.date | date: "%s" %}
 		  {% endif %}
@@ -33,7 +33,7 @@ nav_id: nav_conferences
 		  {% assign itemDate = item.date | date: "%s" %}
 		  {% if currentDate > itemDate and todaySet == false %}
 			  <header class="timeline-header">
-				<span class="tag is-success">Today </span>
+				<span class="is-success">Today </span>
 			  </header>
 			  {% assign todaySet = true %}
 		  {% endif %}
@@ -54,7 +54,7 @@ nav_id: nav_conferences
 		  </div>
 	  {% endfor %}
 	  <header class="timeline-header">
-		<span class="tag is-medium is-success">Start PhD 2021</span>
+		<span class="is-medium is-success">Start PhD 2021</span>
 	  </header>
 	</div>
 </div>

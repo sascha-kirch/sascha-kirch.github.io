@@ -37,7 +37,7 @@ function updateStackoverflowTopAnswers(){
 	for(const answer of responseObj.items){
 		let object_string = ""
 		
-		tag_score_color = "is-light"
+		tag_score_color = ""
 		if (answer.is_accepted){
 			tag_score_color = "is-success"
 		}
@@ -95,7 +95,7 @@ function updateStackoverflowRecentAnswers(){
 	for(const answer of responseObj.items){
 		let object_string = ""
 		
-		tag_score_color = "is-light"
+		tag_score_color = ""
 		if (answer.is_accepted){
 			tag_score_color = "is-success"
 		}

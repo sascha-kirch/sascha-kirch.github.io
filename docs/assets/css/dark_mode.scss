@@ -1,0 +1,95 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "dark_mode";
+
+
+//---------------------------------
+// Tags
+//---------------------------------
+.tag:not(body) {
+  align-items: center;
+  background-color: hsl(205,14%,28%);
+  border-radius: 4px;
+  color: hsl(205,46.5%,73.5%);
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  white-space: nowrap;
+}
+
+.tag:not(body).is-success {
+  background-color: hsl(140,27.5%,48.5%);
+  color: $body-background-color;
+}
+
+.tag:not(body).is-success.is-light {
+  background-color: hsl(140,27.5%,48.5%);
+  color: $text;
+}
+
+.tag:not(body).is-info {
+  background-color: hsl(209,56%,43%);
+  color: $body-background-color;
+}
+
+.tag:not(body).is-info.is-light {
+  //background-color: $body-background-color;
+  background-color: hsl(209,56%,43%);
+  //color: hsl(206,100%,60%);
+  color: $text;
+}
+
+//---------------------------------
+// Text
+//---------------------------------
+.has-text-success {
+  color: hsl(140,27.5%,48.5%) !important;
+}
+
+//---------------------------------
+// Timeline marker
+//---------------------------------
+//.timeline-marker.is-success > svg{
+//  fill: hsl(140,27.5%,48.5%); 
+//  //color: $body-background-color;
+//}
+
+//.timeline-item:not(body).is-success {
+//  background-color: #48c78e;
+//  color: $body-background-color;
+//}
+
+
+//---------------------------------
+// stackoverflow links
+//---------------------------------
+#stackoverflow_rss_user a {
+	color: $text;
+}
+
+#stackoverflow_rss_user a:hover {
+	color: $link-hover;
+}
+
+#stackoverflow_rss_top_answers a {
+	color: $text;
+}
+
+#stackoverflow_rss_top_answers a:hover {
+	color: $link-hover;
+}
+
+#stackoverflow_rss_recent_answers a {
+	color: $text;
+}
+
+#stackoverflow_rss_recent_answers a:hover {
+	color: $link-hover;
+}
