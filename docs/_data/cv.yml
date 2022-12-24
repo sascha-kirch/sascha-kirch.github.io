@@ -2,11 +2,19 @@ professional_experience:
     - company_name: Robert Bosch GmbH
       logo: bosch_logo.jpeg
       positions:
+      - position: Expert Deep Learning for Automotive Sensor Perception
+        employment_type: Full-Time
+        location: Leonberg, Baden-Würtemberg, Germany
+        start_date: Jan 2023
+        end_date: today
+        description: >
+            Deep learning based perception for automotive radar, lidar and camera sensors.
+
       - position: Technical Project Lead for Automotive Radar
         employment_type: Full-Time
         location: Leonberg, Baden-Würtemberg, Germany
         start_date: Jan 2019
-        end_date: today
+        end_date: Dec 2022
         description: >
             Responsible for the development of electronic modules and concepts 
             including hardware architecture, safety, thermal design and EMC for automotive radar.
