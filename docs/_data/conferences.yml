@@ -1,13 +1,3 @@
-- name: NeurIPS - Neural Information Processing Systems
-  date: 28 November 2022
-  description: >
-   NeurIPS is a multi-track interdisciplinary annual meeting 
-   that includes invited talks, demonstrations, symposia, and oral and poster presentations of 
-   refereed papers. Along with the conference is a professional exposition focusing on machine 
-   learning in practice, a series of tutorials, and topical workshops that provide a less formal 
-   setting for the exchange of ideas.
-  homepage: https://nips.cc/Conferences/2022
-
 - name: ICLR - International Conference on Learning Representations
   date: 25 April 2022
   description: >

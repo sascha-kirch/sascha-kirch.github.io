@@ -17,7 +17,7 @@ professional_experience:
         end_date: Dec 2022
         description: >
             Responsible for the development of electronic modules and concepts 
-            including hardware architecture, safety, thermal design and EMC for automotive radar.
+            including µC, MMIC radar ASIC, SystemASIC, radar SoC, hardware architecture, safety, thermal design and EMC for automotive radar.
             
       - position: Hardware Engineer Automotive Radar
         employment_type: Full-Time
