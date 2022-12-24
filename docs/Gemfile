@@ -33,3 +33,5 @@ gem "jekyll", "~> 3.9"
 
 # to be able to use sass style files to customize appearance
 gem 'jekyll-sass-converter'
+
+gem "webrick", "~> 1.7"
