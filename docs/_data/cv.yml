@@ -32,11 +32,20 @@ professional_experience:
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
       logo: hkn_logo.jpeg
       positions:
+      - position: President
+        employment_type: Full-Time
+        location: Madrid, Spain
+        start_date: Jan 2023
+        end_date: today
+        description: >
+            Jan 2023 - Aug 2023 President Elect \\
+            Sep 2023 - Aug 2024 President \\
+            Sep 2024 - Aug 2025 Past President
       - position: Chapter Leadership, Corresponding Secretary
         employment_type: Full-Time
         location: Madrid, Spain
-        start_date: 2022
-        end_date: today
+        start_date: Jan 2022
+        end_date: Dec 2022
         description: >
             Among other tasks, the corresponding secretary, in general, 
             conducts correspondence with IEEE-HKN Headquarters. It is his/her 
