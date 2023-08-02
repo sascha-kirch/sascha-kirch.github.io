@@ -5,15 +5,9 @@ image: emojos.png
 ---
 My research focuses on multi-modal generative deep learning, primarily using generative adversarial networks (GANs) and diffusion models.
 
-Together with the Irish company <a href="https://www.volograms.com/" target="_blank">Volograms</a> I have worked on adversarial domain adaptation of 3D data to train a volumetric video generator.
-We implemented a novel CycleGAN architecture, the VoloGAN, to synthetically generate training samples, which we then used to train a model for single-view 3D reconstruction. 
-Our results are published in the paper <a href="https://arxiv.org/abs/2207.09204" target="_blank">VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data</a>.
-
-I am currently working on two publications. 
-
-First, we are performing a survey on multi-modal generative deeplearning approaches for the depth estimation of complex scenes such as in autonomous driving scenarios with multiple sensors and multiple views. 
-
-Second, we are investigating denoising diffusion probabilistic models for data generation in the field of augmented/virtual reality applications such as the metaverse.  
+Over the last several years I have been a colaborative researcher together with <a href="https://www.volograms.com/" target="_blank">Volograms</a>. We have worked on multiple projects that resulted in two publications. In our first project we have implemented adversarial domain adaptation of 3D data to train a volumetric video generator.
+We designed a novel CycleGAN architecture, the VoloGAN, to synthetically generate training samples, which we then used to train a model for single-view 3D reconstruction. Our results are published in the paper <a href="https://arxiv.org/abs/2207.09204" target="_blank">VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data</a>.
+In our second project we performed monocular depth estimation and depth super-resolution applying conditional diffusion probabilistic models. Or results have been published in the paper <a href="https://arxiv.org/abs/2307.15988" target="_blank">RGB-D-Fusion: Image Conditioned Depth Diffusion of Humanoid Subjects</a>.
 
 I frequently attend conferences to stay up to date with the latest research in the field of deep learning. A record of conferences I attended is found <a href="https://sascha-kirch.github.io/conferences.html" target="_blank">here</a>.
 

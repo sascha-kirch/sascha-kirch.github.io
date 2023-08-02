@@ -1,7 +1,7 @@
 ---
 title: Biography
 order: 1
-image: saschas_dark.png
+image: saschas.png
 ---
 I was born in 1993 in <a href="https://en.wikipedia.org/wiki/Baden-Baden" target="_blank">Baden-Baden</a>, southern Germany. 
 
@@ -16,11 +16,12 @@ At the end of 2017, I changed jobs and started at Bosch as a hardware engineer f
 electronics and soon after, in 2019, I became the technical project lead for automotive radar electronics. At this time, I was only 25 years old and I felt an internal urge
 to continue studying. Since I had a great job and a house to pay, I wanted to keep on working and studying at the same time. Through my Spanish wife, I found the 
 <a href="https://www.uned.es/universidad/inicio/en/" target="_blank">National University of Distance Education (UNED)</a> in Madrid, Spain. I graduated my master in electronic systems for information 
-and communication in 2021. 
+and communication in 2021. In december 2022 I started as an expert in deeplearning for automotive sensor perception.
 
 In June 2021, I got the great honor to be induced into <a href="https://hkn.ieee.org/" target="_blank">IEEE Eta Kappa Nu</a>, the international honor society of the Institute of Electrical and Electronics Engineers (IEEE). 
 The organization promotes excellence in the profession and in education through an emphasis on scholarship, character, and attitude.
-
 It was during that time where I discovered my new passion: machine learning. It combined everything I was interested in: math, software, hardware and complexity.
 This new passion drove me to start my PhD in machine learning in 2021.
+
+In 2023 I got elected to be the president of the spanish <a href="https://hknuned.org/" target="_blank">chapter Nu Alpha of IEEE Eta Kappa Nu</a>.
  

@@ -4,7 +4,7 @@ order: 2
 image: domain_adaptation_1.png
 ---
 
-In cooperation with the Irish company <a href="https://www.volograms.com/" target="_blank">Volograms</a> we synthetically generated 
+In cooperation with <a href="https://www.volograms.com/" target="_blank">Volograms</a> we synthetically generated 
 training data from an existing (similar but different) data distribution by performing adversarial domain adaptation using an improved CycleGAN 
 to train a single-view reconstruction model for VR/AR applications. 
 
