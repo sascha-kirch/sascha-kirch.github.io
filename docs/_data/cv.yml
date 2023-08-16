@@ -251,6 +251,16 @@ programming:
       logo: programming_matlab.png
       
 courses:
+    - title: Advanced Programming Learning Path
+      initiater: Udemy
+      date: false
+      certificate: false
+      sub_courses: 
+      - title: Git & Github Bootcamp
+        certificate: https://bosch.udemy.com/certificate/UC-6b6b5f1b-8aa0-4886-8360-c02987277c39/ 
+        date: Aug 2023
+      logo: course_udemy.jpeg
+
     - title: Fundamentals of Reinforcement Learning
       initiater: University of Alberta
       date: Dec 2021
@@ -260,21 +270,27 @@ courses:
       
     - title: TDP - Talent Development Program
       initiater: Robert Bosch GmbH
-      date: since July 2021
+      date: 2021 - 2023
       certificate: false
       sub_courses: 
       - title: Self-Awareness
         certificate: false 
+        date: Oct 2021
       - title: Communication & Cooperation
         certificate: false
+        date: Oct 2021
       - title: Shaping Bosch
         certificate: false
+        date: Oct 2021
       - title: Market my Expertise and Myself
         certificate: false
+        date: May 2022
       - title: The Expert Framework
         certificate: false
+        date: Jul 2022
       - title: Self-Efficacy - Impacting my team and beyond
         certificate: false
+        date: Oct 2022
       logo: bosch_logo.jpeg
       
     - title: TensorFlow Advanced Techniques Specialization
@@ -284,12 +300,16 @@ courses:
       sub_courses: 
       - title: Custom Models, Layers, and Loss Functions with TensorFlow
         certificate: http://coursera.org/verify/RRKQD8B3BNPJ 
+        date: Dec 2020
       - title: Custom and Distributed Training with TensorFlow
         certificate: http://coursera.org/verify/U88NNYCP54P2
+        date: Dec 2020
       - title: Advanced Computer Vision with TensorFlow
         certificate: http://coursera.org/verify/L84F4K93RKDC 
+        date: Jan 2021
       - title: Generative Deep Learning with TensorFlow
         certificate: http://coursera.org/verify/E44343B8XLJS  
+        date: Jan 2021
       logo: course_deeplearning.jpeg
       
     - title: LFG - Leadership Focus Group
@@ -299,16 +319,22 @@ courses:
       sub_courses: 
       - title: Module 1 - Creating Values for my Customers
         certificate: false 
+        date: false
       - title: Module 2 - Leading Myself and my Team
         certificate: false
+        date: false
       - title: Module 3 - Fascinating Customers
         certificate: false
+        date: Nov 2020
       - title: Module 4 - Mastering Complexity
         certificate: false
+        date: Feb 2021
       - title: Module 5 - Keeping the Promise
         certificate: false
+        date: Mar 2021
       - title: Module 6 - Stay on Track
         certificate: false
+        date: Apr 2021
       logo: bosch_logo.jpeg
       
     - title: Generative Adversarial Networks (GANs) Specialization
@@ -318,10 +344,13 @@ courses:
       sub_courses: 
       - title: Build Basic Generative Adversarial Networks (GANs)
         certificate: http://coursera.org/verify/645ZMEFECWA4 
+        date: Oct 2020
       - title: Build Better Generative Adversarial Networks (GANs)
         certificate: http://coursera.org/verify/DW6S8D6C5W63 
+        date: Nov 2020
       - title: Apply Generative Adversarial Networks (GANs)
         certificate: http://coursera.org/verify/X2UEBZ3T9VSY 
+        date: Nov 2020
       logo: course_deeplearning.jpeg
       
     - title: iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp
@@ -338,27 +367,35 @@ courses:
       sub_courses: 
       - title: Browser-based Models with TensorFlow.js
         certificate: http://coursera.org/verify/KJQZ5L82XW4D 
+        date: Aug 2020
       - title: Device-based Models with TensorFlow Lite
         certificate: http://coursera.org/verify/CX3NUM9GXN69 
+        date: Aug 2020
       - title: Data Pipelines with TensorFlow Data Services
         certificate: http://coursera.org/verify/M8LAF4LNBWDR 
+        date: Sep 2020
       - title: Advanced Deployment Scenarios with TensorFlow
         certificate: http://coursera.org/verify/K5DWLR3QTE3J  
+        date: Sep 2020
       logo: course_deeplearning.jpeg
       
     - title: TensorFlow Developer Specialization
       initiater: Deeplearning.ai
-      date: Sep 2020
-      certificate: http://coursera.org/verify/professionalcert/B6TFFLN2QUUT 
+      date: Aug 2020
+      certificate: https://www.coursera.org/verify/specialization/B6TFFLN2QUUT 
       sub_courses: 
       - title: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
         certificate: http://coursera.org/verify/WCBZHXSTKSJY 
+        date: Aug 2020
       - title: Convolutional Neural Networks in TensorFlow
         certificate: http://coursera.org/verify/BSV7FTJX3ATW 
+        date: Aug 2020
       - title: Natural Language Processing in TensorFlow
         certificate: http://coursera.org/verify/ZSZ43NA36E5Z 
+        date: Aug 2020
       - title: Sequences, Time Series and Prediction
         certificate: http://coursera.org/verify/7D2UHNHAGEE5  
+        date: Aug 2020
       logo: course_deeplearning.jpeg
       
     - title: Self-Driving Cars Specialization
@@ -368,12 +405,16 @@ courses:
       sub_courses: 
       - title: Introduction to Self-Driving Cars
         certificate: http://coursera.org/verify/5TMU6ZZBKQE4 
+        date: Aug 2020
       - title: State Estimation and Localization for Self-Driving Cars
         certificate: http://coursera.org/verify/U8NC2PN6F96V 
+        date: Aug 2020
       - title: Visual Perception for Self-Driving Cars
         certificate: http://coursera.org/verify/KRDBHC4UD752 
+        date: Aug 2020
       - title: Motion Planning for Self-Driving Cars
         certificate: http://coursera.org/verify/ZV4LCRBHLPN3 
+        date: Aug 2020
       logo: course_toronto.png
     
     - title: Deep Learning Specialization
@@ -383,14 +424,19 @@ courses:
       sub_courses: 
       - title: Neural Networks and Deep Learning
         certificate: http://coursera.org/verify/XQ9RE5QMDWXC 
+        date: Jul 2020
       - title: Convolutional Neural Networks
         certificate: http://coursera.org/verify/SERT5ZXM4WL6 
+        date: Jul 2020
       - title: Structuring Machine Learning Projects
         certificate: http://coursera.org/verify/3WFSB3QUEL5E 
+        date: Jul 2020
       - title: Improving Deep Neural Networks Hyperparameter Tuning, Regularization and Optimization
         certificate: http://coursera.org/verify/4MN65YES7NV2 
+        date: Jul 2020
       - title: Sequence Models
         certificate: http://coursera.org/verify/J5NF9CZ3E398
+        date: Aug 2020
       logo: course_deeplearning.jpeg
       
     - title: Machine Learning
@@ -407,10 +453,14 @@ courses:
       sub_courses: 
       - title: Project Management Fundamentals - Basics
         certificate: false 
+        date: Jun 2018
       - title: Project Management Fundamentals - Project team development and communication
         certificate: false
+        date: Mar 2019
       - title: Project Management Fundamentals - Leadership in projects
         certificate: false
+        date: Apr 2019
       - title: Project Management Fundamentals - Combining classic and agile project management
         certificate: false
+        date: Oct 2016
       logo: bosch_logo.jpeg
