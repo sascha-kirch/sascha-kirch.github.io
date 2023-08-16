@@ -10,19 +10,24 @@
 			
 			<div><b>{{item.title}}</b></div>
 			<div>{{item.initiater}}</div>
+			{% if item.date != false %}
 			<div><small>{{item.date}}</small></div>
+			{% endif %}
 			{% if item.certificate != false %}
 			<div><small><a href="{{item.certificate}}" target="_blank">View Certificate</a></small></div>
 			{% endif %}
 		</div>
 	</div>
 	{% if item.sub_courses != false %}
-	<div><b>Contained Courses:</b></div>
+	<p><b>Courses:</b></p>
 	<div class="columns is-multiline is-vcentered">
 		{% for sub_course in item.sub_courses %}
 		<div class="column is-half">
 			<div class="box">
-				<div>{{sub_course.title}}</div>
+				<div><b>{{sub_course.title}}</b></div>
+				{% if sub_course.date != false %}
+				<div><small>{{sub_course.date}}</small></div>
+				{% endif %}
 				{% if sub_course.certificate != false %}
 				<div style="word-break: break-all;"><small><a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></div>
 				{% endif %}
