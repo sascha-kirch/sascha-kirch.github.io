@@ -7,7 +7,7 @@ function updateGithubFields(){
 	user_info_string += "<div>"  
 	user_info_string += "<article class=\"media\">"
     user_info_string += "<figure class=\"media-left\">"
-	user_info_string += "<p class=\"image is-64x64\"><img src=\""+responseObj.avatar_url+"\"/></p>"
+	user_info_string += "<p class=\"image is-64x64\"><img class=\"is-rounded\" src=\""+responseObj.avatar_url+"\"/></p>"
 	user_info_string += "</figure>"
 	user_info_string += "<div class=\"media-content\">"
 	user_info_string += "<div class=\"content\">"
