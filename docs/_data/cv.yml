@@ -259,6 +259,9 @@ courses:
       - title: Git & Github Bootcamp
         certificate: https://bosch.udemy.com/certificate/UC-6b6b5f1b-8aa0-4886-8360-c02987277c39/ 
         date: Aug 2023
+      - title: Clean Code
+        certificate: https://bosch.udemy.com/certificate/UC-ba6cc7a3-9f40-409d-bc6b-866ef6766509/ 
+        date: Aug 2023
       logo: course_udemy.jpeg
 
     - title: Fundamentals of Reinforcement Learning
