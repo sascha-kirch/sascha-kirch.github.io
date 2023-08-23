@@ -265,6 +265,9 @@ courses:
       - title: Docker Complete - From Beginner to Expert (incl. Kubernetes)
         certificate: https://www.udemy.com/certificate/UC-3cfd2949-3727-4693-a1ef-6f20fc2b0737/
         date: Aug 2023
+      - title: Bash Mastery - The Complete Guide to Bash Shell Scripting
+        certificate: https://www.udemy.com/certificate/UC-18760300-847b-4853-b012-f039812da969/
+        date: Aug 2023
       logo: course_udemy.jpeg
 
     - title: Fundamentals of Reinforcement Learning
