@@ -187,7 +187,10 @@ awards:
       initiater: UNED - Universidad Nacional de Educación a Distancia
 
 expertises:
-    - expertise: Deep Learning
+    - expertise: Generative Deep Learning
+    - expertise: Self-supervised learning
+    - expertise: unsupervised learning
+    - expertise: Foundation Models
     - expertise: Generative Adversarial Networks (GANs)
     - expertise: Diffusion Models
     - expertise: Autonomous Driving
@@ -208,6 +211,26 @@ programming:
     - language: TensorFlow
       level: Expert
       logo: programming_tensorflow.png
+
+    - language: PyTorch
+      level: Advanced
+      logo: programming_pytorch.png
+
+    - language: Docker
+      level: Expert
+      logo: docker_logo.png
+
+    - language: Bash
+      level: Advanced
+      logo: bash_logo.png
+
+    - language: Git
+      level: Expert
+      logo: git_logo.png
+
+    - language: MATLAB
+      level: Advanced
+      logo: programming_matlab.png
       
     - language: C#
       level: Expert
@@ -237,17 +260,10 @@ programming:
       level: Advanced
       logo: programming_html.png
       
-    - language: PyTorch
-      level: Advanced
-      logo: programming_pytorch.png
-      
     - language: PHP
       level: Advanced
       logo: programming_php.png
-      
-    - language: MATLAB
-      level: Advanced
-      logo: programming_matlab.png
+
       
 courses:
     - title: Advanced Programming Learning Path
