@@ -32,21 +32,24 @@ function updateMediumBlogPosts(responseText){
 	//Go through all posts
 	for (const item of responseObj.items){
 		
-		object_string += "<div class=\"column is-full\">"
+		//object_string += "<div class=\"column is-full\">"
+		object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"box\">"
-		object_string += "<div class=\"columns is-vcentered\">"
+		// object_string += "<div class=\"columns is-vcentered\">"
+		object_string += "<div class=\"columns is-multiline\">"
 		
 		//Image Column
-		object_string += "<div class=\"column is-one-third\">"
+		// object_string += "<div class=\"column is-one-third\">"
+		object_string += "<div class=\"column is-full\">"
 		object_string += "<figure class=\"image\">"
 		object_string += "<img src=\""+item.thumbnail+"\" alt=\"Placeholder image\">"
 		object_string += "</figure>"
 		object_string += "</div>"
 		
 		// Content Column
-		object_string += "<div class=\"column\">"
-		object_string += "<p class=\"title is-5\">"+item.title+"</p>"
-		object_string += "<p class=\"subtitle is-7\">by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
+		object_string += "<div class=\"column is-full\">"
+		object_string += "<p align=\"left\" class=\"title is-5\">"+item.title+"</p>"
+		object_string += "<p align=\"left\" class=\"subtitle is-7\"><br>by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
 		dateTime = item.pubDate.split(" ")
 		object_string += "<time><span>, "+dateTime[0]+"</span></time></p>"
 		object_string += "<div class=\"content\">"
