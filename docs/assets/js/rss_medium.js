@@ -41,9 +41,11 @@ function updateMediumBlogPosts(responseText){
 		//Image Column
 		// object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"column is-full\">"
+		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
 		object_string += "<figure class=\"image\">"
 		object_string += "<img src=\""+item.thumbnail+"\" alt=\"Placeholder image\">"
 		object_string += "</figure>"
+		object_string += "</a>"
 		object_string += "</div>"
 		
 		// Content Column
