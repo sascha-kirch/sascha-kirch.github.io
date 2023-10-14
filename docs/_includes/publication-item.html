@@ -2,7 +2,10 @@
 	<div class="media-content">
 		<div class="content">
 		<p>
-		<strong>{{ item.title }}</strong>, 
+		<strong>{{ item.title }}</strong>,
+		{% if item.journal != false %}
+			<i>{{ item.journal }}</i>,
+		{% endif %} 
 		{{ item.year }}.
 		<br>
 		{% for author in item.authors %}
@@ -13,10 +16,7 @@
 				<span class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}">{{ author.name }}</span>
 			{% endif %}
 		{% endfor %}
-		{% if item.journal != false %}
-			<br>
-			{{ item.journal }}.
-		{% endif %}
+		
 		{% if item.tags %}
 			<br>
 			{% for tag in item.tags %}

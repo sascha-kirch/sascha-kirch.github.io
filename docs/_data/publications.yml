@@ -3,7 +3,7 @@
     - name: Sascha Kirch
       orcid: 0000-0002-5578-7555
     - name: Valeria Olyunina
-      orcid: false
+      orcid: 0009-0000-9766-5057
     - name: Jan Ondřej
       orcid: 0000-0002-5409-1521
     - name: Rafael Pagés
@@ -13,12 +13,14 @@
     - name: Sergio Martín
       orcid: 0000-0002-4118-0234
   year: 2023
-  journal: false
+  journal: "IEEE Access"
   tags:
     - tag: IEEE ACCESS
       link: https://ieeexplore.ieee.org/document/10239167
     - tag: arXiv
       link: https://arxiv.org/abs/2307.15988
+    - tag: GitHub
+      link: https://github.com/sascha-kirch/rgb-d-fusion
 - title: "VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data"
   authors:
     - name: Sascha Kirch
