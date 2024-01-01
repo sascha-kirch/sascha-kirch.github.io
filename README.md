@@ -78,9 +78,9 @@ On this page I show the highlights of my [StackOverflow](https://stackoverflow.c
 
 https://user-images.githubusercontent.com/72045951/155887394-3c05ed77-06d5-4e72-b352-a8d28cfade24.mp4
 
-## Conferences
-Link to [Conferences](https://sascha-kirch.github.io/conferences.html).
-On this page I implement Bulma's timeline extension to show my attendence reccord on conferences.
+## Events
+Link to [events](https://sascha-kirch.github.io/events.html).
+On this page I implement Bulma's timeline extension to show my attendence reccord on events.
 
 https://user-images.githubusercontent.com/72045951/155887384-3999d2a1-cf1d-4581-b86c-7bac25fb8991.mp4
 
