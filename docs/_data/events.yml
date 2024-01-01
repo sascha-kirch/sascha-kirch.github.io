@@ -1,3 +1,16 @@
+- name: Hackathon - Unleash GenAI @ Bosch 
+  date: 6 November 2023
+  description: False
+  homepage: False
+
+- name: Bosch Corporate Research Colloquium on Signal Processing
+  date: 23 June 2023
+  description:  >
+   The Bosch Corporate Research Colloquium on Signal Processing is an internal annual meeting for 
+   information exchange across Corporate Research and Business Units with focus on signal
+   processing and its applications.
+  homepage: False
+
 - name: ICLR - International Conference on Learning Representations
   date: 25 April 2022
   description: >

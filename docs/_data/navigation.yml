@@ -13,9 +13,9 @@
 - name: Programming
   link: /programming.html
   id: nav_programming
-- name: Conferences
-  link: /conferences.html
-  id: nav_conferences
+- name: Events
+  link: /events.html
+  id: nav_events
 - name: About me
   link: /about.html
   id: nav_about

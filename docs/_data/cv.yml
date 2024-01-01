@@ -173,6 +173,10 @@ language_skills:
       logo: flag_spain.png
       
 awards:
+    - award: Technology Award - Unleash GenAI Bosch Hackathon
+      date: Nov 2023
+      initiater: Robert Bosch GmbH
+
     - award: Matrícula de honor for „Final Master Thesis“
       date: Oct 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia

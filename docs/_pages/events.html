@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Conference Attendence
-permalink: /conferences
-nav_id: nav_conferences
+title: Event Attendence
+permalink: /events
+nav_id: nav_events
 ---
 <div class="content">
 	<div class="timeline is-centered">
@@ -14,7 +14,7 @@ nav_id: nav_conferences
 	  {% assign todaySet = false %}
 	  {% assign currentDate = "today" | date: "%s" %}
 	  
-	  {% for item in site.data.conferences %}
+	  {% for item in site.data.events %}
 	  
 		  {% if firstRun %}
 			{% assign date = item.date | date: "%s" %}
