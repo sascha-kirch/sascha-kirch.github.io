@@ -15,39 +15,49 @@ function updateBlogPostsOnError(){
 	object_string += "<p><a href=\"https://medium.com/@SaschaKirch\" target=\"_blank\">https://medium.com/@SaschaKirch</a></p>"
 	object_string += "</div>"
 	object_string += "</div>"
-	
+
 	//add content to page
 	document.getElementById("blog_posts").innerHTML = "<div>"+object_string+"</div>"
+}
+
+function extractFirstImageLink(html) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const img = doc.querySelector('img');
+    return img ? img.src : null;
 }
 
 function updateMediumBlogPosts(responseText){
 
 	var responseObj = JSON.parse(responseText);
+
 	let object_string = ""
 	//hack to obtain link to prifile by removing /feed
 	var profileLink = responseObj.feed.url.replace("/feed", "")
-	
+
 	object_string += "<div class=\"columns is-multiline\">"
 
 	//Go through all posts
 	for (const item of responseObj.items){
-		
+
+		const img_path = extractFirstImageLink(item.content);
+
 		//object_string += "<div class=\"column is-full\">"
 		object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"box\">"
 		// object_string += "<div class=\"columns is-vcentered\">"
 		object_string += "<div class=\"columns is-multiline\">"
-		
+
 		//Image Column
 		// object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"column is-full\">"
 		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
 		object_string += "<figure class=\"image\">"
-		object_string += "<img src=\""+item.thumbnail+"\" alt=\"Placeholder image\">"
+		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\">"
 		object_string += "</figure>"
 		object_string += "</a>"
 		object_string += "</div>"
-		
+
 		// Content Column
 		object_string += "<div class=\"column is-full\">"
 		object_string += "<p align=\"left\" class=\"title is-5\">"+item.title+"</p>"
@@ -62,12 +72,12 @@ function updateMediumBlogPosts(responseText){
 		object_string += "</p>"
 		let startIndex = item.description.indexOf("<p>") + 3 //+3 to compensate for <p>
 		let stopIndex = item.description.indexOf("</p>")
-		let stringValue = item.description.slice(startIndex,stopIndex) 
+		let stringValue = item.description.slice(startIndex,stopIndex)
 		object_string += "<p>" + stringValue + "...</p>"
 		object_string += "<p><a href=\""+item.guid+"\" target=\"_blank\" >Read full post</a></p>"
 		object_string += "</div>"
 		object_string += "</div>"
-				
+
 		object_string += "</div>"
 		object_string += "</div>"
 		object_string += "</div>"
@@ -89,4 +99,3 @@ var request_basics = new XMLHttpRequest();
 request_basics.onload = updateBlogPosts;
 request_basics.open('get', request_url, true)
 request_basics.send()
-
