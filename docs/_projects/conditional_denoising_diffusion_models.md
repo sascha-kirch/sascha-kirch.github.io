@@ -1,6 +1,6 @@
 ---
 title: Conditional Denoising Diffusion Models for AR/VR Applications
-order: 1
+order: 2
 image: depth_diffusion.png
 ---
 

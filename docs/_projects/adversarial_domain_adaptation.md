@@ -1,6 +1,6 @@
 ---
 title: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
-order: 2
+order: 1
 image: domain_adaptation_1.png
 ---
 
@@ -35,4 +35,3 @@ that translate high resolution multi-channel images, models become complex and r
 <img src="{{site.baseurl}}/assets/images/{{page.image}}" >
 </figure>
 </div>
-
