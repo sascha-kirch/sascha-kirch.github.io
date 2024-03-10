@@ -53,7 +53,7 @@ function updateMediumBlogPosts(responseText){
 		object_string += "<div class=\"column is-full\">"
 		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
 		object_string += "<figure class=\"image\">"
-		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\">"
+		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\" style=\"border-radius: 5px;\">"
 		object_string += "</figure>"
 		object_string += "</a>"
 		object_string += "</div>"
