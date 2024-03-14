@@ -3,9 +3,7 @@ title: 3D Gaussian Splatting
 order: 3
 image: 3d_splats.png
 ---
-This project is ment to showcase some sublementary materials for <a href="tbd" target="_blank">my blog post on 3D Gaussian Splatting</a>.
-
-
+This project is ment to showcase some sublementary materials for <a href="https://medium.com/@SaschaKirch/turn-yourself-into-a-3d-gaussian-splat-3a2bc59a770f" target="_blank">my blog post on 3D Gaussian Splatting</a>.
 
 <div class="columns is-multiline">
 	<div class="column is-one-third">
