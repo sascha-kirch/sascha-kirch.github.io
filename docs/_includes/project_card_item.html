@@ -1,0 +1,23 @@
+<div class="column {{page.card_width}}">
+    <div class="box">
+        <div class="columns is-multiline">
+            <!--card image-->
+            <div class="column is-full">
+                <a href="{{ item.url }}" target="_blank">
+                    <figure class="image">
+                        <img src="{{site.baseurl}}/assets/images/{{ item.image }}" alt="Placeholder image" style="border-radius: 5px;">
+                    </figure>
+                </a>
+            </div>
+
+            <!--Card Content-->
+            <div class="column is-full">
+                <p align="left" class="title is-5">{{ item.title }}</p>
+                <div class="content">
+                    <p>{{ item.excerpt }}</p>
+                    <a href="{{ item.url }}" target="_blank"><em>Read more</em></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
