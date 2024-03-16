@@ -16,18 +16,18 @@ professional_experience:
         start_date: Jan 2019
         end_date: Dec 2022
         description: >
-            Responsible for the development of electronic modules and concepts 
+            Responsible for the development of electronic modules and concepts
             including µC, MMIC radar ASIC, SystemASIC, radar SoC, hardware architecture, safety, thermal design and EMC for automotive radar.
-            
+
       - position: Hardware Engineer Automotive Radar
         employment_type: Full-Time
         location: Leonberg, Baden-Würtemberg, Germany
         start_date: Oct 2017
         end_date: Jan 2019
         description: >
-            Design and validation of electronic modules and concepts, 
+            Design and validation of electronic modules and concepts,
             considering reliability and safety aspects, for automotive radar sensors.
-      
+
     - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
       logo: hkn_logo.jpeg
       positions:
@@ -37,7 +37,7 @@ professional_experience:
         start_date: Jan 2023
         end_date: today
         description: >
-            Jan 2023 - Aug 2023 President Elect <br>            
+            Jan 2023 - Aug 2023 President Elect <br>
             Sep 2023 - Aug 2024 President <br>
             Sep 2024 - Aug 2025 Past President
       - position: Chapter Leadership, Corresponding Secretary
@@ -46,9 +46,9 @@ professional_experience:
         start_date: Jan 2022
         end_date: Dec 2022
         description: >
-            Among other tasks, the corresponding secretary, in general, 
-            conducts correspondence with IEEE-HKN Headquarters. It is his/her 
-            duty to confer with the president in all matters that concern IEEE-HKN 
+            Among other tasks, the corresponding secretary, in general,
+            conducts correspondence with IEEE-HKN Headquarters. It is his/her
+            duty to confer with the president in all matters that concern IEEE-HKN
             Headquarters to ensure that action is taken and to report back to IEEE-HKN Headquarters without delay.
       - position: IEEE Eta Kappa Nu Member
         employment_type: Full-Time
@@ -56,10 +56,10 @@ professional_experience:
         start_date: Jun 2021
         end_date: today
         description: >
-            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE, 
-            promotes excellence in the profession and in education with 
+            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE,
+            promotes excellence in the profession and in education with
             ideals of scholarship, character and attitude.
-      
+
     - company_name: Universidad Nacional de Educación a Distancia (UNED)
       logo: uned_logo.jpeg
       positions:
@@ -69,9 +69,9 @@ professional_experience:
         start_date: Sep 2022
         end_date: today
         description: >
-          Lecturer for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department 
-          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering) 
-          
+          Lecturer for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department
+          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering)
+
     - company_name: Towards Data Science
       logo: tds_logo.jpeg
       positions:
@@ -82,7 +82,7 @@ professional_experience:
         end_date: today
         description: >
           Writing on deep learning theory and implementation guides.
-      
+
     - company_name: Volograms
       logo: volograms_logo.jpeg
       positions:
@@ -99,10 +99,10 @@ professional_experience:
         start_date: Nov 2020
         end_date: Jun 2021
         description: >
-          Adversarial Domain Adaptation of Synthetic 3D Data to Train a 
+          Adversarial Domain Adaptation of Synthetic 3D Data to Train a
           Volumetric Video Generator Model.
-      
-      
+
+
     - company_name: Bitifeye Digital Test Solutions GmbH
       logo: bitifeye_logo.png
       positions:
@@ -111,22 +111,22 @@ professional_experience:
         location: Böblingen, Baden-Württemberg, Germany
         start_date: Oct 2016
         end_date: Oct 2017
-        description: > 
-            Development of FPGA designs in VHDL and Verilog. 
+        description: >
+            Development of FPGA designs in VHDL and Verilog.
             Circuit design and high-speed digital design.
-            Programming of automated pre-compliance tests for 
+            Programming of automated pre-compliance tests for
             high-speed digital standards such as MIPI C-Phy, D-Phy und M-Phy.
             Firmware programming in C++.
-            
+
       - position: Copoorate Student Electrical Engineering
         employment_type: Full-Time
         location: Böblingen, Baden-Württemberg, Germany
         start_date: Oct 2013
         end_date: Oct 2016
-        description: > 
+        description: >
             Design and test of electronic circuits. Programming of test software in C#.
             High-speed digital cable testing using network analyzer.
-      
+
 
 education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
@@ -138,7 +138,7 @@ education:
       grade: false
       thesis: false
       logo: uned_logo.jpeg
-      
+
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
       degree: Master of Science (M.Sc.)
@@ -148,7 +148,7 @@ education:
       grade: 9.4 (German equivalent 1.0)
       thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
       logo: uned_logo.jpeg
-      
+
     - university: Duale Hochschule Baden-Württemberg (DHBW)
       location: Horb am Neckar, Germany
       degree: Bachelor of Engineering (B.Eng.)
@@ -163,15 +163,15 @@ language_skills:
     - language: German
       level: Native
       logo: flag_germany.png
-      
+
     - language: English
       level: Fluent
       logo: flag_english.png
-      
+
     - language: Spanish
       level: Advanced
       logo: flag_spain.png
-      
+
 awards:
     - award: Technology Award - Unleash GenAI Bosch Hackathon
       date: Nov 2023
@@ -180,12 +180,12 @@ awards:
     - award: Matrícula de honor for „Final Master Thesis“
       date: Oct 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
-      
+
     - award: Matrícula de honor for „Multimedia for Information and Communication Systems“
       date: Jun 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
 
-      
+
     - award: Matrícula de honor for "Microprocessor Techniques"
       date: Jun 2020
       initiater: UNED - Universidad Nacional de Educación a Distancia
@@ -201,17 +201,17 @@ expertises:
     - expertise: Integrated Circuits
     - expertise: High-Speed Digital Communication
     - expertise: HW Engineering
-    - expertise: SW Engineering (Embedded, Mobile, Desktop) 
-      
+    - expertise: SW Engineering (Embedded, Mobile, Desktop)
+
 programming:
     - language: C++
       level: Expert
       logo: programming_c++.png
-      
+
     - language: Python
       level: Expert
       logo: programming_python.png
-      
+
     - language: TensorFlow
       level: Expert
       logo: programming_tensorflow.png
@@ -235,51 +235,51 @@ programming:
     - language: MATLAB
       level: Advanced
       logo: programming_matlab.png
-      
+
     - language: C#
       level: Expert
       logo: programming_csharp.png
-      
+
     - language: Java
       level: Expert
       logo: programming_java.png
-      
+
     - language: JavaScript
       level: Advanced
       logo: programming_javascript.png
-      
+
     - language: iOS Swift
       level: Advanced
       logo: programming_swift.png
-      
+
     - language: Verilog
       level: Advanced
       logo: programming_v.png
-      
+
     - language: VHDL
       level: Advanced
       logo: programming_v.png
-      
+
     - language: HTML
       level: Advanced
       logo: programming_html.png
-      
+
     - language: PHP
       level: Advanced
       logo: programming_php.png
 
-      
-courses:
+
+certificates:
     - title: Advanced Programming Learning Path
       initiater: Udemy
       date: false
       certificate: false
-      sub_courses: 
+      sub_certificates:
       - title: Git & Github Bootcamp
-        certificate: https://www.udemy.com/certificate/UC-6b6b5f1b-8aa0-4886-8360-c02987277c39/ 
+        certificate: https://www.udemy.com/certificate/UC-6b6b5f1b-8aa0-4886-8360-c02987277c39/
         date: Aug 2023
       - title: Clean Code
-        certificate: https://www.udemy.com/certificate/UC-ba6cc7a3-9f40-409d-bc6b-866ef6766509/ 
+        certificate: https://www.udemy.com/certificate/UC-ba6cc7a3-9f40-409d-bc6b-866ef6766509/
         date: Aug 2023
       - title: Docker Complete - From Beginner to Expert (incl. Kubernetes)
         certificate: https://www.udemy.com/certificate/UC-3cfd2949-3727-4693-a1ef-6f20fc2b0737/
@@ -292,17 +292,17 @@ courses:
     - title: Fundamentals of Reinforcement Learning
       initiater: University of Alberta
       date: Dec 2021
-      certificate: coursera.org/verify/F8KLW5KWHQ87
-      sub_courses: false
+      certificate: http://coursera.org/verify/F8KLW5KWHQ87
+      sub_certificates: false
       logo: course_uni_alberta.jpeg
-      
+
     - title: TDP - Talent Development Program
       initiater: Robert Bosch GmbH
       date: 2021 - 2023
       certificate: false
-      sub_courses: 
+      sub_certificates:
       - title: Self-Awareness
-        certificate: false 
+        certificate: false
         date: Oct 2021
       - title: Communication & Cooperation
         certificate: false
@@ -320,33 +320,33 @@ courses:
         certificate: false
         date: Oct 2022
       logo: bosch_logo.jpeg
-      
+
     - title: TensorFlow Advanced Techniques Specialization
       initiater: Deeplearning.ai
       date: Jan 2021
-      certificate: http://coursera.org/verify/specialization/3YKU3Q7THVX7 
-      sub_courses: 
+      certificate: http://coursera.org/verify/specialization/3YKU3Q7THVX7
+      sub_certificates:
       - title: Custom Models, Layers, and Loss Functions with TensorFlow
-        certificate: http://coursera.org/verify/RRKQD8B3BNPJ 
+        certificate: http://coursera.org/verify/RRKQD8B3BNPJ
         date: Dec 2020
       - title: Custom and Distributed Training with TensorFlow
         certificate: http://coursera.org/verify/U88NNYCP54P2
         date: Dec 2020
       - title: Advanced Computer Vision with TensorFlow
-        certificate: http://coursera.org/verify/L84F4K93RKDC 
+        certificate: http://coursera.org/verify/L84F4K93RKDC
         date: Jan 2021
       - title: Generative Deep Learning with TensorFlow
-        certificate: http://coursera.org/verify/E44343B8XLJS  
+        certificate: http://coursera.org/verify/E44343B8XLJS
         date: Jan 2021
       logo: course_deeplearning.jpeg
-      
+
     - title: LFG - Leadership Focus Group
       initiater: Robert Bosch GmbH
       date: 2020 - 2021
       certificate: false
-      sub_courses: 
+      sub_certificates:
       - title: Module 1 - Creating Values for my Customers
-        certificate: false 
+        certificate: false
         date: false
       - title: Module 2 - Leading Myself and my Team
         certificate: false
@@ -364,123 +364,123 @@ courses:
         certificate: false
         date: Apr 2021
       logo: bosch_logo.jpeg
-      
+
     - title: Generative Adversarial Networks (GANs) Specialization
       initiater: Deeplearning.ai
       date: Nov 2020
-      certificate: http://coursera.org/verify/specialization/DTZCUKPY64LL 
-      sub_courses: 
+      certificate: http://coursera.org/verify/specialization/DTZCUKPY64LL
+      sub_certificates:
       - title: Build Basic Generative Adversarial Networks (GANs)
-        certificate: http://coursera.org/verify/645ZMEFECWA4 
+        certificate: http://coursera.org/verify/645ZMEFECWA4
         date: Oct 2020
       - title: Build Better Generative Adversarial Networks (GANs)
-        certificate: http://coursera.org/verify/DW6S8D6C5W63 
+        certificate: http://coursera.org/verify/DW6S8D6C5W63
         date: Nov 2020
       - title: Apply Generative Adversarial Networks (GANs)
-        certificate: http://coursera.org/verify/X2UEBZ3T9VSY 
+        certificate: http://coursera.org/verify/X2UEBZ3T9VSY
         date: Nov 2020
       logo: course_deeplearning.jpeg
-      
+
     - title: iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp
       initiater: Udemy
       date: Oct 2021
       certificate: http://ude.my/UC-1004acf8-0a2a-458d-a2aa-2aad570356ef
-      sub_courses: false
+      sub_certificates: false
       logo: course_udemy.jpeg
-      
+
     - title: TensorFlow Data and Deployment Specialization
       initiater: Deeplearning.ai
       date: Sep 2020
-      certificate: http://coursera.org/verify/specialization/J7ANVTTZMBRS 
-      sub_courses: 
+      certificate: http://coursera.org/verify/specialization/J7ANVTTZMBRS
+      sub_certificates:
       - title: Browser-based Models with TensorFlow.js
-        certificate: http://coursera.org/verify/KJQZ5L82XW4D 
+        certificate: http://coursera.org/verify/KJQZ5L82XW4D
         date: Aug 2020
       - title: Device-based Models with TensorFlow Lite
-        certificate: http://coursera.org/verify/CX3NUM9GXN69 
+        certificate: http://coursera.org/verify/CX3NUM9GXN69
         date: Aug 2020
       - title: Data Pipelines with TensorFlow Data Services
-        certificate: http://coursera.org/verify/M8LAF4LNBWDR 
+        certificate: http://coursera.org/verify/M8LAF4LNBWDR
         date: Sep 2020
       - title: Advanced Deployment Scenarios with TensorFlow
-        certificate: http://coursera.org/verify/K5DWLR3QTE3J  
+        certificate: http://coursera.org/verify/K5DWLR3QTE3J
         date: Sep 2020
       logo: course_deeplearning.jpeg
-      
+
     - title: TensorFlow Developer Specialization
       initiater: Deeplearning.ai
       date: Aug 2020
-      certificate: https://www.coursera.org/verify/specialization/B6TFFLN2QUUT 
-      sub_courses: 
+      certificate: https://www.coursera.org/verify/specialization/B6TFFLN2QUUT
+      sub_certificates:
       - title: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
-        certificate: http://coursera.org/verify/WCBZHXSTKSJY 
+        certificate: http://coursera.org/verify/WCBZHXSTKSJY
         date: Aug 2020
       - title: Convolutional Neural Networks in TensorFlow
-        certificate: http://coursera.org/verify/BSV7FTJX3ATW 
+        certificate: http://coursera.org/verify/BSV7FTJX3ATW
         date: Aug 2020
       - title: Natural Language Processing in TensorFlow
-        certificate: http://coursera.org/verify/ZSZ43NA36E5Z 
+        certificate: http://coursera.org/verify/ZSZ43NA36E5Z
         date: Aug 2020
       - title: Sequences, Time Series and Prediction
-        certificate: http://coursera.org/verify/7D2UHNHAGEE5  
+        certificate: http://coursera.org/verify/7D2UHNHAGEE5
         date: Aug 2020
       logo: course_deeplearning.jpeg
-      
+
     - title: Self-Driving Cars Specialization
       initiater: University of Toronto
       date: Aug 2020
-      certificate: http://coursera.org/verify/specialization/DT99UWEMXZ2G 
-      sub_courses: 
+      certificate: http://coursera.org/verify/specialization/DT99UWEMXZ2G
+      sub_certificates:
       - title: Introduction to Self-Driving Cars
-        certificate: http://coursera.org/verify/5TMU6ZZBKQE4 
+        certificate: http://coursera.org/verify/5TMU6ZZBKQE4
         date: Aug 2020
       - title: State Estimation and Localization for Self-Driving Cars
-        certificate: http://coursera.org/verify/U8NC2PN6F96V 
+        certificate: http://coursera.org/verify/U8NC2PN6F96V
         date: Aug 2020
       - title: Visual Perception for Self-Driving Cars
-        certificate: http://coursera.org/verify/KRDBHC4UD752 
+        certificate: http://coursera.org/verify/KRDBHC4UD752
         date: Aug 2020
       - title: Motion Planning for Self-Driving Cars
-        certificate: http://coursera.org/verify/ZV4LCRBHLPN3 
+        certificate: http://coursera.org/verify/ZV4LCRBHLPN3
         date: Aug 2020
       logo: course_toronto.png
-    
+
     - title: Deep Learning Specialization
       initiater: Deeplearning.ai
       date: Aug 2020
-      certificate: http://coursera.org/verify/specialization/YW5CRA2T45X6 
-      sub_courses: 
+      certificate: http://coursera.org/verify/specialization/YW5CRA2T45X6
+      sub_certificates:
       - title: Neural Networks and Deep Learning
-        certificate: http://coursera.org/verify/XQ9RE5QMDWXC 
+        certificate: http://coursera.org/verify/XQ9RE5QMDWXC
         date: Jul 2020
       - title: Convolutional Neural Networks
-        certificate: http://coursera.org/verify/SERT5ZXM4WL6 
+        certificate: http://coursera.org/verify/SERT5ZXM4WL6
         date: Jul 2020
       - title: Structuring Machine Learning Projects
-        certificate: http://coursera.org/verify/3WFSB3QUEL5E 
+        certificate: http://coursera.org/verify/3WFSB3QUEL5E
         date: Jul 2020
       - title: Improving Deep Neural Networks Hyperparameter Tuning, Regularization and Optimization
-        certificate: http://coursera.org/verify/4MN65YES7NV2 
+        certificate: http://coursera.org/verify/4MN65YES7NV2
         date: Jul 2020
       - title: Sequence Models
         certificate: http://coursera.org/verify/J5NF9CZ3E398
         date: Aug 2020
       logo: course_deeplearning.jpeg
-      
+
     - title: Machine Learning
       initiater: Stanford Online
       date: Jul 2020
-      certificate: http://coursera.org/verify/P9ADSR3ASC64 
-      sub_courses: false
+      certificate: http://coursera.org/verify/P9ADSR3ASC64
+      sub_certificates: false
       logo: course_stanford.jpeg
-      
+
     - title: Project Management Fundamentals
       initiater: Robert Bosch GmbH
       date: 2018 - 2019
       certificate: false
-      sub_courses: 
+      sub_certificates:
       - title: Project Management Fundamentals - Basics
-        certificate: false 
+        certificate: false
         date: Jun 2018
       - title: Project Management Fundamentals - Project team development and communication
         certificate: false
