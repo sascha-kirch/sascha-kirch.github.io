@@ -42,24 +42,21 @@ function updateMediumBlogPosts(responseText){
 
 		const img_path = extractFirstImageLink(item.content);
 
-		//object_string += "<div class=\"column is-full\">"
 		object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"box\">"
-		// object_string += "<div class=\"columns is-vcentered\">"
-		object_string += "<div class=\"columns is-multiline\">"
+		object_string += "<div>"
 
 		//Image Column
-		// object_string += "<div class=\"column is-one-third\">"
-		object_string += "<div class=\"column is-full\">"
+		object_string += "<div>"
 		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
-		object_string += "<figure class=\"image\">"
+		object_string += "<figure class=\"image\" style=\"margin-left: 0px;margin-right: 0px;\">"
 		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\" style=\"border-radius: 5px;\">"
 		object_string += "</figure>"
 		object_string += "</a>"
 		object_string += "</div>"
 
 		// Content Column
-		object_string += "<div class=\"column is-full\">"
+		object_string += "<div>"
 		object_string += "<p align=\"left\" class=\"title is-5\">"+item.title+"</p>"
 		object_string += "<p align=\"left\" class=\"subtitle is-7\"><br>by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
 		dateTime = item.pubDate.split(" ")
@@ -70,10 +67,6 @@ function updateMediumBlogPosts(responseText){
 			object_string += "<span class=\"tag is-rounded is-small is-info is-light\">"+category+"</span>"
 		}
 		object_string += "</p>"
-		let startIndex = item.description.indexOf("<p>") + 3 //+3 to compensate for <p>
-		let stopIndex = item.description.indexOf("</p>")
-		let stringValue = item.description.slice(startIndex,stopIndex)
-		object_string += "<p>" + stringValue + "...</p>"
 		object_string += "<p><a href=\""+item.guid+"\" target=\"_blank\" >Read full post</a></p>"
 		object_string += "</div>"
 		object_string += "</div>"
