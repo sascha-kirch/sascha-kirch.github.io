@@ -44,12 +44,11 @@ function updateMediumBlogPosts(responseText){
 
 		object_string += "<div class=\"column is-one-third\">"
 		object_string += "<div class=\"box\">"
-		object_string += "<div>"
 
 		//Image Column
 		object_string += "<div>"
 		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
-		object_string += "<figure class=\"image\" style=\"margin-left: 0px;margin-right: 0px;\">"
+		object_string += "<figure class=\"image\" style=\"margin-left: 0px;margin-right: 0px; margin-bottom: 20px;\">"
 		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\" style=\"border-radius: 5px;\">"
 		object_string += "</figure>"
 		object_string += "</a>"
@@ -71,7 +70,6 @@ function updateMediumBlogPosts(responseText){
 		object_string += "</div>"
 		object_string += "</div>"
 
-		object_string += "</div>"
 		object_string += "</div>"
 		object_string += "</div>"
 
