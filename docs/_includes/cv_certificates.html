@@ -1,4 +1,4 @@
-{% for item in site.data.cv.courses %}
+{% for item in site.data.cv.certificates %}
 <div class="box">
 	<div class="columns is-mobile">
 		<div class="column is-narrow">
@@ -7,7 +7,7 @@
 			</figure>
 		</div>
 		<div class="column">
-			
+
 			<div><b>{{item.title}}</b></div>
 			<div>{{item.initiater}}</div>
 			{% if item.date != false %}
@@ -18,10 +18,10 @@
 			{% endif %}
 		</div>
 	</div>
-	{% if item.sub_courses != false %}
+	{% if item.sub_certificates != false %}
 	<p><b>Courses:</b></p>
 	<div class="columns is-multiline is-vcentered">
-		{% for sub_course in item.sub_courses %}
+		{% for sub_course in item.sub_certificates %}
 		<div class="column is-half">
 			<div class="box">
 				<div><b>{{sub_course.title}}</b></div>
