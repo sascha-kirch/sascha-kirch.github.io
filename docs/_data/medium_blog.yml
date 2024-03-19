@@ -1,0 +1,27 @@
+profile: https://medium.com/@SaschaKirch
+subscription_page: https://medium.com/@SaschaKirch/subscribe
+friend_links:
+  - description: Turn Yourself into a 3D Gaussian Splat
+    link: https://medium.com/towards-data-science/turn-yourself-into-a-3d-gaussian-splat-3a2bc59a770f?sk=b6960d4195bb96994f1af119677e654e
+  - description: DINO - A Foundation Model for Computer Vision
+    link: https://medium.com/towards-data-science/dino-a-foundation-model-for-computer-vision-4cb08e821b18?sk=d85260276367f5914cc3efadc0fe307c
+  - description: Segment Anything - Promptable Segmentation of Arbitrary Objects
+    link: https://medium.com/towards-data-science/segment-anything-promptable-segmentation-of-arbitrary-objects-f28958c5612d?sk=bd1311a6d8b1e0e6d3369d536dba0700
+  - description: BYOL -The Alternative to Contrastive Self-Supervised Learning
+    link: https://medium.com/towards-data-science/byol-the-alternative-to-contrastive-self-supervised-learning-5d0a26983d7c?sk=fc5a3b3a556088181d8726226862252c
+  - description: GLIP - Introducing Language-Image Pre-Training to Object Detection
+    link: https://medium.com/towards-data-science/glip-introducing-language-image-pre-training-to-object-detection-5ddb601873aa?sk=4f0acb404a38d342b7669f861c013a05
+  - description: The CLIP Foundation Model
+    link: https://medium.com/towards-data-science/the-clip-foundation-model-7770858b487d?sk=a7b10ba1d0c3a20ecd4adb8200a48500
+  - description: Implement Multi-GPU Training on a single GPU
+    link: https://medium.com/towards-data-science/implement-multi-gpu-training-on-a-single-gpu-e9b6b775456a?sk=33a6f419491784d491da7e4e2f9149a0
+  - description: Fourier CNNs with Kernel Sizes of 1024x1024 and Larger
+    link: https://medium.com/towards-data-science/fourier-cnns-with-kernel-sizes-of-1024x1024-and-larger-29f513fd6120?sk=e2c41277d25c98d08214778eff603d2a
+  - description: MLP Mixer in a Nutshell
+    link: https://medium.com/towards-data-science/mlp-mixer-in-a-nutshell-eccffb68e4fc?sk=09000a6a1a857367707f7b8d6c29dabc
+  - description: Create your own GPU accelerated Jupyter Notebook Server with Google Colab using Docker
+    link: https://medium.com/towards-data-science/create-your-own-gpu-accelerated-yupyter-notebook-server-with-google-colab-using-docker-2fa14900bab5?sk=669c6d11f486cdc104fdb0df4b9da6f4
+  - description: Accelerated Distributed Training with TensorFlow on Google's TPU
+    link: https://medium.com/towards-data-science/accelerated-distributed-training-with-tensorflow-on-googles-tpu-52f1fe21da33?sk=b713cd3cf705bae60c523b26cfe25b3f
+  - description: Speed up your Training with Mixed Precision on GPUs and TPUs in TensorFlow
+    link: https://medium.com/towards-data-science/speed-up-your-tensorflow-training-with-mixed-precision-on-gpu-tpu-acf4c8c0931c?sk=ff0bc89c30ef29eb924c3a096bba62c4

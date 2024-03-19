@@ -1,0 +1,32 @@
+---
+layout: page
+title: Friend Links
+permalink: /blog_friend_links
+---
+{% assign medium_data = site.data.medium_blog %}
+
+<p>Hi Friends!🤗</p>
+<p>Bellow is a list of links to all <a href="{{ medium_data.profile }}" target="_blank">my Medium</a> articles so you can access them for free.</p>
+<p>To help me grow, please consider to:
+    <ul>
+        <li>like my articles (up to 50 likes possible)</li>
+        <li>follow me</li>
+        <li>leave comments</li>
+        <li>make notes in the text</li>
+        <li>read the article (at least 30sec)</li>
+        <li>bookmark the articles</li>
+        <li><a href="{{ medium_data.subscription_page }}" target="_blank">Subscribe to my blog</a> to get notified via e-mail when I publish new articles.</li>
+    </ul>
+</p>
+
+<div class="columns is-multiline">
+    {% for item in medium_data.friend_links %}
+        <div class="column is-one-quarter">
+            <a href="{{ item.link }}" target="_blank">
+                <div class="box">
+                    <b>{{ item.description }}</b>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
