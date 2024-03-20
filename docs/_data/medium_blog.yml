@@ -1,8 +1,8 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
-  - title: Depth Anything —A Foundation Model for Monocular Depth Estimation
-    subtitle: Paper Walkthrough — Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data
+  - title: Depth Anything - A Foundation Model for Monocular Depth Estimation
+    subtitle: Paper Walkthrough - Depth Anything, Unleashing the Power of Large-Scale Unlabeled Data
     link: https://medium.com/towards-data-science/depth-anything-a-foundation-model-for-monocular-depth-estimation-8a7920b5c9cc?sk=fc6197edd68e6137c3396c83e50f65cb
   - title: Turn Yourself into a 3D Gaussian Splat
     subtitle: A Hands-on Guide for Practitioners
