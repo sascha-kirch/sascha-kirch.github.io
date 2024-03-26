@@ -34,13 +34,4 @@ This project is ment to showcase some sublementary materials for <a href="https:
 </div> 
 
 
-<script>
-    document.getElementsByTagName("body")[0].setAttribute("onload","rl()")
-    function rl(){
-        v = document.querySelectorAll("spline-viewer")
-        for(viewer of v){
-            viewer._canvas.style.borderRadius="12px"
-            viewer._logo.style.visibility="hidden"
-        }
-    }
-</script>
+<script src="{{site.baseurl}}/assets/js/spline_viewer.js"></script>
