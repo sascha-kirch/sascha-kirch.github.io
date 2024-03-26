@@ -5,7 +5,7 @@
 		<!--Hack to change order of image when column is wrapped on mobile devices!-->
 		<div class="column {{page.image_width}} is-hidden-mobile">
 			<figure class="image">
-				<img src="{{site.baseurl}}/assets/images/{{ item.image }}">
+				<img src="{{site.baseurl}}/assets/images/{{ item.image }}" style="border-radius: 5px;">
 			</figure>
 		</div>
 		<div class="column {{page.text_width}} ">
@@ -19,10 +19,10 @@
 		</div>
 		<div class="column {{page.image_width}} is-hidden-tablet"><!--is-hidden-tablet hides for all screens bigger than tablet -> only if not mobile -->
 			<figure class="image">
-				<img src="{{site.baseurl}}/assets/images/{{ item.image }}">
+				<img src="{{site.baseurl}}/assets/images/{{ item.image }}" style="border-radius: 5px;">
 			</figure>
 		</div>
-				
+
 	{% else %}
 	<!--image right-->
 		<div class="column {{page.text_width}}">
@@ -36,11 +36,11 @@
 		</div>
 		<div class="column {{page.image_width}}">
 			<figure class="image">
-				<img src= "{{site.baseurl}}/assets/images/{{ item.image }}">
+				<img src= "{{site.baseurl}}/assets/images/{{ item.image }}" style="border-radius: 5px;">
 			</figure>
 		</div>
 
 	{% endif %}
-	
+
 	</div>
 </div>
