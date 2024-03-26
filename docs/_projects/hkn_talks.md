@@ -13,7 +13,7 @@ image: hkn_talks_banner.png
 <div class="columns is-multiline">
     {% for item in hkn_talks_data.hosted_talks %}
     <div class="column is-half">
-        <iframe width="560" height="315" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style="border-radius: 5px;"></iframe>
     </div>
     {% endfor %}
 </div>
