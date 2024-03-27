@@ -1,6 +1,9 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: The Rise of Diffusion Models - A new Era of Generative Deep Learning
+    subtitle: Paper Walkthrough - Denoising Diffusion Probabilistic Models
+    link: https://medium.com/towards-data-science/the-rise-of-diffusion-models-a-new-era-of-generative-deep-learning-3ef4779f6e1b?sk=8c178422a977c6f49ec24b13502be4fd
   - title: Depth Anything - A Foundation Model for Monocular Depth Estimation
     subtitle: Paper Walkthrough - Depth Anything, Unleashing the Power of Large-Scale Unlabeled Data
     link: https://medium.com/towards-data-science/depth-anything-a-foundation-model-for-monocular-depth-estimation-8a7920b5c9cc?sk=fc6197edd68e6137c3396c83e50f65cb
@@ -11,7 +14,7 @@ friend_links:
     subtitle: Paper Walkthrough - Emerging Properties in Self-Supervised Vision Transformers
     link: https://medium.com/towards-data-science/dino-a-foundation-model-for-computer-vision-4cb08e821b18?sk=d85260276367f5914cc3efadc0fe307c
   - title: Segment Anything - Promptable Segmentation of Arbitrary Objects
-    subtitle: Paper Walkthrough — Segment Anything
+    subtitle: Paper Walkthrough — Segment Anything
     link: https://medium.com/towards-data-science/segment-anything-promptable-segmentation-of-arbitrary-objects-f28958c5612d?sk=bd1311a6d8b1e0e6d3369d536dba0700
   - title: BYOL -The Alternative to Contrastive Self-Supervised Learning
     subtitle: Paper Analysis - Bootstrap Your Own Latent - A New Approach to Self-Supervised Learning
