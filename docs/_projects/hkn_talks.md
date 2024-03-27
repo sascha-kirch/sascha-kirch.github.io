@@ -9,11 +9,11 @@ image: hkn_talks_banner.png
 <p>Here you can find the playlist of all HKN Talks: <a href="{{ hkn_talks_data.hkn_talks_playlist_link }}" target="_blank">Playlist all HKN Talks </a></p>
 
 <!-- Here the iFrame API for later improvements https://developers.google.com/youtube/iframe_api_reference?hl=de -->
-<p>Here a list of HKN Talks I have hosted:</p>
+<p><b>Here a list of HKN Talks I have hosted:</b></p>
 <div class="columns is-multiline">
     {% for item in hkn_talks_data.hosted_talks %}
     <div class="column is-half">
-        <iframe width="560" height="315" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style="border-radius: 5px;"></iframe>
+        <iframe width="100%" height="350" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style="border-radius: 5px;"></iframe>
     </div>
     {% endfor %}
 </div>
