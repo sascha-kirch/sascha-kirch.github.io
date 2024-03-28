@@ -24,6 +24,9 @@ permalink: /blog_friend_links
         <div class="column is-one-quarter">
             <a href="{{ item.link }}" target="_blank">
                 <div class="box">
+                    {% if item.kicker %}
+                    <p style="color:gray"><i>{{ item.kicker }}</i></p>
+                    {% endif %}
                     <p style="margin-bottom: 5px"><b>{{ item.title }}</b></p>
                     <p style="color:gray"><i>{{ item.subtitle }}</i></p>
                 </div>
