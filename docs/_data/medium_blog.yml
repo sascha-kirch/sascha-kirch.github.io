@@ -2,28 +2,28 @@ profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
   - title: The Rise of Diffusion Models - A new Era of Generative Deep Learning
-    subtitle: Paper Walkthrough - Denoising Diffusion Probabilistic Models
+    subtitle: Denoising Diffusion Probabilistic Models by J. Ho et. al.
     link: https://medium.com/towards-data-science/the-rise-of-diffusion-models-a-new-era-of-generative-deep-learning-3ef4779f6e1b?sk=8c178422a977c6f49ec24b13502be4fd
   - title: Depth Anything - A Foundation Model for Monocular Depth Estimation
-    subtitle: Paper Walkthrough - Depth Anything, Unleashing the Power of Large-Scale Unlabeled Data
+    subtitle: Depth Anything, Unleashing the Power of Large-Scale Unlabeled Data by L. Yang et. al.
     link: https://medium.com/towards-data-science/depth-anything-a-foundation-model-for-monocular-depth-estimation-8a7920b5c9cc?sk=fc6197edd68e6137c3396c83e50f65cb
   - title: Turn Yourself into a 3D Gaussian Splat
     subtitle: A Hands-on Guide for Practitioners
     link: https://medium.com/towards-data-science/turn-yourself-into-a-3d-gaussian-splat-3a2bc59a770f?sk=b6960d4195bb96994f1af119677e654e
   - title: DINO - A Foundation Model for Computer Vision
-    subtitle: Paper Walkthrough - Emerging Properties in Self-Supervised Vision Transformers
+    subtitle: Emerging Properties in Self-Supervised Vision Transformers by M. Caron et. al.
     link: https://medium.com/towards-data-science/dino-a-foundation-model-for-computer-vision-4cb08e821b18?sk=d85260276367f5914cc3efadc0fe307c
   - title: Segment Anything - Promptable Segmentation of Arbitrary Objects
-    subtitle: Paper Walkthrough — Segment Anything
+    subtitle: Segment Anything by A. Krillov et. al.
     link: https://medium.com/towards-data-science/segment-anything-promptable-segmentation-of-arbitrary-objects-f28958c5612d?sk=bd1311a6d8b1e0e6d3369d536dba0700
   - title: BYOL -The Alternative to Contrastive Self-Supervised Learning
-    subtitle: Paper Analysis - Bootstrap Your Own Latent - A New Approach to Self-Supervised Learning
+    subtitle: Bootstrap Your Own Latent, A New Approach to Self-Supervised Learning by J. Grill et. al.
     link: https://medium.com/towards-data-science/byol-the-alternative-to-contrastive-self-supervised-learning-5d0a26983d7c?sk=fc5a3b3a556088181d8726226862252c
   - title: GLIP - Introducing Language-Image Pre-Training to Object Detection
-    subtitle: Paper Summary - Grounded Language-Image Pre-training
+    subtitle: Grounded Language-Image Pre-training by L. H. Li et. al.
     link: https://medium.com/towards-data-science/glip-introducing-language-image-pre-training-to-object-detection-5ddb601873aa?sk=4f0acb404a38d342b7669f861c013a05
   - title: The CLIP Foundation Model
-    subtitle: Paper Summary - Learning Transferable Visual Models From Natural Language Supervision
+    subtitle: Learning Transferable Visual Models From Natural Language Supervision by A. Radford et. al.
     link: https://medium.com/towards-data-science/the-clip-foundation-model-7770858b487d?sk=a7b10ba1d0c3a20ecd4adb8200a48500
   - title: Implement Multi-GPU Training on a single GPU
     subtitle: An Advanced Guide for TensorFlow
