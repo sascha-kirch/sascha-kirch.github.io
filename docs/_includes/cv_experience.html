@@ -22,13 +22,14 @@
 				<div class="column">
 					<div class="box">
 						
-						<div><b>{{job.position}}</b></div>
-						{% if job.location != false %}
-						<div>{{job.location}}</div>
-						{% endif %}
-						{% if job.employment_type != false %}
-						<div>{{job.employment_type}}</div>
-						{% endif %}
+						<div><b>{{job.position}}</b>
+							{% if job.location != false %}
+							<span>{{job.location}}</span>
+							{% endif %}
+							{% if job.employment_type != false %}
+							<span>({{job.employment_type}})</span>
+							{% endif %}
+						</div>
 						
 						<br>
 						<em>{{job.description}}</em>
