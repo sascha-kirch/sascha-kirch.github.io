@@ -4,21 +4,18 @@
 		<div class="box">
 			<!-- First line with university icon and name -->
 			<div class="columns is-full is-mobile is-vcentered">
-				<div class="column is-one-fifth has-text-centered">
-					<figure class="image is-48x48 is-inline-block mx-0">
+				<div class="column is-narrow has-text-centered">
+					<figure class="image is-48x48 is-centered is-inline-block mx-0">
 						<img class="is-rounded" src="{{site.baseurl}}/assets/images/{{item.logo}}">
 					</figure>
 				</div>
 				<div class="column">
-					<div><strong>{{item.university}}</strong> {{item.location}}</div>
-					
+					<b>{{item.university}}</b> {{item.location}}
+					<b><span style="float:right">{{item.start_date}} - {{item.end_date}}</span></b>
 				</div>
 			</div>
 			<!-- Second line remaining info with data aside -->
 			<div class="columns is-full is-mobile">
-				<div class="column is-one-fifth">
-					<div style="text-align: center">{{item.end_date}}<br>|<br>{{item.start_date}}</div>
-				</div>
 				<div class="column">
 					<div><b>Degree:</b> {{item.degree}}</div>
 					<div><b>Specialization:</b> {{item.specialization}}</div>
