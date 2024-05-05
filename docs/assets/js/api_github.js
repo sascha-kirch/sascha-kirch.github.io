@@ -1,10 +1,10 @@
-//JavaScript to fetch from GitHub API. Code inspired by: https://stackoverflow.com/a/18395248/17905764 
+//JavaScript to fetch from GitHub API. Code inspired by: https://stackoverflow.com/a/18395248/17905764
 // TODO: Add Programming Languages and pagination
 
 function updateGithubFields(){
 	var responseObj = JSON.parse(this.responseText);
 	let user_info_string = ""
-	user_info_string += "<div>"  
+	user_info_string += "<div>"
 	user_info_string += "<article class=\"media\">"
     user_info_string += "<figure class=\"media-left\">"
 	user_info_string += "<p class=\"image is-64x64\"><img class=\"is-rounded\" src=\""+responseObj.avatar_url+"\"/></p>"
@@ -28,7 +28,7 @@ function updateGithubFields(){
 	user_info_string += "</div>"  //media-content
 	user_info_string += "</article>"  //media
 	user_info_string += "</div>"  //box
-	
+
 	document.getElementById("github_user").innerHTML = user_info_string
 	console.log(user_info_string)
 }
@@ -48,9 +48,9 @@ function updateGithubRepos() {
 
 	//sort according update date
 	sortedResponse = sortJSON(responseObj, "pushed_at", false);
-	
+
 	for (const element of sortedResponse) {
-		
+
 		let topic_string = ""
 		//Get topic of each public repo and represent as tag
 		for (const topic of element.topics){
@@ -58,22 +58,26 @@ function updateGithubRepos() {
 		}
 		//Get Infor of each public Repo
 		let repo_info_string = ""
-		repo_info_string += "<div class=\"box\">"  
-		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\" target=\"_blank\">"+element.name+" </a>"
+		repo_info_string += "<div class=\"box\">"
 		repo_info_string +=	"<div class=\"columns is-multiline is-mobile\">"
-		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"far fa-star\"></i> " + element.stargazers_count + "</div>"
-		repo_info_string +=	"<div class=\"column is-narrow\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + "</div>"
+		repo_info_string +=	"<div class=\"column is-full\">"
+		repo_info_string +=	"<a class=\"is-size-4\" href=\""+element.html_url+"\" target=\"_blank\">"+element.name+" </a>"
+		repo_info_string +=	"<span class=\"ml-1 mr-1\" style=\"float:right\"><i class=\"fas fa-eye\"></i> " + element.watchers_count + "</span>"
+		repo_info_string +=	"<span class=\"ml-1 mr-1\" style=\"float:right\"><i class=\"far fa-star\"></i> " + element.stargazers_count + "</span>"
+		repo_info_string +=	"<span class=\"ml-1 mr-1\" style=\"float:right\"><i class=\"fas fa-code-branch\"></i> " + element.forks_count + "</span>"
+		repo_info_string +=	"</div>"
 		//empty container for languages. If element.languages is null, the API also does not return languages. e.g. Githubpage or only markdown repos
 		if (element.language != null){
-			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full pt-0 pb-0\"></div>" 
+			repo_info_string +=	"<div id=\"github_repo_"+element.name+"\" class=\"column is-full pt-0 pb-0\"></div>"
 		}
 		repo_info_string +=	"<div class=\"column is-full pt-0 pb-0\">" + topic_string + "</div>"
-		repo_info_string +=	"<div class=\"column is-full\">" + element.description + "</div>"
+		if (element.language != null){
+			repo_info_string +=	"<div class=\"column is-full\">" + element.description + "</div>"
+		}
 		repo_info_string +=	"</div>"
 		repo_info_string +=	"</div>"
 		document.getElementById("github_repos").innerHTML += repo_info_string
-		
+
 		//Update languages by performing HTTP Request, that have been created with a certain id. I execute after the div has been created, to ensure, the async call finds the element.
 		if (element.language != null){
 			var request_repos = new XMLHttpRequest();
