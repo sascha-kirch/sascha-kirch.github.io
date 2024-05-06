@@ -10,15 +10,23 @@
 					</figure>
 				</div>
 				<div class="column">
-					<b>{{item.university}}</b> {{item.location}}
-					<b><span style="float:right">{{item.start_date}} - {{item.end_date}}</span></b>
+					<div class="columns is-full is-multiline">
+						<div class="column pb-0 pt-0">
+							<div><em><b>{{item.degree}}, {{item.specialization}}</b></em></div>
+							<div>{{item.university}}, {{item.location}}</div>
+						</div>
+						<div class="column is-narrow pt-0 pb-0">
+							<b>{{item.start_date}} - {{item.end_date}}</b>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- Second line remaining info with data aside -->
 			<div class="columns is-full is-mobile">
 				<div class="column">
-					<div><b>Degree:</b> {{item.degree}}</div>
-					<div><b>Specialization:</b> {{item.specialization}}</div>
+					{% if item.description != false %}
+					<div><em>{{item.description}}</em></div>
+					{% endif %}
 					{% if item.grade != false %}
 					<div><b>Grade:</b> {{item.grade}}</div>
 					{% endif %}

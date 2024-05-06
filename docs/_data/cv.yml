@@ -135,26 +135,29 @@ education:
       specialization: Multi-Modal Generative Deep Learning
       start_date: Oct 2021
       end_date: Present
+      description: false
       grade: false
       thesis: false
       logo: uned_logo.jpeg
 
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
-      degree: Master of Science (M.Sc.)
+      degree: M.Sc.
       specialization: Electronic Systems for Communication and Information
       start_date: Oct 2019
       end_date: Jun 2021
+      description: false
       grade: 9.4 (German equivalent 1.0)
       thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
       logo: uned_logo.jpeg
 
     - university: Duale Hochschule Baden-Württemberg (DHBW)
       location: Horb am Neckar, Germany
-      degree: Bachelor of Engineering (B.Eng.)
+      degree: B.Eng.
       specialization: Electrical Engineering
       start_date: Sep 2013
       end_date: Aug 2016
+      description: false
       grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
@@ -189,6 +192,24 @@ awards:
     - award: Matrícula de honor for "Microprocessor Techniques"
       date: Jun 2020
       initiater: UNED - Universidad Nacional de Educación a Distancia
+
+organizations_and_societies:
+    - name: IEEE - Eta Kappa Nu
+      start_date: 2021
+      end_date: Present
+      logo: hkn_logo.jpeg
+      description: Honor Society of the IEEE
+    - name: IEEE - Computer Society
+      start_date: 2023
+      end_date: Present
+      logo: ieee_computer_society_logo.png
+      description: Largest Global Community of Computer Scientists and Engineers.
+    - name: MIPI Alliance
+      start_date: 2016
+      end_date: 2017
+      logo: mipi_logo.jpg
+      description: Developing interface specifications for mobile and mobile-influenced products.
+
 
 expertises:
     - expertise: Generative Deep Learning
@@ -347,10 +368,10 @@ certificates:
       sub_certificates:
       - title: Module 1 - Creating Values for my Customers
         certificate: false
-        date: false
+        date: Q2/2020
       - title: Module 2 - Leading Myself and my Team
         certificate: false
-        date: false
+        date: Q2/2020
       - title: Module 3 - Fascinating Customers
         certificate: false
         date: Nov 2020

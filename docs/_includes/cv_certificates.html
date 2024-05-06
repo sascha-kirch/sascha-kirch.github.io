@@ -7,34 +7,34 @@
 			</figure>
 		</div>
 		<div class="column">
+			<div>
+				<b>{{item.title}}</b>
 
-			<div><b>{{item.title}}</b></div>
+				{% if item.date != false %}
+				<span><small>- {{item.date}}</small></span>
+				{% endif %}
+				{% if item.certificate != false %}
+				<span><small>- <a href="{{item.certificate}}" target="_blank">View Certificate</a></small></span>
+				{% endif %}
+			</div>
 			<div>{{item.initiater}}</div>
-			{% if item.date != false %}
-			<div><small>{{item.date}}</small></div>
-			{% endif %}
-			{% if item.certificate != false %}
-			<div><small><a href="{{item.certificate}}" target="_blank">View Certificate</a></small></div>
-			{% endif %}
 		</div>
 	</div>
 	{% if item.sub_certificates != false %}
-	<p><b>Courses:</b></p>
-	<div class="columns is-multiline is-vcentered">
+	<p class="mb-0"><b>Courses:</b></p>
+		<ul class="mt-1">
 		{% for sub_course in item.sub_certificates %}
-		<div class="column is-half">
-			<div class="box">
-				<div><b>{{sub_course.title}}</b></div>
+			<li>
+				<span>{{sub_course.title}}</span>
 				{% if sub_course.date != false %}
-				<div><small>{{sub_course.date}}</small></div>
+				<span><small>- {{sub_course.date}}</small></span>
 				{% endif %}
 				{% if sub_course.certificate != false %}
-				<div style="word-break: break-all;"><small><a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></div>
+				<span style="word-break: break-all;"><small>- <a href="{{sub_course.certificate}}" target="_blank">View Certificate</a></small></span>
 				{% endif %}
-			</div>
-		</div>
+			</li>
 		{% endfor %}
-	</div>
+		</ul>
 	{% endif %}
 </div>
 {% endfor %}
