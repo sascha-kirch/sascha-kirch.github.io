@@ -1,6 +1,6 @@
 ---
 title: IEEE HKN Talks
-order: 4
+order: 5
 image: hkn_talks_banner.png
 ---
 {% assign hkn_talks_data = site.data.hkn_talks %}

@@ -37,9 +37,8 @@ professional_experience:
         start_date: Jan 2023
         end_date: Present
         description: >
-            Jan 2023 - Dec 2023 President Elect <br>
-            Jan 2023 - Dec 2024 President <br>
-            Jan 2024 - Dec 2025 Past President
+            The president is responsible for planning the chapter's program and securing its completion. He calls for internal meetings with all members and presents the chapter in external communications.
+            The president further helds the induction ceremony of new members
       - position: Chapter Leadership, Corresponding Secretary
         employment_type: Full-Time
         location: Madrid, Spain
@@ -216,13 +215,13 @@ expertises:
     - expertise: Self-supervised learning
     - expertise: unsupervised learning
     - expertise: Foundation Models
-    - expertise: Generative Adversarial Networks (GANs)
+    - expertise: Generative Adversarial Networks
     - expertise: Diffusion Models
     - expertise: Autonomous Driving
     - expertise: Integrated Circuits
     - expertise: High-Speed Digital Communication
     - expertise: HW Engineering
-    - expertise: SW Engineering (Embedded, Mobile, Desktop)
+    - expertise: SW Engineering
 
 programming:
     - language: C++
