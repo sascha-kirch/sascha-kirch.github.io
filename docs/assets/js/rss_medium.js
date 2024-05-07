@@ -35,7 +35,7 @@ function updateMediumBlogPosts(responseText){
 	//hack to obtain link to prifile by removing /feed
 	var profileLink = responseObj.feed.url.replace("/feed", "")
 
-	object_string += "<div class=\"columns is-multiline is-vcentered \">"
+	object_string += "<div class=\"columns is-multiline \">"
 
 	//Go through all posts
 	for (const item of responseObj.items){

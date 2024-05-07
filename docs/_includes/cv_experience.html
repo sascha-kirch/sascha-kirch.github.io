@@ -4,7 +4,7 @@
 		<div class="box">
 			<!-- First line with company icon and name -->
 			<div class="columns is-full is-mobile is-vcentered">
-				<div class="column is-one-fifth has-text-centered">
+				<div class="column is-narrow has-text-centered">
 					<figure class="image is-48x48 is-centered is-inline-block mx-0">
 						<img class="is-rounded"  src="{{site.baseurl}}/assets/images/{{company.logo}}">
 					</figure>
@@ -15,25 +15,23 @@
 			</div>
 			<!-- Multiple lines with positions and dates -->
 			{% for job in company.positions %}
-			<div class="columns is-full is-mobile">
-				<div class="column is-one-fifth">
-					<div style="text-align: center">{{job.end_date}}<br>|<br>{{job.start_date}}</div>
-				</div>
-				<div class="column">
-					<div class="box">
-						
-						<div><b>{{job.position}}</b></div>
+			<div class="columns is-full is-multiline">
+				<div class="column pb-0 pt-0">
+					<em><div>
+						<b>{{job.position}}</b>
 						{% if job.location != false %}
-						<div>{{job.location}}</div>
+						<span>{{job.location}}</span>
 						{% endif %}
 						{% if job.employment_type != false %}
-						<div>{{job.employment_type}}</div>
+						<span>({{job.employment_type}})</span>
 						{% endif %}
-						
-						<br>
-						<em>{{job.description}}</em>
-						
-					</div>
+					</div></em>
+				</div>
+				<div class="column is-narrow pt-0 pb-0">
+					<b>{{job.start_date}} - {{job.end_date}}</b>
+				</div>
+				<div class="column is-full pt-0 pb-4">
+					{{job.description}}
 				</div>
 			</div>
 			{% endfor %}

@@ -1,3 +1,13 @@
+- name: Google I/O 2024 
+  date: 14 May 2024
+  description: False
+  homepage: https://io.google/2024/
+
+- name: IEEE HKN 2024 TechX 
+  date: 17 April 2024
+  description: False
+  homepage: https://techx.hkn.events/
+
 - name: Hackathon - Unleash GenAI @ Bosch 
   date: 6 November 2023
   description: False

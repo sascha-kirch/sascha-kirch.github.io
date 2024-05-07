@@ -1,0 +1,29 @@
+<div class="columns is-full is-multiline">
+    {% for item in site.data.cv.organizations_and_societies %}
+    <div class="column is-half">
+        <div class="box">
+            <!-- First line with university icon and name -->
+            <div class="columns is-full is-mobile is-vcentered">
+                <div class="column is-narrow has-text-centered">
+                    <figure class="image is-48x48 is-centered is-inline-block mx-0">
+                        <img class="is-rounded" src="{{site.baseurl}}/assets/images/{{item.logo}}">
+                    </figure>
+                </div>
+                <div class="column">
+                    <div class="columns is-full is-multiline">
+                        <div class="column pb-0 pt-0">
+                            <div><em><b>{{item.name}}</b></em></div>
+                            {% if item.description != false %}
+                            <div>{{item.description}}</div>
+                            {% endif %}
+                        </div>
+                        <div class="column is-narrow pt-0 pb-0">
+                            <b>{{item.start_date}} - {{item.end_date}}</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

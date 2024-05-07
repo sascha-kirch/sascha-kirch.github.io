@@ -7,9 +7,14 @@ image_width: is-one-third
 text_width: is-two-thirds
 view_mode: excerpt
 ---
+<div class="content">
+	<p>Here a collection of projects I have been working on outside my job. Also check my <a href="https://medium.com/@SaschaKirch" target="_blank">technical blog on Medium</a> and my <a href="https://github.com/sascha-kirch" target="_blank">GitHub</a> for more.</p>
+    <hr>
 
-{% assign items = site.projects | sort: 'order' | reverse %}
-{% for item in items %}
-{% assign side = forloop.index0 | modulo: 2 %}
-{% include left_right.html %}
-{% endfor %}
+    {% assign items = site.projects | sort: 'order' | reverse %}
+    {% for item in items %}
+    {% assign side = forloop.index0 | modulo: 2 %}
+    {% include left_right.html %}
+    {% endfor %}
+
+</div>

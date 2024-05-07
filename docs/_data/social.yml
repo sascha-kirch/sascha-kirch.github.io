@@ -1,55 +1,55 @@
-- name: Google Scholar
-  link: https://scholar.google.com/citations?user=VpdOc2kAAAAJ&hl=de
-  icon:
-    source: ai
-    name: ai-google-scholar
-    type: ai
-    
+# - name: Google Scholar
+#   link: https://scholar.google.com/citations?user=VpdOc2kAAAAJ&hl=de
+#   icon:
+#     source: ai
+#     name: ai-google-scholar
+#     type: ai
+
 - name: GitHub
   link: https://github.com/sascha-kirch
   icon:
     source: fa
     name: fa-github
     type: fab
-    
+
 - name: LinkedIn
   link: https://www.linkedin.com/in/sascha-kirch/
   icon:
     source: fa
     name: fa-linkedin-in
     type: fab
-    
-- name: Twitter
-  link: https://twitter.com/sascha_kirch
-  icon:
-    source: fa
-    name: fa-twitter
-    type: fab
-    
+
+# - name: Twitter
+#   link: https://twitter.com/sascha_kirch
+#   icon:
+#     source: fa
+#     name: fa-twitter
+#     type: fab
+
 - name: Medium
   link: https://medium.com/@SaschaKirch
   icon:
     source: fa
     name: fa-medium-m
     type: fab
-    
+
 - name: stackoverflow
   link: https://stackoverflow.com/users/17905764/sascha-kirch?tab=profile
   icon:
     source: fa
     name: fa-stack-overflow
     type: fab
-    
+
 - name: ORCID
   link: https://orcid.org/0000-0002-5578-7555
   icon:
     source: fa
     name: fa-orcid
     type: fab
-    
-- name: Email
-  link: mailto:skirch1@alumno.uned.es
-  icon:
-    source: fa
-    name: fa-envelope
-    type: far
+
+# - name: Email
+#   link: mailto:skirch1@alumno.uned.es
+#   icon:
+#     source: fa
+#     name: fa-envelope
+#     type: far

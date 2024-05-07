@@ -4,24 +4,29 @@
 		<div class="box">
 			<!-- First line with university icon and name -->
 			<div class="columns is-full is-mobile is-vcentered">
-				<div class="column is-one-fifth has-text-centered">
-					<figure class="image is-48x48 is-inline-block mx-0">
+				<div class="column is-narrow has-text-centered">
+					<figure class="image is-48x48 is-centered is-inline-block mx-0">
 						<img class="is-rounded" src="{{site.baseurl}}/assets/images/{{item.logo}}">
 					</figure>
 				</div>
 				<div class="column">
-					<div><strong>{{item.university}}</strong></div>
-					<div>{{item.location}}</div>
+					<div class="columns is-full is-multiline">
+						<div class="column pb-0 pt-0">
+							<div><em><b>{{item.degree}}, {{item.specialization}}</b></em></div>
+							<div>{{item.university}}, {{item.location}}</div>
+						</div>
+						<div class="column is-narrow pt-0 pb-0">
+							<b>{{item.start_date}} - {{item.end_date}}</b>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- Second line remaining info with data aside -->
 			<div class="columns is-full is-mobile">
-				<div class="column is-one-fifth">
-					<div style="text-align: center">{{item.end_date}}<br>|<br>{{item.start_date}}</div>
-				</div>
 				<div class="column">
-					<div><b>Degree:</b> {{item.degree}}</div>
-					<div><b>Specialization:</b> {{item.specialization}}</div>
+					{% if item.description != false %}
+					<div><em>{{item.description}}</em></div>
+					{% endif %}
 					{% if item.grade != false %}
 					<div><b>Grade:</b> {{item.grade}}</div>
 					{% endif %}
