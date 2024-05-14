@@ -28,7 +28,7 @@ professional_experience:
             Design and validation of electronic modules and concepts,
             considering reliability and safety aspects, for automotive radar sensors.
 
-    - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
+    - company_name: IEEE Eta Kappa Nu - Chapter Nu Alpha
       logo: hkn_logo.jpeg
       positions:
       - position: President
@@ -39,7 +39,7 @@ professional_experience:
         description: >
             The president is responsible for planning the chapter's program and securing its completion. He calls for internal meetings with all members and presents the chapter in external communications.
             The president further helds the induction ceremony of new members
-      - position: Chapter Leadership, Corresponding Secretary
+      - position: Corresponding Secretary - Chapter Leadership Team
         employment_type: Volunteer
         location: Madrid, Spain
         start_date: Jan 2022
@@ -129,7 +129,6 @@ professional_experience:
             Design and test of electronic circuits. Programming of test software in C#.
             High-speed digital cable testing using network analyzer.
 
-
 education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
@@ -137,7 +136,8 @@ education:
       specialization: Multi-Modal Generative Deep Learning
       start_date: Oct 2021
       end_date: Present
-      description: false
+      description: >
+        Researching on 3D reconstruction using multi-modal generative deep learning. Finished 2 publications in the field of GANs and diffusion models. Working on 2 publications concerned with monocular 3D reconstruction using foundation models, and applying Mamba state space models for time-series prediction.
       grade: false
       thesis: false
       logo: uned_logo.jpeg
@@ -148,7 +148,9 @@ education:
       specialization: Electronic Systems for Communication and Information
       start_date: Oct 2019
       end_date: Jun 2021
-      description: false
+      description: >
+        Earned multiple distinctions (3 Matricular de Honor),
+        Subjects included: microprocessors, wireless communications, satellite and mobile communications.
       grade: 9.4 (German equivalent 1.0)
       thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
       logo: uned_logo.jpeg
@@ -159,7 +161,9 @@ education:
       specialization: Electrical Engineering
       start_date: Sep 2013
       end_date: Aug 2016
-      description: false
+      description: >
+        Corporate student program with alternating theoretical and practical semesters.
+        Subjects included: signal & system theory, computing, radio frequency technique, electronics.
       grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
@@ -200,12 +204,12 @@ organizations_and_societies:
       start_date: 2021
       end_date: Present
       logo: hkn_logo.jpeg
-      description: Honor Society of the IEEE promoting scholarship, character and attitude.
+      description: Honor society of the IEEE promoting scholarship, character and attitude.
     - name: IEEE - Computer Society
       start_date: 2023
       end_date: Present
       logo: ieee_computer_society_logo.png
-      description: Largest Global Community of Computer Scientists and Engineers.
+      description: Largest global community of computer scientists and engineers.
     - name: MIPI Alliance
       start_date: 2016
       end_date: 2017
@@ -215,8 +219,8 @@ organizations_and_societies:
 
 expertises:
     - expertise: Generative Deep Learning
-    - expertise: Self-supervised learning
-    - expertise: unsupervised learning
+    - expertise: Self-supervised Learning
+    - expertise: Unsupervised Learning
     - expertise: Foundation Models
     - expertise: Diffusion Models
     - expertise: Generative Adversarial Networks
