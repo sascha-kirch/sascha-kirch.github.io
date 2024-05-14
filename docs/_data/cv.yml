@@ -5,7 +5,7 @@ professional_experience:
       - position: Expert Deep Learning for Automotive Sensor Perception
         employment_type: Full-Time
         location: Leonberg, Germany
-        start_date: Jan 2023
+        start_date: Dec 2022
         end_date: Present
         description: >
             Deep learning based perception for automotive radar, lidar and camera sensors.
@@ -14,7 +14,7 @@ professional_experience:
         employment_type: Full-Time
         location: Leonberg, Germany
         start_date: Jan 2019
-        end_date: Dec 2022
+        end_date: Oct 2022
         description: >
             Responsible for the development of electronic modules and concepts
             including µC, MMIC radar ASIC, SystemASIC, radar SoC, hardware architecture, safety, thermal design and EMC for automotive radar.
@@ -23,24 +23,24 @@ professional_experience:
         employment_type: Full-Time
         location: Leonberg, Germany
         start_date: Oct 2017
-        end_date: Jan 2019
+        end_date: Dec 2018
         description: >
             Design and validation of electronic modules and concepts,
             considering reliability and safety aspects, for automotive radar sensors.
 
-    - company_name: IEEE Eta Kappa Nu Nu Alpha Chapter
+    - company_name: IEEE Eta Kappa Nu - Chapter Nu Alpha
       logo: hkn_logo.jpeg
       positions:
       - position: President
-        employment_type: Full-Time
+        employment_type: Volunteer
         location: Madrid, Spain
         start_date: Jan 2023
         end_date: Present
         description: >
             The president is responsible for planning the chapter's program and securing its completion. He calls for internal meetings with all members and presents the chapter in external communications.
             The president further helds the induction ceremony of new members
-      - position: Chapter Leadership, Corresponding Secretary
-        employment_type: Full-Time
+      - position: Corresponding Secretary - Chapter Leadership Team
+        employment_type: Volunteer
         location: Madrid, Spain
         start_date: Jan 2022
         end_date: Dec 2022
@@ -50,7 +50,7 @@ professional_experience:
             duty to confer with the president in all matters that concern IEEE-HKN
             Headquarters to ensure that action is taken and to report back to IEEE-HKN Headquarters without delay.
       - position: IEEE Eta Kappa Nu Member
-        employment_type: Full-Time
+        employment_type: Volunteer
         location: Madrid, Spain
         start_date: Jun 2021
         end_date: Present
@@ -62,13 +62,13 @@ professional_experience:
     - company_name: Universidad Nacional de Educación a Distancia (UNED)
       logo: uned_logo.jpeg
       positions:
-      - position: Lecturer - Neuronal networks in industrial control systems
+      - position: Lecturer (External) - Neuronal Networks in Industrial Control Systems
         employment_type: false
         location: Madrid, Spain
         start_date: Sep 2022
         end_date: Present
         description: >
-          Lecturer for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department
+          Teaching Colaborator for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department
           "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering)
 
     - company_name: Towards Data Science
@@ -80,7 +80,10 @@ professional_experience:
         start_date: Apr 2022
         end_date: Present
         description: >
-          Writing on deep learning theory and implementation guides.
+          Writing technical blogs about deep learning theory, paper walkthroughs and hands-on deep dives.
+          <br>
+          <a href="https://medium.com/@SaschaKirch" target="_blank">Profile</a>. <a href="blog_friend_links.html">Friend links</a>.
+
 
     - company_name: Volograms
       logo: volograms_logo.jpeg
@@ -126,7 +129,6 @@ professional_experience:
             Design and test of electronic circuits. Programming of test software in C#.
             High-speed digital cable testing using network analyzer.
 
-
 education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
       location: Madrid, Spain
@@ -134,7 +136,8 @@ education:
       specialization: Multi-Modal Generative Deep Learning
       start_date: Oct 2021
       end_date: Present
-      description: false
+      description: >
+        Researching on 3D reconstruction using multi-modal generative deep learning. Finished 2 publications in the field of GANs and diffusion models. Working on 2 publications concerned with monocular 3D reconstruction using foundation models, and applying Mamba state space models for time-series prediction.
       grade: false
       thesis: false
       logo: uned_logo.jpeg
@@ -145,7 +148,9 @@ education:
       specialization: Electronic Systems for Communication and Information
       start_date: Oct 2019
       end_date: Jun 2021
-      description: false
+      description: >
+        Earned multiple distinctions (3 Matricular de Honor),
+        Subjects included: microprocessors, wireless communications, satellite and mobile communications.
       grade: 9.4 (German equivalent 1.0)
       thesis: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
       logo: uned_logo.jpeg
@@ -156,7 +161,9 @@ education:
       specialization: Electrical Engineering
       start_date: Sep 2013
       end_date: Aug 2016
-      description: false
+      description: >
+        Corporate student program with alternating theoretical and practical semesters.
+        Subjects included: signal & system theory, computing, radio frequency technique, electronics.
       grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
@@ -171,7 +178,7 @@ language_skills:
       logo: flag_english.png
 
     - language: Spanish
-      level: Advanced
+      level: Fluent
       logo: flag_spain.png
 
 awards:
@@ -197,12 +204,12 @@ organizations_and_societies:
       start_date: 2021
       end_date: Present
       logo: hkn_logo.jpeg
-      description: Honor Society of the IEEE
+      description: Honor society of the IEEE promoting scholarship, character and attitude.
     - name: IEEE - Computer Society
       start_date: 2023
       end_date: Present
       logo: ieee_computer_society_logo.png
-      description: Largest Global Community of Computer Scientists and Engineers.
+      description: Largest global community of computer scientists and engineers.
     - name: MIPI Alliance
       start_date: 2016
       end_date: 2017
@@ -212,11 +219,11 @@ organizations_and_societies:
 
 expertises:
     - expertise: Generative Deep Learning
-    - expertise: Self-supervised learning
-    - expertise: unsupervised learning
+    - expertise: Self-supervised Learning
+    - expertise: Unsupervised Learning
     - expertise: Foundation Models
-    - expertise: Generative Adversarial Networks
     - expertise: Diffusion Models
+    - expertise: Generative Adversarial Networks
     - expertise: Autonomous Driving
     - expertise: Integrated Circuits
     - expertise: High-Speed Digital Communication
@@ -225,67 +232,67 @@ expertises:
 
 programming:
     - language: C++
-      level: Expert
+      used_professionally: true
       logo: programming_c++.png
 
     - language: Python
-      level: Expert
+      used_professionally: true
       logo: programming_python.png
 
     - language: TensorFlow
-      level: Expert
+      used_professionally: true
       logo: programming_tensorflow.png
 
     - language: PyTorch
-      level: Advanced
+      used_professionally: true
       logo: programming_pytorch.png
 
     - language: Docker
-      level: Expert
+      used_professionally: true
       logo: docker_logo.png
 
     - language: Bash
-      level: Advanced
+      used_professionally: true
       logo: bash_logo.png
 
     - language: Git
-      level: Expert
+      used_professionally: true
       logo: git_logo.png
 
     - language: MATLAB
-      level: Advanced
+      used_professionally: true
       logo: programming_matlab.png
 
     - language: C#
-      level: Expert
+      used_professionally: true
       logo: programming_csharp.png
 
     - language: Java
-      level: Expert
+      used_professionally: false
       logo: programming_java.png
 
     - language: JavaScript
-      level: Advanced
+      used_professionally: false
       logo: programming_javascript.png
 
     - language: iOS Swift
-      level: Advanced
+      used_professionally: false
       logo: programming_swift.png
 
     - language: Verilog
-      level: Advanced
+      used_professionally: true
       logo: programming_v.png
 
     - language: VHDL
-      level: Advanced
+      used_professionally: true
       logo: programming_v.png
 
     - language: HTML
-      level: Advanced
+      used_professionally: false
       logo: programming_html.png
 
     - language: PHP
-      level: Advanced
+      used_professionally: false
       logo: programming_php.png
 
 
@@ -510,5 +517,5 @@ certificates:
         date: Apr 2019
       - title: Project Management Fundamentals - Combining classic and agile project management
         certificate: false
-        date: Oct 2016
+        date: Oct 2019
       logo: bosch_logo.jpeg

@@ -10,7 +10,11 @@
 				</div>
 				<div class="column">
 					<div><b>{{item.language}}</b></div>
-					<div>{{item.level}}</div>
+					{% if item.used_professionally %}
+						<span class="tag is-small is-success is-light">Professional Experience</span>
+						{% else %}
+						<span class="tag is-small">Personal Experience</span>
+					{% endif %}
 				</div>
 			</div>
 		</div>
