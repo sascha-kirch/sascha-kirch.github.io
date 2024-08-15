@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Towards Mamba State Space Models for Images, Videos and Time Series
+    kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
+    subtitle: Part 1
+    link: https://medium.com/towards-data-science/towards-mamba-state-space-models-for-images-videos-and-time-series-1e0bfdb5933a?sk=8aaecd0fc979e1e95ac2a8e62946064b
   - title: The Rise of Diffusion Models - A new Era of Generative Deep Learning
     kicker: 🚀 Sascha's Paper Club
     subtitle: Denoising Diffusion Probabilistic Models by J. Ho et. al.
