@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Structured State Space Models Visually Explained
+    kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
+    subtitle: Part 2 - Towards Mamba State Space Models for Images, Videos and Time Series
+    link: https://towardsdatascience.com/structured-state-space-models-visually-explained-86cfe2757386?sk=479768bd75ecf8d410f902b7ad8c0836
   - title: Towards Mamba State Space Models for Images, Videos and Time Series
     kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
     subtitle: Part 1
