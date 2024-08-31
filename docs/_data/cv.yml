@@ -217,83 +217,131 @@ organizations_and_societies:
       description: Developing interface specifications for mobile and mobile-influenced products.
 
 
-expertises:
-    - expertise: Generative Deep Learning
-    - expertise: Self-supervised Learning
-    - expertise: Unsupervised Learning
-    - expertise: Foundation Models
-    - expertise: Diffusion Models
-    - expertise: Generative Adversarial Networks
-    - expertise: Autonomous Driving
-    - expertise: Integrated Circuits
-    - expertise: High-Speed Digital Communication
-    - expertise: HW Engineering
-    - expertise: SW Engineering
+skills:
+    - category_name: Technology
+      skills:
+      - skill: Generative Deep Learning
+      - skill: Self-supervised Learning
+      - skill: Unsupervised Learning
+      - skill: Foundation Models
+      - skill: Diffusion Models
+      - skill: Generative Adversarial Networks
+      - skill: Autonomous Driving
+      - skill: High-Speed Digital Communication
+      - skill: HW Engineering
+      - skill: SW Engineering
+      - skill: Computer Vision
+      - skill: State Space Models
+      - skill: 3D Reconstruction
+    - category_name: Entrepeneurship
+      skills:
+      - skill: Leadership
+      - skill: Project Management
+      - skill: Coaching
+      - skill: Mentoring
+      - skill: Strategic Planning
+      - skill: Cost Optimization
+      - skill: Customer Satisfaction
+      - skill: Stakeholder Analysis
+      - skill: Risk/Chance Analysis
+    - category_name: Interests
+      skills:
+      - skill: Basketball
+      - skill: Tech
+      - skill: Self-Development
+      - skill: Family Time
+      - skill: Bicycle
+      - skill: DIY Projects
+
 
 programming:
-    - language: C++
+    - name: C++
       used_professionally: true
       logo: programming_c++.png
 
-    - language: Python
+    - name: Python
       used_professionally: true
       logo: programming_python.png
 
-    - language: TensorFlow
+    - name: TensorFlow
       used_professionally: true
       logo: programming_tensorflow.png
 
-    - language: PyTorch
+    - name: PyTorch
       used_professionally: true
       logo: programming_pytorch.png
 
-    - language: Docker
+    - name: Docker
       used_professionally: true
       logo: docker_logo.png
 
-    - language: Bash
+    - name: Bash
       used_professionally: true
       logo: bash_logo.png
 
-    - language: Git
+    - name: Git
       used_professionally: true
       logo: git_logo.png
 
-    - language: MATLAB
+    - name: MATLAB
       used_professionally: true
       logo: programming_matlab.png
 
-    - language: C#
+    - name: C#
       used_professionally: true
       logo: programming_csharp.png
 
-    - language: Java
+    - name: Java
       used_professionally: false
       logo: programming_java.png
 
-    - language: JavaScript
+    - name: JavaScript
       used_professionally: false
       logo: programming_javascript.png
 
-    - language: iOS Swift
+    - name: iOS Swift
       used_professionally: false
       logo: programming_swift.png
 
-    - language: Verilog
+    - name: Verilog
       used_professionally: true
       logo: programming_v.png
 
-    - language: VHDL
+    - name: VHDL
       used_professionally: true
       logo: programming_v.png
 
-    - language: HTML
+    - name: HTML
       used_professionally: false
       logo: programming_html.png
 
-    - language: PHP
+    - name: PHP
       used_professionally: false
       logo: programming_php.png
+
+    - name: CUDA
+      used_professionally: true
+      logo: false
+
+    - name: Numpy
+      used_professionally: true
+      logo: false
+
+    - name: Pandas
+      used_professionally: true
+      logo: false
+
+    - name: Numba
+      used_professionally: true
+      logo: false
+
+    - name: openCV
+      used_professionally: true
+      logo: false
+
+    - name: Torch Lightning
+      used_professionally: true
+      logo: false
 
 
 certificates:

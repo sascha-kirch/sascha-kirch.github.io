@@ -1,0 +1,12 @@
+<div class="column is-full">
+	{% for category in site.data.cv.skills %}
+	<div class="box">
+		<p><b><big>{{category.category_name}}</big></b></p>
+		<div class="tags">
+		{% for item in category.skills %}
+			<span class="tag is-small">{{item.skill}}</span>
+		{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
