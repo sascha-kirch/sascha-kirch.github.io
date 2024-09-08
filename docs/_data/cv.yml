@@ -345,6 +345,13 @@ programming:
 
 
 certificates:
+    - title: Fundamentals of Accelerated Computing with CUDA Python
+      initiater: Nvidia
+      date: Sep 2024
+      certificate: https://learn.nvidia.com/certificates?id=6GclRpx-R9CL_FGfanfElQ
+      sub_certificates: false
+      logo: logo_nvidia.png
+
     - title: Advanced Programming Learning Path
       initiater: Udemy
       date: false
