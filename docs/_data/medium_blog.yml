@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Vision Mamba - Like a Vision Transformer but Better
+    kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
+    subtitle: Part 4 - Towards Mamba State Space Models for Images, Videos and Time Series
+    link: https://medium.com/towards-data-science/vision-mamba-like-a-vision-transformer-but-better-3b2660c35848?sk=2a84edececf20d69284ea5b03c058fa9
   - title: Here Comes Mamba - The Selective State Space Model
     kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
     subtitle: Part 3 - Towards Mamba State Space Models for Images, Videos and Time Series
