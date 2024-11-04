@@ -1,3 +1,20 @@
+- title: "SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models"
+  authors:
+    - name: José Ignacio Olalde-Verano
+      orcid: 0000-0001-8058-156X
+    - name: Sascha Kirch
+      orcid: 0000-0002-5578-7555
+    - name: Clara Pérez-Molina
+      orcid: 0000-0001-8260-4155
+    - name: Sergio Martín
+      orcid: 0000-0002-4118-0234
+  year: 2024
+  journal: false
+  tags:
+    - tag: arXiv
+      link: https://arxiv.org/abs/2411.00233
+    - tag: GitHub
+      link: https://github.com/sascha-kirch/samba-mixer
 - title: "RGB-D-Fusion: Image Conditioned Depth Diffusion of Humanoid Subjects"
   authors:
     - name: Sascha Kirch
