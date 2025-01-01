@@ -9,8 +9,10 @@
     - name: Sergio Martín
       orcid: 0000-0002-4118-0234
   year: 2024
-  journal: false
+  journal: "IEEE Access"
   tags:
+    - tag: IEEE ACCESS
+      link: hhttps://ieeexplore.ieee.org/document/10818656
     - tag: arXiv
       link: https://arxiv.org/abs/2411.00233
     - tag: GitHub
