@@ -59,6 +59,19 @@ professional_experience:
             promotes excellence in the profession and in education with
             ideals of scholarship, character and attitude.
 
+
+    - company_name: Grupo de Tratamiento de Imagenes (GTI) at Universidad Politécnica de Madrid
+      logo: gti_logo.jpg
+      positions:
+      - position: Collaborating Researcher
+        employment_type: false
+        location: Madrid, Spain
+        start_date: Apr 2025
+        end_date: Present
+        description: >
+          Collaborating in the advancement of the Free View Point Video (FVV) Live system for the European project 5G Records at Universidad Politécnica de Madrid.
+
+
     - company_name: Universidad Nacional de Educación a Distancia (UNED)
       logo: uned_logo.jpeg
       positions:
@@ -70,19 +83,6 @@ professional_experience:
         description: >
           Teaching Colaborator for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department
           "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering)
-
-    - company_name: Towards Data Science
-      logo: tds_logo.jpeg
-      positions:
-      - position: Technical Writer
-        employment_type: false
-        location: false
-        start_date: Apr 2022
-        end_date: Present
-        description: >
-          Writing technical blogs about deep learning theory, paper walkthroughs and hands-on deep dives.
-          <br>
-          <a href="https://medium.com/@SaschaKirch" target="_blank">Profile</a>. <a href="blog_friend_links.html">Friend links</a>.
 
 
     - company_name: Volograms

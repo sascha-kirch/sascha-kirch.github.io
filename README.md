@@ -23,6 +23,10 @@ Website: [https://sascha-kirch.github.io](https://sascha-kirch.github.io)
 - Create a container named github-pages with an interactive terminal, the name of your choice, bind the this repo and enable port forwarding of a port of your choice:
   ```
   docker container create -it --name <YOUR-IMAGE-NAME> -v <PATH-TO-REPO>/sascha-kirch.github.io:/root/github-pages/ -p <YOUR-PORT>:4000 github-pages
+  
+  docker container create -it --name github-pages -v ~/git/sascha-kirch.github.io:/root/github-pages/ -p 4000:4000 github-pages
+
+  
   ```
 - Start container in interactive mode:
   ```
