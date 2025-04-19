@@ -54,7 +54,7 @@ friend_links:
     subtitle: Learning Transferable Visual Models From Natural Language Supervision by A. Radford et. al.
     link: https://medium.com/towards-data-science/the-clip-foundation-model-7770858b487d?sk=a7b10ba1d0c3a20ecd4adb8200a48500
   - title: Implement Multi-GPU Training on a single GPU
-    kicker: false
+    kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: An Advanced Guide for TensorFlow
     link: https://medium.com/towards-data-science/implement-multi-gpu-training-on-a-single-gpu-e9b6b775456a?sk=33a6f419491784d491da7e4e2f9149a0
   - title: Fourier CNNs with Kernel Sizes of 1024x1024 and Larger
@@ -66,14 +66,14 @@ friend_links:
     subtitle: A Resource-Saving and Performance-Competitive Alternative to Vision Transformers
     link: https://medium.com/towards-data-science/mlp-mixer-in-a-nutshell-eccffb68e4fc?sk=09000a6a1a857367707f7b8d6c29dabc
   - title: Create your own GPU accelerated Jupyter Notebook Server with Google Colab using Docker
-    kicker: false
+    kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: A Step-by-Step Guide
     link: https://medium.com/towards-data-science/create-your-own-gpu-accelerated-yupyter-notebook-server-with-google-colab-using-docker-2fa14900bab5?sk=669c6d11f486cdc104fdb0df4b9da6f4
   - title: Accelerated Distributed Training with TensorFlow on Google's TPU
-    kicker: false
+    kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: Understanding the Hardware to Optimize the Software!
     link: https://medium.com/towards-data-science/accelerated-distributed-training-with-tensorflow-on-googles-tpu-52f1fe21da33?sk=b713cd3cf705bae60c523b26cfe25b3f
   - title: Speed up your Training with Mixed Precision on GPUs and TPUs in TensorFlow
-    kicker: false
+    kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: A simple step-by-step Guide
     link: https://medium.com/towards-data-science/speed-up-your-tensorflow-training-with-mixed-precision-on-gpu-tpu-acf4c8c0931c?sk=ff0bc89c30ef29eb924c3a096bba62c4
