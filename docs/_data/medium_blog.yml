@@ -1,9 +1,13 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
-  - title: FlashAttention from First Principles - Part 1
+  - title: FlashAttention — Visually and Exhaustively Explained
     kicker: 🚀 Sascha's Paper Club
-    subtitle: All the Basics you need!
+    subtitle: Part 2: FlashAttention from First Principles
+    link: https://medium.com/ai-advances/flashattention-visually-and-exhaustively-explained-d6124670f7fb?sk=a695dae681cadef47624378aae004a83
+  - title: FlashAttention from First Principles
+    kicker: 🚀 Sascha's Paper Club
+    subtitle: Part 1: All the Basics you need!
     link: https://medium.com/ai-advances/flashattention-from-first-principles-part-1-5a9f2407d739?sk=ba068449f89ce8a6a2582b4e5a9b25ec
   - title: Vision Mamba - Like a Vision Transformer but Better
     kicker: 🐍 Towards Mamba State Space Models for Images, Videos and Time Series
