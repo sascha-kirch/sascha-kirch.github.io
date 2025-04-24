@@ -74,7 +74,15 @@ function updateMediumBlogPosts(responseText){
 		object_string += "</div>"
 
 	}
+	object_string += "<div class=\"column is-full\">"
+	object_string += "<div class=\"box\">"
+	object_string += "<div class=\"content has-text-centered\">"
+	object_string += "<p class=\"has-text-centered\" ><a href=\"https://medium.com/feed/@SaschaKirch\" target=\"_blank\" >Load More ...</a></p>"
 	object_string += "</div>"
+	object_string += "</div>"
+	object_string += "</div>"
+	object_string += "</div>"
+
 
 	//add content to page
 	document.getElementById("blog_posts").innerHTML = "<div>"+object_string+"</div>"
