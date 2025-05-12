@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Mastering NumPy - Manual Metadata Manipulation for Memory-Efficient Arrays
+    kicker: 💻 Code & Coffee with Sascha ☕
+    subtitle: Part 3 - NumPy Like a Pro - A Deep Dive Into Arrays and Performance
+    link: https://medium.com/ai-advances/mastering-numpy-manual-metadata-manipulation-for-memory-efficient-arrays-fc461f64074f?sk=042e5d224a909135a57f417637758ec2
   - title: The Power of Views - How NumPy Avoids Copies and Saves Memory
     kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: Part 2 - NumPy Like a Pro - A Deep Dive Into Arrays and Performance
