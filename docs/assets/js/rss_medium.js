@@ -38,6 +38,9 @@ function updateMediumBlogPosts(responseText){
 	object_string += "<div class=\"columns is-multiline \">"
 
 	//Go through all posts
+	// for (let i =0; i < responseObj.items.size(); i++){
+	// const item = responseObj.items[i];
+	let i = 1;
 	for (const item of responseObj.items){
 
 		const img_path = extractFirstImageLink(item.content);
@@ -72,6 +75,12 @@ function updateMediumBlogPosts(responseText){
 
 		object_string += "</div>"
 		object_string += "</div>"
+
+		i++;
+
+		if (i > 9){
+			break;
+		}
 
 	}
 	object_string += "<div class=\"column is-full\">"
