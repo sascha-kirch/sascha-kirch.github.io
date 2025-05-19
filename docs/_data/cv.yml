@@ -323,7 +323,15 @@ programming:
       used_professionally: true
       logo: false
 
-    - name: Numpy
+    - name: Open3D
+      used_professionally: true
+      logo: false
+
+    - name: NetworkX
+      used_professionally: true
+      logo: false
+
+    - name: NumPy
       used_professionally: true
       logo: false
 
@@ -335,7 +343,7 @@ programming:
       used_professionally: true
       logo: false
 
-    - name: openCV
+    - name: OpenCV
       used_professionally: true
       logo: false
 
