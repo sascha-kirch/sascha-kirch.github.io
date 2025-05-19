@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Still Avoiding einsum()? It’s Time to Fix That
+    kicker: 💻 Code & Coffee with Sascha ☕
+    subtitle: Build Intuition, Master the Syntax, and Apply einsum() with Real Examples and a Handy Cheat Sheet
+    link: https://ai.gopubby.com/still-avoiding-einsum-its-time-to-fix-that-6779be94c7ed?sk=85e76dc04bf57067d757421f5f38f06c
   - title: Mastering NumPy - Manual Metadata Manipulation for Memory-Efficient Arrays
     kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: Part 3 - NumPy Like a Pro - A Deep Dive Into Arrays and Performance
