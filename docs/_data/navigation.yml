@@ -1,6 +1,6 @@
-- name: Publications
-  link: /publications.html
-  id: nav_publication
+- name: Academia
+  link: /academia.html
+  id: nav_academia
 - name: Projects
   link: /projects.html
   id: nav_projects
@@ -13,6 +13,6 @@
 - name: Programming
   link: /programming.html
   id: nav_programming
-- name: Events
-  link: /events.html
-  id: nav_events
+# - name: Events
+#   link: /events.html
+#   id: nav_events

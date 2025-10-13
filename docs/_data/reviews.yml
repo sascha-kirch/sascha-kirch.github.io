@@ -1,0 +1,19 @@
+- journal: "IEEE transactions on neural networks and learning systems"
+  issn:
+    id: 2162-2388
+    link: https://portal.issn.org/resource/ISSN/2162-2388
+  reviews:
+    - date: 2025
+      certificate:
+        id: SeUdYaM4
+        link: https://publons.com/wos-op/review/author/SeUdYaM4/
+
+- journal: "Scientific reports by nature"
+  issn:
+    id: 2045-2322
+    link: https://portal.issn.org/resource/ISSN/2045-2322
+  reviews:
+    - date: 2025
+      certificate:
+        id: eDRaaAaw
+        link: https://publons.com/wos-op/review/author/eDRaaAaw/

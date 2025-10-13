@@ -1,0 +1,19 @@
+<article class="media">
+	<div class="media-content">
+		<div class="content">
+			<p class="mb-1">
+			<b>{{ item.journal }}</b>,
+			ISSN: <a href="{{ item.issn.link }}" target="_blank">{{ item.issn.id }}</a>.
+			</p>
+			<ul>
+			{% for review in item.reviews %}
+				<li>
+					<b>Review-ID:</b> {{ review.certificate.id }},
+					<b>Date:</b> {{ review.date }},
+					<a class="tag is-small is-success is-light" href="{{ review.certificate.link }}" target="_blank">Certificate</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+</article>
