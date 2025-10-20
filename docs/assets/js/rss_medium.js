@@ -9,8 +9,8 @@ function updateBlogPosts(){
 function updateBlogPostsOnError(){
 	let object_string = ""
 	object_string += "<div class=\"column\">"
-	object_string += "<div class=\"box\">"
-	object_string += "<h4>Oops...</h4>"
+	object_string += "<div class=\"notification is-warning is-light\">"
+	object_string += "<p>Oops...</p>"
 	object_string += "<p>Medium's RSS feed is currently not available, hence data cannot be pulled. <br> Please visit my blog on Medium to see all my posts.</p>"
 	object_string += "<p><a href=\"https://medium.com/@SaschaKirch\" target=\"_blank\">https://medium.com/@SaschaKirch</a></p>"
 	object_string += "</div>"
@@ -45,7 +45,7 @@ function updateMediumBlogPosts(responseText){
 
 		const img_path = extractFirstImageLink(item.content);
 
-		object_string += "<div class=\"column is-one-third\">"
+		object_string += "<div class=\"column is-half\">"
 		object_string += "<div class=\"box\">"
 
 		//Image Column
@@ -66,7 +66,7 @@ function updateMediumBlogPosts(responseText){
 		object_string += "<div class=\"content\">"
 		object_string += "<p>"
 		for (const category of item.categories){
-			object_string += "<span class=\"tag is-rounded is-small is-info is-light\">"+category+"</span>"
+			object_string += "<span class=\"tag is-small is-info is-light mr-1\">"+category+"</span>"
 		}
 		object_string += "</p>"
 		object_string += "<p><a href=\""+item.guid+"\" target=\"_blank\" >Read full post</a></p>"
