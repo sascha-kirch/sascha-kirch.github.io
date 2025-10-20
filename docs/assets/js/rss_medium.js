@@ -38,8 +38,6 @@ function updateMediumBlogPosts(responseText){
 	object_string += "<div class=\"columns is-multiline \">"
 
 	//Go through all posts
-	// for (let i =0; i < responseObj.items.size(); i++){
-	// const item = responseObj.items[i];
 	let i = 1;
 	for (const item of responseObj.items){
 
