@@ -6,47 +6,16 @@ nav_id: nav_programming
 ---
 
 <div class="content">
-	<div class="columns is-multiline">
-		
-		<!-- Stack Overflow -->
-		<div class="column is-half">
-			<div class="box">
-				<h2 class="title"><i class="fab fa-stack-overflow"></i> Stack Overflow</h2>
-				<div id="stackoverflow_rss_user"></div>
-				<p>
-				<h4 class="title">Top Answers</h4>
-				<div id="stackoverflow_rss_top_answers"></div>
-				<div><a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=answers&sort=votes" target="blank">Show all answers</a></div>
-				</p>
-				<p>
-				<h4 class="title">Top Tags</h4>
-				<div id="stackoverflow_rss_top_tags"></div>
-				<div><a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=tags" target="blank">Show all tags</a></div>
-				</p>
-				<p>
-				<h4 class="title">Recent Answers</h4>
-				<div id="stackoverflow_rss_recent_answers"></div>
-				<div><a href="https://stackoverflow.com/users/17905764/sascha-kirch?tab=answers&sort=votes" target="blank">Show all answers</a></div>
-				</p>
-			</div>
-		</div>
-		
-		<!-- GitHub -->
-		<div class="column is-half">
-			<div class="box">
-				<h2 class="title"><i class="fab fa-github"></i> GitHub</h2>
-				<div id="github_user"></div>
-				<p>
-				<h4 class="title">Repos</h4>
-				<div id="github_repos"></div>
-				</p>
-			</div>
-		</div>
-
-    </div>
+	<!-- GitHub -->
+	<h2 class="title"><i class="fab fa-github"></i> GitHub</h2>
+	<div id="github_section">
+		<div id="github_user"></div>
+		<p>
+		<h4 class="title">Repositories</h4>
+		<div id="github_repos"></div>
+		</p>
+	</div>
 </div>
 
 <!-- Run scripts to read APIs-->
 <script src={{site.baseurl | append: "/assets/js/api_github.js"}}></script>
-<script src={{site.baseurl | append: "/assets/js/rss_stackoverflow.js"}}></script>
-
