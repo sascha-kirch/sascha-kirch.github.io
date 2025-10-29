@@ -1,42 +1,42 @@
 <div class="hero-head">
-
-  <nav class="navbar container" role=navigation>
-    <div class="navbar-brand">
-		<a class="navbar-item" href="{{site.baseurl}}/">
-		<div class="columns is-vcentered is-mobile">
+  <nav class="navbar app-navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner container is-max-desktop">
+      <div class="navbar-brand">
+		<a class="navbar-item" href="{{site.baseurl}}/" aria-label="Home">
+		  <div class="columns is-vcentered is-mobile">
 			<div class="column is-narrow">
 			  <figure class="image is-32x32">
-				<img class="is-rounded" src="{{site.baseurl}}/assets/images/profile_image.png" width="20" height ="20">
+				<img class="is-rounded" src="{{site.baseurl}}/assets/images/profile_image.png" width="20" height ="20" alt="Profile image">
 			  </figure>
 			</div>
 			<div class="column">
 				<strong>{{ site.title }}</strong>
 			</div>
 		  </div>
-      </a>
-	    <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
+        </a>
+        <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
 			<span aria-hidden="true"></span>
-    		<span aria-hidden="true"></span>
-    		<span aria-hidden="true"></span>
-  	  </div>
-    </div>
-    <div id="navbar-main" class="navbar-menu">
-      <div class="navbar-start">
-        {% for item in site.data.navigation %}
-          <a class="navbar-item" id="{{item.id}}" href="{{site.baseurl|append: item.link }}" >
-            {{ item.name }}
-          </a>
-        {% endfor %}
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</div>
       </div>
-      <div class="navbar-end">
-    		<div class="navbar-item">
-    		  {% for item in site.data.social %}
-    			<a class="button" href="{{ item.link }}" target="_blank">
-    			  <i class="{{ item.icon.type }} {{ item.icon.name }} {{ item.icon.source }}-{{ include.icon-size }}" aria-hidden="true">
-                  </i>
-    			</a>
-    		  {% endfor %}
-    		</div>
+      <div id="navbar-main" class="navbar-menu">
+        <div class="navbar-start">
+          {% for item in site.data.navigation %}
+            <a class="navbar-item" id="{{item.id}}" href="{{site.baseurl|append: item.link }}">
+              {{ item.name }}
+            </a>
+          {% endfor %}
+        </div>
+        <div class="navbar-end">
+		  <div class="navbar-item">
+			{% for item in site.data.social %}
+			  <a class="button social-btn" href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}">
+				<i class="{{ item.icon.type }} {{ item.icon.name }} {{ item.icon.source }}-{{ include.icon-size }}" aria-hidden="true"></i>
+			  </a>
+			{% endfor %}
+		  </div>
+        </div>
       </div>
     </div>
   </nav>
