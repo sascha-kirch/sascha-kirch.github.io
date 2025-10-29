@@ -23,6 +23,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.11.0/js/all.js"></script>
     <script src="{{site.baseurl}}/assets/js/navbar-burger.js"></script>
     <script src="{{site.baseurl}}/assets/js/set_dark_mode.js"></script>
+  <script src="{{site.baseurl}}/assets/js/scroll-buttons.js" defer></script>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.55/build/spline-viewer.js"></script>
     {% if site.google_analytics and jekyll.environment == 'production' %}
@@ -37,6 +38,7 @@
           {{ content }}
         </div>
       </div>
+      {% include scroll-buttons.html %}
       {% include footer.html icon-size="lg" %}
     </section>
   </body>
