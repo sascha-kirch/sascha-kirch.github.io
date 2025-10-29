@@ -11,8 +11,8 @@
 		<div class="column {{page.text_width}} ">
 			<h3>{{ item.title }}</h3>
 			{% if page.view_mode == "excerpt" %}
-			{{ item.excerpt }}
-			<a href="{{ item.url }}"><em>Read more</em></a>
+			<div class="clamped-excerpt lines-5">{{ item.excerpt | strip_html }}</div>
+			<div><a href="{{ item.url }}"><em>Read more</em></a></div>
 			{% else %}
 			{{ item.content }}
 			{% endif %}
@@ -28,8 +28,8 @@
 		<div class="column {{page.text_width}}">
 			<h3>{{ item.title }}</h3>
 			{% if page.view_mode == "excerpt" %}
-			{{ item.excerpt }}
-			<a href="{{ item.url }}"><em>Read more</em></a>
+			<div class="clamped-excerpt lines-5">{{ item.excerpt | strip_html }}</div>
+			<div><a href="{{ item.url }}"><em>Read more</em></a></div>
 			{% else %}
 			{{ item.content }}
 			{% endif %}

@@ -76,3 +76,18 @@ $button-hover-border-color: $button-background-color;
 	.scroll-buttons { right: 0.75rem; bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
 	.scroll-buttons .button { width: 3rem; height: 3rem; }
 }
+
+// ----- Excerpt line clamp (bright mode) -----
+.clamped-excerpt {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	position: relative;
+	line-height: 1.25rem; // tighten a bit for consistency
+}
+
+// Provide specific line clamp variants (fallback for browsers that don't support CSS vars in -webkit-line-clamp)
+.clamped-excerpt.lines-3 { line-clamp: 3; -webkit-line-clamp: 3; max-height: calc(3 * 1.25rem); }
+.clamped-excerpt.lines-4 { line-clamp: 4; -webkit-line-clamp: 4; max-height: calc(4 * 1.25rem); }
+.clamped-excerpt.lines-5 { line-clamp: 5; -webkit-line-clamp: 5; max-height: calc(5 * 1.25rem); }
+.clamped-excerpt.lines-6 { line-clamp: 6; -webkit-line-clamp: 6; max-height: calc(6 * 1.25rem); }
