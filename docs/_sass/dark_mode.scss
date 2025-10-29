@@ -3,10 +3,10 @@
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
 
-// Doc: https://bulma.io/documentation/customize/with-node-sass/ 
+// Doc: https://bulma.io/documentation/customize/with-node-sass/
 
 
-// Test Code: 
+// Test Code:
 @charset "utf-8";
 
 
@@ -61,3 +61,71 @@ $navbar-item-hover-background-color: $navbar-background-color;
 
 // import complete bulma
 @import "mybulma/bulma/bulma.sass";
+
+// Scroll buttons styling (dark mode)
+.scroll-buttons {
+	position: fixed;
+	right: 1rem;
+	bottom: calc(1rem + env(safe-area-inset-bottom));
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	z-index: 1000;
+}
+
+.scroll-buttons.is-hidden { display: none; }
+
+// Larger tap target for mobile accessibility
+.scroll-buttons .button {
+	background-color: rgba($footer-background-color, 0.9);
+	color: $text;
+	border-radius: 50%;
+	width: 2.75rem; // ~44px
+	height: 2.75rem;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 6px rgba(#000,0.5);
+	transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+	backdrop-filter: blur(4px);
+}
+
+.scroll-buttons .button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(#000,0.7);
+	background-color: $navbar-background-color;
+	color: $link-hover;
+}
+
+// Visually hidden utility
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (max-width: 600px) {
+	.scroll-buttons { right: 0.75rem; bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
+	.scroll-buttons .button { width: 3rem; height: 3rem; }
+}
+
+// ----- Excerpt line clamp (dark mode) -----
+.clamped-excerpt {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	position: relative;
+	line-height: 1.25rem;
+}
+
+.clamped-excerpt.lines-3 { line-clamp: 3; -webkit-line-clamp: 3; max-height: calc(3 * 1.25rem); }
+.clamped-excerpt.lines-4 { line-clamp: 4; -webkit-line-clamp: 4; max-height: calc(4 * 1.25rem); }
+.clamped-excerpt.lines-5 { line-clamp: 5; -webkit-line-clamp: 5; max-height: calc(5 * 1.25rem); }
+.clamped-excerpt.lines-6 { line-clamp: 6; -webkit-line-clamp: 6; max-height: calc(6 * 1.25rem); }

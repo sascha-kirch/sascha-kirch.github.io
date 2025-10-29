@@ -1,7 +1,8 @@
 ---
-title: High Speed Digital Receiver Testing
+title: High-Speed-Digital Receiver Testing
 order: 0
 image: m_phy.png
+hidden: false
 ---
 
 Ever wondered how you can plug almost any HDMI device into your TV and it just works? Or how USB sticks connect seamlessly (after flipping them twice, of course)? A big reason is that both the transmitting and receiving sides follow strict standards — not just in terms of protocol, but also the physical signaling and cabling. These standards define exactly how bits are placed onto the wire and how they’re interpreted on the other end.

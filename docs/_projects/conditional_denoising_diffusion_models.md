@@ -1,12 +1,15 @@
 ---
 title: RGB-D-Fusion - Image Conditioned Depth Diffusion of Humanoid Subjects
-order: 2
+order: 4
 image: rgbdfusion_featured_image.png
+hidden: false
 ---
 
 We present RGB-D-Fusion, a multi-modal conditional denoising diffusion probabilistic model to generate high resolution depth maps from low-resolution monocular RGB images of humanoid subjects. RGB-D-Fusion first generates a low-resolution depth map using an image conditioned denoising diffusion probabilistic model and then upsamples the depth map using a second denoising diffusion probabilistic model conditioned on a low-resolution RGB-D image. We further introduce a novel augmentation technique, depth noise augmentation, to increase the robustness of our super-resolution model.
 
 **Authors:** [Sascha Kirch](https://sascha-kirch.github.io/), [Valeria Olyunina](https://orcid.org/0009-0000-9766-5057), [Jan Ondřej](https://orcid.org/0000-0002-5409-1521), [Rafael Pagés](https://orcid.org/0000-0002-5691-9580), [Sergio Martín](https://orcid.org/0000-0002-4118-0234) & [Clara Pérez-Molina](https://orcid.org/0000-0001-8260-4155)
+
+[![](https://img.shields.io/badge/IEEE_Access-doi:10.1109/ACCESS.2023.3312017-blue)](https://ieeexplore.ieee.org/document/10239167) [![arXiv](https://img.shields.io/badge/arXiv-2307.15988-b31b1b.svg)](https://arxiv.org/abs/2307.15988) 
 
 [<a href="https://ieeexplore.ieee.org/document/10239167" target="_blank">`Paper`</a>]
 [<a href="https://github.com/sascha-kirch/rgb-d-fusion" target="_blank">`Code`</a>]
@@ -56,3 +59,22 @@ Outputs of our RGB-D-Fusion framework for the given input images where no ground
     <img src="{{site.baseurl}}/assets/images/rgbdfusion_rgbd3.png" alt="results_in_the_wild_1" width = "70%">
     <figcaption>Fig.5 - In the wild prediction for images generated with Stable Diffusion v1.5.</figcaption>
 </figure>
+
+## Citation
+
+If you find our work helpful for your research, please consider citing the following BibTeX entry.
+
+```bibtex
+@article{kirch_rgb-d-fusion_2023,
+ title = {RGB-D-Fusion: Image Conditioned Depth Diffusion of Humanoid Subjects},
+ author = {Kirch, Sascha and Olyunina, Valeria and Ondřej, Jan and Pagés, Rafael and Martín, Sergio and Pérez-Molina, Clara},
+ journal = {IEEE Access},
+ year = {2023},
+ volume = {11},
+ issn = {2169-3536},
+ doi = {10.1109/ACCESS.2023.3312017},
+ pages = {99111--99129},
+ url = {https://ieeexplore.ieee.org/document/10239167},
+}
+
+```
