@@ -1,7 +1,8 @@
 ---
 title: Dynamic Sequencing Generator and Analyzer (DSGA) and Automated High-Bandwidth Switch System
-order: 7
+order: 1
 image: bitifeye_switch_dsga.png
+hidden: false
 ---
 Receiver tests in the lab are often too “ideal”. Real silicon does not sit forever in a steady high‑speed lane sending a single pattern. It flips between high‑speed bursts and low‑power states, exchanges sideband control, reconfigures lanes, reports counters and status, then dives back into data again. Two hardware pieces made those real behaviours testable in an automated way: a Dynamic Sequencing Generator & Analyzer (DSGA) and a modular high‑bandwidth switching system. Classic AWGs (Arbitrary Waveform Generators) and BERTs (Bit Error Rate Testers) are great at stressed data (jittered PRBS, de‑emphasis, ISI). They are not built to script low‑speed protocol “glue” or to read device feedback while stress is applied. The DSGA plus switching closes that gap.
 

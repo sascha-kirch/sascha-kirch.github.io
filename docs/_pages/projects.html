@@ -12,9 +12,14 @@ view_mode: excerpt
     <hr>
 
     {% assign items = site.projects | sort: 'order' | reverse %}
+    {% assign drawn_count = 0 %}
     {% for item in items %}
-    {% assign side = forloop.index0 | modulo: 2 %}
-    {% include left_right.html %}
+        {% if item.hidden %}
+            {% continue %}
+        {% endif %}
+        {% assign side = drawn_count | modulo: 2 %}
+        {% include left_right.html %}
+        {% assign drawn_count = drawn_count | plus: 1 %}
     {% endfor %}
 
 </div>
