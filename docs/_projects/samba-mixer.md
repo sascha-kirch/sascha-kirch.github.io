@@ -84,6 +84,4 @@ If you find our work helpful for your research, please consider citing the follo
   pages={2313-2327},
   keywords={Lithium-ion batteries;Predictive models;Transformers;Temperature measurement;Discharges (electric);Voltage measurement;Lithium;Battery charge measurement;State of charge;NASA;Li-ion battery;mamba;state space model;state of health prediction;multivariate time series;deep learning},
   doi={10.1109/ACCESS.2024.3524321}}
-
-
 ```
