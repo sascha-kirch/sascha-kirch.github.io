@@ -1,7 +1,8 @@
 ---
 title: IEEE HKN Talks
-order: 5
+order: 7
 image: hkn_talks_banner.png
+hidden: false
 ---
 {% assign hkn_talks_data = site.data.hkn_talks %}
 <p>HKN Talks is a series created and hosted by <a href="https://hknuned.org/" target="_blank">IEEE Eta Kappa Nu Nu Alpha</a>. We invite experts from the industry and academia to give talks on IEEE related topics. We publish the talks on <a href="{{ hkn_talks_data.channel_link }}" target="_blank">our YouTube Channel</a> to make them publically available for everyone.</p>

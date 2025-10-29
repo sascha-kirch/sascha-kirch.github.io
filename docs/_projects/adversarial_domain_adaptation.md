@@ -1,7 +1,8 @@
 ---
 title: Adversarial Domain Adaptation of Synthetic 3D Data to Train a Volumetric Video Generator Model
-order: 1
+order: 2
 image: vologan_domain_adaptation_1.png
+hidden: false
 ---
 
 In cooperation with <a href="https://www.volograms.com/" target="_blank">Volograms</a> we synthetically generated 

@@ -1,7 +1,8 @@
 ---
 title: DeepSaki TensorFlow Add-On
-order: 4
+order: 6
 image: deepsaki.png
+hidden: false
 ---
 
 [DeepSaki](https://sascha-kirch.github.io/DeepSaki/latest/) is an add-on to [TensorFlow](https://github.com/tensorflow/tensorflow). It provides a variaty of custom classes ranging from activation functions to entire models, helper functions to facilitate connectiong to your compute HW and many more!
@@ -42,6 +43,3 @@ pip install DeepSaki
 
 ## Contribute to DeepSaki
 I highly encourage you to contribute to DeepSaki. Checkout our [contribution guide](https://sascha-kirch.github.io/DeepSaki/latest/CONTRIBUTE/) to get started. 
-
-## :star: Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=sascha-kirch/DeepSaki&type=Date)](https://star-history.com/#sascha-kirch/DeepSaki&Date)
