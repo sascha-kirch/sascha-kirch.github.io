@@ -3,6 +3,7 @@ function updateGithubFields() {
 		_updateGithubFields(this.responseText)
 	} catch (e) {
 		_updateGithubSectionOnError(e)
+		console.error(e)
 	}
 }
 
@@ -12,6 +13,7 @@ function updateGithubRepos() {
 		_updateGithubRepos(this.responseText)
 	} catch (e) {
 		_updateGithubSectionOnError(e)
+		console.error(e)
 	}
 }
 
