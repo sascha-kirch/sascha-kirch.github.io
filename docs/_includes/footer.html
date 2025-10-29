@@ -1,32 +1,32 @@
 <div class="hero-foot">
-  <footer class="footer">
+  <footer class="app-footer" role="contentinfo">
     <div class="container">
-      <div class="content has-text-centered is-size-7">
-        <p>
-        Site created by Sascha Kirch with
-        <a href="https://jekyllrb.com/">jekyll</a>
-        and 
-        <a href="https://bulma.io/">bulma</a>.
-        <br>
-        Source Code: <a href="https://github.com/sascha-kirch/sascha-kirch.github.io">Github Repo</a>.
-        <br>
-        Last Build: {{ site.time | date: '%B %d, %Y' }}
-        <br>
-        Creative Commons License 
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-          <i class="fab fa-creative-commons fa-{{ include.icon-size }}" aria-hidden="true"></i>
-          <i class="fab fa-creative-commons-by fa-{{ include.icon-size }}" aria-hidden="true"></i>
-          <i class="fab fa-creative-commons-nc fa-{{ include.icon-size }}" aria-hidden="true"></i>
-          <i class="fab fa-creative-commons-sa fa-{{ include.icon-size }}" aria-hidden="true"></i>
-        </a>
-        <!--<br>
-        Dark Mode: 
-        <a onclick="changeCSS('{{site.baseurl}}/assets/css/dark_mode.css');">
-			<i class="fas fa-moon fa-{{ include.icon-size }}" aria-hidden="true"></i>
-		</a> |
-		<a onclick="changeCSS('{{site.baseurl}}/assets/css/bright_mode.css');">
-			<i class="fas fa-sun fa-{{ include.icon-size }}" aria-hidden="true"></i>
-		</a>-->
+      <div class="social-wrapper has-text-centered">
+        <ul class="social-list is-centered">
+          {% for item in site.data.social %}
+            <li>
+              <a href="{{ item.link }}" target="_blank" rel="noopener" aria-label="{{ item.name }}">
+                <i class="{{ item.icon.type }} {{ item.icon.name }} {{ item.icon.source }}-{{ include.icon-size }}" aria-hidden="true"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="meta has-text-centered is-size-7">
+        <p class="copyright">
+          &copy; {{ site.time | date: '%Y' }} Sascha Kirch · Last build {{ site.time | date: '%Y-%m-%d' }} ·
+          <a href="https://github.com/sascha-kirch/sascha-kirch.github.io" aria-label="Source code">Source</a> ·
+          <span class="license">Licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" aria-label="Creative Commons BY-NC-SA 4.0">
+              CC BY-NC-SA 4.0
+            </a>
+            <span class="cc-icons">
+              <i class="fab fa-creative-commons fa-xs" aria-hidden="true"></i>
+              <i class="fab fa-creative-commons-by fa-xs" aria-hidden="true"></i>
+              <i class="fab fa-creative-commons-nc fa-xs" aria-hidden="true"></i>
+              <i class="fab fa-creative-commons-sa fa-xs" aria-hidden="true"></i>
+            </span>
+          </span>
         </p>
       </div>
     </div>
