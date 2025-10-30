@@ -6,48 +6,165 @@ nav_id: nav_cv
 ---
 
 <div class="content">
+	<!-- Fixed left sidebar nav (desktop) -->
+	<aside class="cv-side-nav fixed-left" aria-label="CV section navigation">
+		<nav class="menu">
+			<p class="menu-label">Jump to</p>
+			<ul class="menu-list" id="cv-jump-list">
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#professional_experience">Professional Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#language_skills">Language Skills</a></li>
+				<li><a href="#awards">Awards</a></li>
+				<li><a href="#organizations">Organizations & Societies</a></li>
+				<li><a href="#programming_framework">Programming & Frameworks</a></li>
+				<li><a href="#certificates">Certificates</a></li>
+			</ul>
+		</nav>
+	</aside>
 
-	<nav class="navbar" role="navigation" aria-label="cv navigation">
-		<div class="navbar-menu" id="navbar-cv">
-			<a class="navbar-item" href="#skills">Skills</a>
-			<a class="navbar-item" href="#professional_experience">Professional Experience</a>
-			<a class="navbar-item" href="#education">Education</a>
-			<a class="navbar-item" href="#language_skills">Language Skills</a>
-			<a class="navbar-item" href="#awards">Awards</a>
-			<a class="navbar-item" href="#organizations">Organizations and Societies</a>
-			<a class="navbar-item" href="#programming_framework">Programming and Frameworks</a>
-			<a class="navbar-item" href="#certificates">Certificates</a>
-		</div>
-		<div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-cv">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		</div>
-	</nav>
+	<!-- Mobile floating Bulma dropdown navigation -->
+	<div class="cv-mobile-float is-hidden-desktop" id="cv-mobile-float">
+		<nav class="navbar is-transparent is-paddingless" role="navigation" aria-label="Section navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item cv-mobile-current" id="cv-mobile-current" aria-haspopup="true" aria-expanded="false">
+					<span class="icon"><i class="fas fa-list-ul" aria-hidden="true"></i></span>
+					<span class="cv-mobile-label">Sections</span>
+					<span class="icon is-small"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+				</a>
+				<a role="button" class="navbar-burger is-hidden" aria-label="toggle" aria-expanded="false">
+					<span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div class="navbar-menu" id="cv-mobile-menu">
+				<div class="navbar-start" id="cv-mobile-links">
+					<!-- populated by script -->
+				</div>
+			</div>
+		</nav>
+	</div>
 
-	<hr>
+	<div class="cv-main-content" id="cv-main">
+		<h2 class="title" id="skills">Skills</h2>
+		{% include cv_skills.html icon-size="lg" %}
 
-	<h2 class="title" id="skills">Skills</h2>
-	{% include cv_skills.html icon-size="lg" %}
+		<h2 class="title" id="professional_experience">Professional Experience</h2>
+		{% include cv_experience.html icon-size="lg" %}
 
-	<h2 class="title" id="professional_experience">Professional Experience</h2>
-	{% include cv_experience.html icon-size="lg" %}
+		<h2 class="title" id="education">Education</h2>
+		{% include cv_education.html icon-size="lg" %}
 
-	<h2 class="title" id="education">Education</h2>
-	{% include cv_education.html icon-size="lg" %}
+		<h2 class="title" id="language_skills">Language Skills</h2>
+		{% include cv_language_skills.html icon-size="lg" %}
 
-	<h2 class="title" id="language_skills">Language Skills</h2>
-	{% include cv_language_skills.html icon-size="lg" %}
+		<h2 class="title" id="awards">Awards</h2>
+		{% include cv_awards.html icon-size="lg" %}
 
-	<h2 class="title" id="awards">Awards</h2>
-	{% include cv_awards.html icon-size="lg" %}
+		<h2 class="title" id="organizations">Organizations and Societies</h2>
+		{% include cv_organizations.html icon-size="lg" %}
 
-	<h2 class="title" id="organizations">Organizations and Societies</h2>
-	{% include cv_organizations.html icon-size="lg" %}
+		<h2 class="title" id="programming_framework">Programming/Scripting Languages and ML Frameworks</h2>
+		{% include cv_programming.html icon-size="lg" %}
 
-	<h2 class="title" id="programming_framework">Programming/Scripting Languages and ML Frameworks</h2>
-	{% include cv_programming.html icon-size="lg" %}
+		<h2 class="title" id="certificates">Certificates</h2>
+		{% include cv_certificates.html icon-size="lg" %}
+	</div>
 
-	<h2 class="title" id="certificates">Certificates</h2>
-	{% include cv_certificates.html icon-size="lg" %}
+	<script>
+	// Enhance layout for wider CV and nav highlighting
+	(function(){
+	  // Flag body so styles can widen only the main content container (not navbar)
+	  document.body.classList.add('cv-page');
+
+	  // Desktop side nav active highlighting
+	  const links = Array.from(document.querySelectorAll('#cv-jump-list a'));
+	  const sections = links.map(l => document.getElementById(l.getAttribute('href').slice(1))).filter(Boolean);
+	  let current;
+	  const observer = new IntersectionObserver(entries => {
+	    entries.forEach(entry => {
+	      if(entry.isIntersecting){
+	        const link = links.find(l => l.getAttribute('href').slice(1) === entry.target.id);
+	        if(link && current !== link){
+	          if(current){ current.classList.remove('is-active'); }
+	          link.classList.add('is-active');
+	          current = link;
+	        }
+	      }
+	    });
+	  }, { rootMargin: '0px 0px -65% 0px', threshold: [0,0.3,0.6,1] });
+	  sections.forEach(s => observer.observe(s));
+
+	  // Offset scroll (keep heading visible)
+	  function scrollWithOffset(id){
+	    const el = document.getElementById(id);
+	    if(!el) return;
+	    const navH = document.querySelector('.app-navbar')?.offsetHeight || 56;
+	    const offset = navH + 12; // navbar + small margin
+	    const y = el.getBoundingClientRect().top + window.scrollY - offset;
+	    window.scrollTo({ top: y, behavior: 'smooth' });
+	    history.replaceState(null,'','#'+id);
+	  }
+	  links.forEach(a => a.addEventListener('click', function(e){
+	    e.preventDefault();
+	    scrollWithOffset(this.getAttribute('href').slice(1));
+	  }));
+
+	  // Mobile dropdown build
+	  const mobileLinksContainer = document.getElementById('cv-mobile-links');
+	  const mobileCurrent = document.getElementById('cv-mobile-current');
+	  const mobileMenu = document.getElementById('cv-mobile-menu');
+	  if(mobileLinksContainer && mobileCurrent){
+	    // clone links
+	    links.forEach(l => {
+	      const a = document.createElement('a');
+	      a.className = 'navbar-item';
+	      a.href = l.getAttribute('href');
+	      a.textContent = l.textContent;
+	      a.addEventListener('click', e => {
+	        e.preventDefault();
+	        scrollWithOffset(a.getAttribute('href').slice(1));
+	        mobileMenu.classList.remove('is-active');
+	        mobileCurrent.setAttribute('aria-expanded','false');
+	      });
+	      mobileLinksContainer.appendChild(a);
+	    });
+	    mobileCurrent.addEventListener('click', e => {
+	      e.preventDefault();
+	      const expanded = mobileCurrent.getAttribute('aria-expanded') === 'true';
+	      mobileCurrent.setAttribute('aria-expanded', String(!expanded));
+	      mobileMenu.classList.toggle('is-active', !expanded);
+	    });
+	    document.addEventListener('click', e => {
+	      if(!document.getElementById('cv-mobile-float').contains(e.target)){
+	        mobileMenu.classList.remove('is-active');
+	        mobileCurrent.setAttribute('aria-expanded','false');
+	      }
+	    });
+	  }
+
+	  // Sync mobile current label
+	  function updateMobileLabel(sectionId){
+	    if(!mobileCurrent) return;
+	    const link = links.find(l => l.getAttribute('href') === '#' + sectionId);
+	    if(link){
+	      mobileCurrent.querySelector('.cv-mobile-label').textContent = link.textContent;
+	    }
+	  }
+	  // Extend observer to update label
+	  const labelObserver = new IntersectionObserver(entries => {
+	    entries.forEach(entry => {
+	      if(entry.isIntersecting){ updateMobileLabel(entry.target.id); }
+	    });
+	  }, { rootMargin: '0px 0px -70% 0px', threshold:[0,0.4,1] });
+	  sections.forEach(s => labelObserver.observe(s));
+
+	  // Close menu on resize to desktop
+	  window.addEventListener('resize', () => {
+	    if(window.innerWidth > 1023 && mobileMenu){
+	      mobileMenu.classList.remove('is-active');
+	      mobileCurrent && mobileCurrent.setAttribute('aria-expanded','false');
+	    }
+	  });
+	})();
+	</script>
 </div>
