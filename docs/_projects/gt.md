@@ -4,59 +4,37 @@ order: 10
 image: gt.png
 hidden: false
 ---
+
 High‑quality labeled and unlabeled data is still the limiting resource in autonomous driving. A vehicle has to perceive not only “what is where” now, but how objects are moving and how rare edge cases look under different weather, lighting and traffic patterns. Ground truth is the reference we use to train models, benchmark perception quality, validate safety cases, seed simulation, and evaluate domain shift when the stack or environment changes. A single modality or manual labeling approach cannot scale to the fidelity required.
 
 ## Why Ground Truth Matters (Beyond Supervised Labels)
 
-Accurate 3D object trajectories, freespace, road geometry, semantics, and motion cues feed many workflows:
+High‑quality ground truth is not just a box or a mask for supervised training. The same curated corpus powers motion prediction, tracking, segmentation, map refinement, unsupervised representation learning, simulation seeded with real distributions (not guesses), repeatable regression (rerun a new stack on identical sequences and measure deltas), and fair benchmarking across sensor or algorithm generations. It’s also where we mine near misses, unusual maneuvers and weather transitions, and where we validate calibration or inject faults safely. One investment, many uses. The fleet image below is a small glimpse of the capture backbone behind that idea.
 
-- Supervised training of detection, tracking, segmentation and motion prediction networks.
-- Unsupervised / self‑supervised representation learning on raw multi‑sensor streams.
-- Closed‑loop simulation and scenario generation (inject real distributions into synthetic worlds).
-- Regression testing and safety evidence: repeat runs on the same reference sequences measure performance deltas after model or hardware changes.
-- Sensor / algorithm benchmarking and comparison across generations or suppliers.
-
-The same raw corpus also supports calibration validation, fault injection experiments, and rare event mining (near misses, unusual maneuvers, weather transitions).
+<figure>
+    <img src="{{site.baseurl}}/assets/images/gt_cars1.png" alt="Fleet vehicles" width="70%" style="border-radius:5px;">
+    <figcaption>Fleet vehicles used for 360° multi‑modal, multi‑view data collection.</figcaption>
+</figure>
 
 ## Automated + Hybrid Approach
 
-Fully manual 360° annotation is too slow and inconsistent; fully end‑to‑end automated labeling without guardrails drifts and propagates bias. A hybrid stack combining deep learning, classical geometry and explicit domain rules gives better control:
+Purely manual 360° annotation does not scale; purely end‑to‑end deep learning that tries to “learn everything” from scratch wastes the physics, geometry and traffic knowledge we already possess. A hybrid approach is faster and more stable: deep networks propose dense primitives; classical multi‑view geometry and tracking enforce physical and temporal consistency; fusion blends complementary sensor strengths (LiDAR: structure, camera: appearance, radar: velocity, IMU/GPS: motion); domain rules bring map and traffic context; offline batch processing lets us move freely forward and backward in time and run global optimization passes without real‑time constraints. Horizontal scaling in the compute cluster turns heavy refinement into routine processing. Human effort focuses on uncertainty review and edge cases instead of drawing thousands of boxes. Result: higher consistency, lower manual cost, less drift.
 
-- Deep nets for dense perception primitives (segmentation masks, instance proposals, depth priors).
-- Classical multi‑view geometry and tracking to enforce physical consistency (epipolar constraints, motion smoothness, kinematic filters).
-- Sensor fusion using LiDAR point clouds, camera imagery, radar velocity hints, inertial/GPS poses to resolve ambiguities and recover occluded structure.
-- Domain knowledge / rule layers to inject map priors, traffic regulations, lane topology, and object motion constraints.
-- Offline batch optimization: no real‑time latency requirement, so we can run multi‑pass refinement (initial proposal → alignment → joint optimization → QC metrics).
-
-This reduces manual touch time to targeted corrections and quality audits instead of frame‑by‑frame drawing.
+<figure>
+    <img src="{{site.baseurl}}/assets/images/gt_cars2.png" alt="Fleet vehicles" width="70%" style="border-radius:5px;">
+    <figcaption>Complementary sensors across the fleet make occlusion handling and temporal consistency possible.</figcaption>
+</figure>
 
 ## System Overview
 
-Multi‑sensor rig (surround cameras, multiple LiDARs, short/long range radars, GPS, high‑rate IMU) feeds a synchronized capture pipeline. Time synchronization (hardware triggers + PTP / GNSS discipline) and precise extrinsic & intrinsic calibration (targets + online refinement) are foundational—misalignment by a few milliseconds or a fraction of a degree quickly dominates error budgets. Data is logged to redundant high‑throughput storage with on‑the‑fly compression and integrity checks; metadata (weather, time of day, location class, scenario tags) is attached for subsequent stratified sampling.
-
-Offline processing stages:
-1. Ingest & verify (schema, checksum, calibration validity, timing skew analysis).
-2. Pre‑compute sensor‑level features (camera undistortion, LiDAR motion compensation, radar clustering, ego motion estimation from IMU/GPS).
-3. Initial perception pass (detection, segmentation, ground surface & drivable area hypotheses, lane topology proposals).
-4. Multi‑sensor fusion & temporal association (tracking, trajectory smoothing, cross‑modal consistency checks).
-5. Optimization / refinement (bundle‑like adjustment of object tracks, map alignment, outlier rejection, confidence scoring).
-6. Assisted annotation UI for targeted human review (uncertain, low‑confidence, or policy‑critical samples only).
-7. Quality assurance (precision/recall vs reference subsets, physical plausibility metrics, calibration drift monitors) and packaging into training / validation shards.
+The rig surrounds the vehicle with cameras, LiDARs, radars and motion sensors. We make sure everything stays precisely aligned in space and time; otherwise fusion becomes guesswork. Data rolls onto reliable high‑throughput storage with metadata (weather, time of day, scenario tags) that later helps us sample or search. Processing happens offline in clear stages—ingest, initial perception, fusion, refinement, selective human review, packaging. That’s as deep as I can go publicly; the internal specifics are proprietary.
 
 ## Key Challenges
 
-- Scale: petabyte‑level raw data; bandwidth and storage optimization (compression, tiering, on‑vehicle pre‑filtering) required.
-- Synchronization & calibration drift: temperature, vibration and time cause extrinsics and timing to shift; continuous self‑checks and re‑estimation needed.
-- Rare events: long tail of edge cases (unusual vehicles, construction, weather transitions) needs mining and up‑weighting.
-- Multi‑modal alignment: differing sensor rates, occlusions, noise statistics; radar provides sparse velocity, LiDAR dense geometry, cameras rich appearance.
-- Quality metrics: defining quantitative “ground truth quality” (trajectory smoothness, reprojection residuals, temporal consistency) to automate acceptance.
-- Latency vs thoroughness: offline pipeline allows heavy optimization, but turnaround time still matters for iteration speed.
-- Data governance: versioning of labels, models used in auto‑label pass, and provenance tracking for regulatory / safety audits.
+Scale is real: capturing multi‑modal streams in real time, storing them reliably, then pushing them through offline refinement at cluster scale. Each modality has its own noise and cadence: radar’s sparse velocity pulses, LiDAR’s dense geometry, cameras’ rich texture. Rare edge cases hide in the long tail and need targeted mining rather than blind accumulation. Objective quality metrics (consistency of trajectories, residual alignment error, stability over time) allow automated acceptance instead of gut feel. And many disciplines intersect: sensor physics, calibration, computer vision, machine learning, software & data engineering, HPC, safety and privacy. Getting them to cooperate smoothly is half the challenge and half the fun.
 
-## Engineering Work
+## Why It Is Interesting
 
-End‑to‑end responsibility for a multi‑generation ground truth platform: sensor selection & placement studies (FOV overlap, occlusion analysis), mechanical & electrical integration constraints, time sync architecture (trigger lines + disciplined clocks), calibration tooling (targets, automated refinement routines), high‑throughput logging stack (stream multiplexing, loss detection, compression), distributed processing & scheduling, hybrid perception / labeling algorithms, assisted annotation tooling, QC dashboards, and final dataset build & release process (sharding, stratification, anonymization, schema versioning). Also built feedback loops: model performance metrics feed back into active data selection and targeted re‑annotation.
+I get to work across almost the entire stack: great instrumented cars, dense camera + LiDAR + radar + inertial sensor suites, low‑level calibration and timing, classical geometry (triangulation, pose refinement, tracking filters), modern deep learning (segmentation, detection, self‑supervised embeddings, foundation model adaptation), and the unglamorous but critical data engineering—designing storage layouts and binary data structures for high throughput, low latency and petabyte cost efficiency. One day is C++ for a performance‑critical fusion routine or a custom CUDA kernel; the next is Python for rapid model experimentation; another might be shell orchestration or building small utilities to automate complex installations and package compilations. Parallel computing, data structure trade‑offs, precision vs recall dashboards, new algorithms, and finally generating a new output video to inspect the latest results.
 
-## Why It Was Interesting
-
-The work touches many layers simultaneously: physics of sensors, information theory (what redundancy actually helps), large‑scale data infrastructure, algorithm design, human factors in annotation UI, and safety / audit traceability. Hybrid automation turned labeling from a linear cost function into a compounding asset—each improvement in fusion or refinement reduced future manual effort and lifted quality across the corpus. The result: a reusable, traceable data engine powering training, validation, simulation and exploratory research rather than a one‑off labeling campaign.
+The variety is the point: physics and signal level details, algorithm research, production software, scalable infrastructure, and human‑in‑the‑loop tooling all feed into a single feedback cycle. Small wins (a lighter data format, a faster alignment pass, a smarter radar + vision association, a clearer quality metric) ripple through training, validation, simulation and future research direction. Ground truth evolves from “label cost” into a living asset that keeps getting better and opens endlessly many possibilities. I’m an engineer; being able to span that breadth  -hardware to data to algorithms— and see concrete impact never gets old.
