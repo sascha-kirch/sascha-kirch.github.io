@@ -25,7 +25,7 @@ Traditionally, this was a labor-intensive and error-prone process. Every test ca
 
 ## Scope & Standards
 
-During my time at BitifEye, I worked on automated pre-compliance testing for high-speed digital physical layer receiver tests, focusing primarily on mobile standards like [MIPI M-PHY](https://www.mipi.org/specifications/m-phy) (inter-processor and memory interfaces) and [MIPI D-PHY](https://www.mipi.org/specifications/d-phy) (used for displays), using protocols like [DSI-2](https://www.mipi.org/specifications/dsi-2), [CSI-2](https://www.mipi.org/specifications/csi-2) and [UniPro](https://www.mipi.org/specifications/unipro-specifications). BitifEye’s portfolio covered essentially all major high-speed standards — USB, HDMI, PCIe, DisplayPort, and more — and the company was deeply involved in defining those standards to ensure that they were actually testable in practice.
+During my time at BitifEye, I worked on automated pre-compliance testing for high-speed digital physical layer receiver tests, focusing primarily on mobile standards like [MIPI M-PHY](https://www.mipi.org/specifications/m-phy) (inter-processor and memory interfaces) and [MIPI D-PHY](https://www.mipi.org/specifications/d-phy) (used for displays), using protocols like [DSI-2](https://www.mipi.org/specifications/dsi-2), [CSI-2](https://www.mipi.org/specifications/csi-2), and [UniPro](https://www.mipi.org/specifications/unipro-specifications). BitifEye’s portfolio covered essentially all major high-speed standards — USB, HDMI, PCIe, DisplayPort, and more — and the company was deeply involved in defining those standards to ensure that they were actually testable in practice.
 
 <figure>
     <img src="{{site.baseurl}}/assets/images/mipi_system.png" alt="m_phy test setup" width="50%">
@@ -34,7 +34,7 @@ During my time at BitifEye, I worked on automated pre-compliance testing for hig
 
 ## Automation & Instrument Control
 
-My work involved directly programming and controlling test equipment — oscilloscopes, signal generators, and protocol analyzers — through standardized remote control interfaces (e.g., SCPI). I implemented automated test sequences that configured the instruments, calibrated the signal paths, generated stressed waveforms, and performed detailed measurements such as eye diagram acquisition and jitter analysis, all in accordance with the official compliance specifications. This significantly reduced manual overhead and improved reproducibility across test runs.
+My work involved directly programming and controlling test equipment — oscilloscopes, signal generators, and protocol analyzers — through standardized remote control interfaces (e.g., SCPI). I implemented automated test sequences that configured the instruments, calibrated the signal paths, generated stressed waveforms, and performed detailed measurements such as eye diagram acquisition and jitter analysis, all in accordance with official compliance specifications. This significantly reduced manual overhead and improved reproducibility across test runs.
 
 <figure>
     <img src="{{site.baseurl}}/assets/images/m_phy.png" alt="m_phy test setup" width="70%">

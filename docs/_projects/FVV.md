@@ -38,7 +38,7 @@ I am investigating generative approaches that sit on top of the classical multi�
 
 ## Why This Is Interesting (Personal Perspective)
 
-The problem nicely bridges classical geometry (calibration, stereo, visibility) with modern generative modeling and real‑time systems constraints (latency budgets, GPU memory, bitrate). Being constraint requires smart and creative engineering: how to pick the right priors, where to inject learned components, how to balance quality vs speed. The application space is compelling too: live events, remote collaboration, training simulations—being able to move freely through a real scene opens up new interaction modes and experiences.
+The problem nicely bridges classical geometry (calibration, stereo, visibility) with modern generative modeling and real‑time systems constraints (latency budgets, GPU memory, bitrate). Being constrained requires smart, creative engineering: how to pick the right priors, where to inject learned components, how to balance quality vs speed. The application space is compelling too: live events, remote collaboration, training simulations—being able to move freely through a real scene opens up new interaction modes and experiences.
 
 ## References & Demo (Original System)
 
