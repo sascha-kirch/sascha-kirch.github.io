@@ -64,7 +64,7 @@ function updateMediumBlogPosts(responseText){
 		object_string += "<div class=\"content\">"
 		object_string += "<p>"
 		for (const category of item.categories){
-			object_string += "<span class=\"tag is-small is-info is-light mr-1\">"+category+"</span>"
+			object_string += "<span class=\"tag is-small is-success is-light mr-1\">"+category+"</span>"
 		}
 		object_string += "</p>"
 		object_string += "<p><a href=\""+item.guid+"\" target=\"_blank\" >Read full post</a></p>"

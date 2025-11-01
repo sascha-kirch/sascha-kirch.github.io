@@ -4,15 +4,15 @@ order: 3
 image: radar_sensor.jpg
 hidden: false
 ---
-Automotive radar quietly solves problems that cameras, lidar and ultrasonic sensors cannot handle alone: seeing and measuring motion in rain, fog, snow, glare and darkness, at long range, with direct velocity information. It underpins Adaptive Cruise Control, Emergency Braking, Blind Spot detection, cross‑traffic alerts and feeds higher‑level fusion in driver assistance stacks.
+Automotive radar quietly solves problems that cameras, lidar and ultrasonic sensors cannot handle alone: seeing and measuring motion in rain, fog, snow, glare and darkness, at long range, with direct velocity information. It underpins Adaptive Cruise Control, Emergency Braking, Blind Spot detection, cross‑traffic alerts, and feeds higher‑level fusion in driver assistance stacks.
 
 ## Why Radar Matters
 
-Camera gives semantics but can be blinded. Lidar gives fine 3D detail but is cost and weather sensitive. Ultrasonic is cheap but very short range. Radar adds all‑weather robustness and instant Doppler velocity. Its lower angular resolution and multipath artefacts mean it complements, not replaces, the other sensors; fusion uses radar early for velocity lock and stable tracking, then camera/lidar refine object shape and class.
+A camera gives semantics but can be blinded. Lidar gives fine 3D detail but is costly and weather‑sensitive. Ultrasonic is cheap but very short range. Radar adds all‑weather robustness and instant Doppler velocity. Its lower angular resolution and multipath artefacts mean it complements, not replaces, the other sensors; fusion uses radar early for velocity lock and stable tracking, then camera/lidar refine object shape and class.
 
 ## How Radar Extracts Motion and Position (High Level)
 
-A radar sensor emits controlled frequency sweeps. Reflections come back slightly delayed (range information) and slightly shifted in frequency (Doppler velocity). Comparing phases across multiple antenna elements gives direction. From raw mixed signals the device builds a map of targets with distance, speed and angle;even in poor visibility. That entire chain has to run continuously with tight timing budgets and low phase noise.
+A radar sensor emits controlled frequency sweeps. Reflections come back slightly delayed (range information) and slightly shifted in frequency (Doppler velocity). Comparing phases across multiple antenna elements gives direction. From raw mixed signals the device builds a map of targets with distance, speed, and angle—even in poor visibility. That entire chain has to run continuously with tight timing budgets and low phase noise.
 
 ## Engineering Challenges
 
@@ -22,7 +22,7 @@ Small antenna aperture limits angular resolution; you fight physics with array l
 
 ## Sensor Internals
 
-Interestingly, while writing this small description I found that public test reports exist the Gen5 radar platform I worked on. I can't detail any design aspects, but here how the sensor (might not be the final design) looked like:
+Interestingly, while writing this small description I found public test reports for the Gen5 radar platform I worked on. I can't detail any design aspects, but here is how the sensor (this might not be the final design) looked:
 
 <figure>
     <img src="{{site.baseurl}}/assets/images/radar_internal.png" alt="radar_internal" width="80%">

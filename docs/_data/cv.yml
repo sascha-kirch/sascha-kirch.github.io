@@ -295,6 +295,14 @@ programming:
       used_professionally: false
       logo: programming_java.png
 
+    - name: rust
+      used_professionally: false
+      logo: programming_rust.png
+
+    - name: mojo
+      used_professionally: false
+      logo: programming_mojo.png
+
     - name: JavaScript
       used_professionally: false
       logo: programming_javascript.png

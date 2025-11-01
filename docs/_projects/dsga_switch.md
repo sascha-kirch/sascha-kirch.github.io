@@ -4,11 +4,11 @@ order: 1
 image: bitifeye_switch_dsga.png
 hidden: false
 ---
-Receiver tests in the lab are often too “ideal”. Real silicon does not sit forever in a steady high‑speed lane sending a single pattern. It flips between high‑speed bursts and low‑power states, exchanges sideband control, reconfigures lanes, reports counters and status, then dives back into data again. Two hardware pieces made those real behaviours testable in an automated way: a Dynamic Sequencing Generator & Analyzer (DSGA) and a modular high‑bandwidth switching system. Classic AWGs (Arbitrary Waveform Generators) and BERTs (Bit Error Rate Testers) are great at stressed data (jittered PRBS, de‑emphasis, ISI). They are not built to script low‑speed protocol “glue” or to read device feedback while stress is applied. The DSGA plus switching closes that gap.
+Receiver tests in the lab are often too “ideal”. Real silicon does not sit forever in a steady high‑speed lane sending a single pattern. It flips between high‑speed bursts and low‑power states, exchanges sideband control, reconfigures lanes, reports counters and status, then dives back into data again. Two hardware pieces made those real behaviors testable in an automated way: a Dynamic Sequencing Generator & Analyzer (DSGA) and a modular high‑bandwidth switching system. Classic AWGs (Arbitrary Waveform Generators) and BERTs (Bit Error Rate Testers) are great at stressed data (jittered PRBS, de‑emphasis, ISI). They are not built to script low‑speed protocol “glue” or to read device feedback while stress is applied. The DSGA plus switching closes that gap.
 
 ## Why a "Low-Speed" Generator Matters
 
-High‑speed gear produces stressed patterns very well. It struggles when the test script needs protocol moves: enter a test mode, switch to low‑power (LP), send a short command frame, read a PWM counter, then return to high‑speed (HS) and inject jitter—repeat. MIPI M‑PHY and D‑PHY receiver work in particular mixes HS bursts and LP signaling tightly. Without a tool that can generate and decode LP traffic you either simplify the sequence (and miss issues) or spend a lot of time hand‑building partial setups.
+High‑speed gear produces stressed patterns very well. It struggles when the test script needs protocol moves: enter a test mode, switch to low‑power (LP), send a short command frame, read a PWM counter, then return to high‑speed (HS) and inject jitter—repeat. MIPI M‑PHY and D‑PHY receiver work in particular mix HS bursts and LP signaling tightly. Without a tool that can generate and decode LP traffic you either simplify the sequence (and miss issues) or spend a lot of time hand‑building partial setups.
 
 The DSGA couples protocol sequencing with physical layer stress. It can:
 
