@@ -361,6 +361,19 @@ programming:
 
 
 certificates:
+    - title: Anthropic Courses
+      initiater: Anthropic
+      date: false
+      certificate: false
+      sub_certificates:
+      - title: Introduction to Model Context Protocol
+        certificate: https://verify.skilljar.com/c/fjwoa4epic9s
+        date: Nov 2025
+      - title: Model Context Protocol - Advanced Topics
+        certificate: https://verify.skilljar.com/c/65h7a9itrg5g
+        date: Nov 2025
+      logo: anthropic_logo.png
+
     - title: Fundamentals of Accelerated Computing with CUDA Python
       initiater: Nvidia
       date: Sep 2024
