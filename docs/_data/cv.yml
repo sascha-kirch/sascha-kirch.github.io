@@ -366,6 +366,9 @@ certificates:
       date: false
       certificate: false
       sub_certificates:
+      - title: Claude Code in Action
+        certificate: https://verify.skilljar.com/c/627i33jto9ch
+        date: Nov 2025
       - title: Introduction to Model Context Protocol
         certificate: https://verify.skilljar.com/c/fjwoa4epic9s
         date: Nov 2025
