@@ -27,7 +27,8 @@ nav_id: nav_cv
 	<div class="cv-mobile-float is-hidden-desktop" id="cv-mobile-float">
 		<nav class="navbar is-transparent is-paddingless" role="navigation" aria-label="Section navigation">
 			<div class="navbar-brand">
-				<a class="navbar-item cv-mobile-current" id="cv-mobile-current" aria-haspopup="true" aria-expanded="false">
+				<a class="navbar-item cv-mobile-current" id="cv-mobile-current" aria-haspopup="true"
+					aria-expanded="false">
 					<span class="icon"><i class="fas fa-list-ul" aria-hidden="true"></i></span>
 					<span class="cv-mobile-label">Sections</span>
 					<span class="icon is-small"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
@@ -45,6 +46,15 @@ nav_id: nav_cv
 	</div>
 
 	<div class="cv-main-content" id="cv-main">
+		<p>Deep learning expert bridging cutting-edge AI research with production systems, specializing in computer
+			vision, generative models, and multi-sensor perception. Transitioned from hardware engineering to architect
+			and develop autonomous driving perception systems processing 1-2 GB/sec of sensor data, while maintaining
+			active research collaborations resulting in peer-reviewed publications on depth estimation and 3D
+			reconstruction. Hands-on technical expertise spans the full spectrum of deep learning—from classical
+			computer vision and object detection to foundation models (SAM2, GroundingDINO, InternImage), generative AI,
+			spatial computing, and vision-language models—with proven ability to optimize inference speed and prediction
+			performance across production pipelines.
+		</p>
 		<h2 class="title" id="skills">Skills</h2>
 		{% include cv_skills.html icon-size="lg" %}
 
@@ -71,100 +81,100 @@ nav_id: nav_cv
 	</div>
 
 	<script>
-	// Enhance layout for wider CV and nav highlighting
-	(function(){
-	  // Flag body so styles can widen only the main content container (not navbar)
-	  document.body.classList.add('cv-page');
+		// Enhance layout for wider CV and nav highlighting
+		(function () {
+			// Flag body so styles can widen only the main content container (not navbar)
+			document.body.classList.add('cv-page');
 
-	  // Desktop side nav active highlighting
-	  const links = Array.from(document.querySelectorAll('#cv-jump-list a'));
-	  const sections = links.map(l => document.getElementById(l.getAttribute('href').slice(1))).filter(Boolean);
-	  let current;
-	  const observer = new IntersectionObserver(entries => {
-	    entries.forEach(entry => {
-	      if(entry.isIntersecting){
-	        const link = links.find(l => l.getAttribute('href').slice(1) === entry.target.id);
-	        if(link && current !== link){
-	          if(current){ current.classList.remove('is-active'); }
-	          link.classList.add('is-active');
-	          current = link;
-	        }
-	      }
-	    });
-	  }, { rootMargin: '0px 0px -65% 0px', threshold: [0,0.3,0.6,1] });
-	  sections.forEach(s => observer.observe(s));
+			// Desktop side nav active highlighting
+			const links = Array.from(document.querySelectorAll('#cv-jump-list a'));
+			const sections = links.map(l => document.getElementById(l.getAttribute('href').slice(1))).filter(Boolean);
+			let current;
+			const observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const link = links.find(l => l.getAttribute('href').slice(1) === entry.target.id);
+						if (link && current !== link) {
+							if (current) { current.classList.remove('is-active'); }
+							link.classList.add('is-active');
+							current = link;
+						}
+					}
+				});
+			}, { rootMargin: '0px 0px -65% 0px', threshold: [0, 0.3, 0.6, 1] });
+			sections.forEach(s => observer.observe(s));
 
-	  // Offset scroll (keep heading visible)
-	  function scrollWithOffset(id){
-	    const el = document.getElementById(id);
-	    if(!el) return;
-	    const navH = document.querySelector('.app-navbar')?.offsetHeight || 56;
-	    const offset = navH + 12; // navbar + small margin
-	    const y = el.getBoundingClientRect().top + window.scrollY - offset;
-	    window.scrollTo({ top: y, behavior: 'smooth' });
-	    history.replaceState(null,'','#'+id);
-	  }
-	  links.forEach(a => a.addEventListener('click', function(e){
-	    e.preventDefault();
-	    scrollWithOffset(this.getAttribute('href').slice(1));
-	  }));
+			// Offset scroll (keep heading visible)
+			function scrollWithOffset(id) {
+				const el = document.getElementById(id);
+				if (!el) return;
+				const navH = document.querySelector('.app-navbar')?.offsetHeight || 56;
+				const offset = navH + 12; // navbar + small margin
+				const y = el.getBoundingClientRect().top + window.scrollY - offset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+				history.replaceState(null, '', '#' + id);
+			}
+			links.forEach(a => a.addEventListener('click', function (e) {
+				e.preventDefault();
+				scrollWithOffset(this.getAttribute('href').slice(1));
+			}));
 
-	  // Mobile dropdown build
-	  const mobileLinksContainer = document.getElementById('cv-mobile-links');
-	  const mobileCurrent = document.getElementById('cv-mobile-current');
-	  const mobileMenu = document.getElementById('cv-mobile-menu');
-	  if(mobileLinksContainer && mobileCurrent){
-	    // clone links
-	    links.forEach(l => {
-	      const a = document.createElement('a');
-	      a.className = 'navbar-item';
-	      a.href = l.getAttribute('href');
-	      a.textContent = l.textContent;
-	      a.addEventListener('click', e => {
-	        e.preventDefault();
-	        scrollWithOffset(a.getAttribute('href').slice(1));
-	        mobileMenu.classList.remove('is-active');
-	        mobileCurrent.setAttribute('aria-expanded','false');
-	      });
-	      mobileLinksContainer.appendChild(a);
-	    });
-	    mobileCurrent.addEventListener('click', e => {
-	      e.preventDefault();
-	      const expanded = mobileCurrent.getAttribute('aria-expanded') === 'true';
-	      mobileCurrent.setAttribute('aria-expanded', String(!expanded));
-	      mobileMenu.classList.toggle('is-active', !expanded);
-	    });
-	    document.addEventListener('click', e => {
-	      if(!document.getElementById('cv-mobile-float').contains(e.target)){
-	        mobileMenu.classList.remove('is-active');
-	        mobileCurrent.setAttribute('aria-expanded','false');
-	      }
-	    });
-	  }
+			// Mobile dropdown build
+			const mobileLinksContainer = document.getElementById('cv-mobile-links');
+			const mobileCurrent = document.getElementById('cv-mobile-current');
+			const mobileMenu = document.getElementById('cv-mobile-menu');
+			if (mobileLinksContainer && mobileCurrent) {
+				// clone links
+				links.forEach(l => {
+					const a = document.createElement('a');
+					a.className = 'navbar-item';
+					a.href = l.getAttribute('href');
+					a.textContent = l.textContent;
+					a.addEventListener('click', e => {
+						e.preventDefault();
+						scrollWithOffset(a.getAttribute('href').slice(1));
+						mobileMenu.classList.remove('is-active');
+						mobileCurrent.setAttribute('aria-expanded', 'false');
+					});
+					mobileLinksContainer.appendChild(a);
+				});
+				mobileCurrent.addEventListener('click', e => {
+					e.preventDefault();
+					const expanded = mobileCurrent.getAttribute('aria-expanded') === 'true';
+					mobileCurrent.setAttribute('aria-expanded', String(!expanded));
+					mobileMenu.classList.toggle('is-active', !expanded);
+				});
+				document.addEventListener('click', e => {
+					if (!document.getElementById('cv-mobile-float').contains(e.target)) {
+						mobileMenu.classList.remove('is-active');
+						mobileCurrent.setAttribute('aria-expanded', 'false');
+					}
+				});
+			}
 
-	  // Sync mobile current label
-	  function updateMobileLabel(sectionId){
-	    if(!mobileCurrent) return;
-	    const link = links.find(l => l.getAttribute('href') === '#' + sectionId);
-	    if(link){
-	      mobileCurrent.querySelector('.cv-mobile-label').textContent = link.textContent;
-	    }
-	  }
-	  // Extend observer to update label
-	  const labelObserver = new IntersectionObserver(entries => {
-	    entries.forEach(entry => {
-	      if(entry.isIntersecting){ updateMobileLabel(entry.target.id); }
-	    });
-	  }, { rootMargin: '0px 0px -70% 0px', threshold:[0,0.4,1] });
-	  sections.forEach(s => labelObserver.observe(s));
+			// Sync mobile current label
+			function updateMobileLabel(sectionId) {
+				if (!mobileCurrent) return;
+				const link = links.find(l => l.getAttribute('href') === '#' + sectionId);
+				if (link) {
+					mobileCurrent.querySelector('.cv-mobile-label').textContent = link.textContent;
+				}
+			}
+			// Extend observer to update label
+			const labelObserver = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) { updateMobileLabel(entry.target.id); }
+				});
+			}, { rootMargin: '0px 0px -70% 0px', threshold: [0, 0.4, 1] });
+			sections.forEach(s => labelObserver.observe(s));
 
-	  // Close menu on resize to desktop
-	  window.addEventListener('resize', () => {
-	    if(window.innerWidth > 1023 && mobileMenu){
-	      mobileMenu.classList.remove('is-active');
-	      mobileCurrent && mobileCurrent.setAttribute('aria-expanded','false');
-	    }
-	  });
-	})();
+			// Close menu on resize to desktop
+			window.addEventListener('resize', () => {
+				if (window.innerWidth > 1023 && mobileMenu) {
+					mobileMenu.classList.remove('is-active');
+					mobileCurrent && mobileCurrent.setAttribute('aria-expanded', 'false');
+				}
+			});
+		})();
 	</script>
 </div>

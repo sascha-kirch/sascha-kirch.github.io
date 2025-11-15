@@ -17,6 +17,8 @@
       link: https://arxiv.org/abs/2411.00233
     - tag: GitHub
       link: https://github.com/sascha-kirch/samba-mixer
+  description: >
+    First application of Mamba state space models to battery health prediction, demonstrating superior performance over traditional LSTM approaches for time-series forecasting in energy systems.
 - title: "RGB-D-Fusion: Image Conditioned Depth Diffusion of Humanoid Subjects"
   authors:
     - name: Sascha Kirch
@@ -40,6 +42,8 @@
       link: https://arxiv.org/abs/2307.15988
     - tag: GitHub
       link: https://github.com/sascha-kirch/rgb-d-fusion
+  description: >
+    Novel application of diffusion models to depth estimation for volumetric video generation, developed through research collaboration with Volograms for AR/VR applications. Techniques integrated into production pipeline for single-view 3D reconstruction of human subjects.
 - title: "VoloGAN: Adversarial Domain Adaptation for Synthetic Depth Data"
   authors:
     - name: Sascha Kirch
@@ -57,3 +61,5 @@
       link: https://arxiv.org/abs/2207.09204
     - tag: GitHub
       link: https://github.com/sascha-kirch/VoloGAN
+  description: >
+    Master's thesis work exploring GAN-based domain adaptation to bridge quality gap between high-fidelity depth maps from photogrammetry and lower-quality depth maps from mobile phone LiDAR sensors for volumetric video models.

@@ -8,18 +8,27 @@ text_width: is-two-thirds
 view_mode: excerpt
 ---
 <div class="content">
-	<p>Here some of the projects I have been working on over the past years. Fields range from deep learning based 3d reconstruction, automotive perception systems, high-speed-digital receiver testing and electronics development. I have taken multiple roles including enginieering, technical expert and project lead.</p>
+    <p> I build AI systems that bridge research and production deployment—from generative
+        models for 3D reconstruction to multi-sensor perception systems processing
+        high-volume data in real-time. My work spans the full stack: deep learning
+        architectures, classical computer vision, hardware design (FPGA/ASIC), and
+        production system optimization.</p>
+
+    <p>Projects range from published IEEE research (diffusion models, state space models)
+        to production-scale perception systems deployed globally. Each demonstrates
+        technical depth, systems thinking, and the ability to translate cutting-edge AI
+        into real-world solutions under real-time constraints.</p>
     <hr>
 
     {% assign items = site.projects | sort: 'order' | reverse %}
     {% assign drawn_count = 0 %}
     {% for item in items %}
-        {% if item.hidden %}
-            {% continue %}
-        {% endif %}
-        {% assign side = drawn_count | modulo: 2 %}
-        {% include left_right.html %}
-        {% assign drawn_count = drawn_count | plus: 1 %}
+    {% if item.hidden %}
+    {% continue %}
+    {% endif %}
+    {% assign side = drawn_count | modulo: 2 %}
+    {% include left_right.html %}
+    {% assign drawn_count = drawn_count | plus: 1 %}
     {% endfor %}
 
 </div>
