@@ -8,7 +8,7 @@ Website: [https://sascha-kirch.github.io](https://sascha-kirch.github.io)
 - GitHub API access
 - StackOverflow RSS access
 - Medium Blog RSS access
-- Github pages with Jekyll 
+- Github pages with Jekyll
 - [Bulma](https://bulma.io/) CSS framework
 - Bulma Timeline extension
 
@@ -17,24 +17,20 @@ Website: [https://sascha-kirch.github.io](https://sascha-kirch.github.io)
 - Install [docker](https://docs.docker.com/get-started/overview/).
 - Clone/fork this repo and change directory into repo
 - Build the docker image with the tag github-pages:
-  ```
+  ```bash
   docker build -t github-pages .
   ```
 - Create a container named github-pages with an interactive terminal, the name of your choice, bind the this repo and enable port forwarding of a port of your choice:
   ```
-  docker container create -it --name <YOUR-IMAGE-NAME> -v <PATH-TO-REPO>/sascha-kirch.github.io:/root/github-pages/ -p <YOUR-PORT>:4000 github-pages
-  
-  docker container create -it --name github-pages -v ~/git/sascha-kirch.github.io:/root/github-pages/ -p 4000:4000 github-pages
-
-  
+  docker container create -it --name website -v ~/git/sascha-kirch.github.io:/home/dev_user/website/ -p 4000:4000 website  
   ```
 - Start container in interactive mode:
   ```
   docker container start -i <YOUR-IMAGE-NAME>
   ```
 - Install gems:
-  ```
-  cd docs/
+  ```bash
+  # inside ~/website/docs
   bundle install
   ```
 - Make changes and test with:

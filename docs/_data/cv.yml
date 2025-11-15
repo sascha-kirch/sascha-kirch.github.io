@@ -8,7 +8,27 @@ professional_experience:
         start_date: Dec 2022
         end_date: Present
         description: >
-            Deep learning based perception for automotive radar, lidar and camera sensors.
+            <p>Deep learning engineer for autonomous driving perception systems, focusing on multi-sensor fusion, foundation model optimization, and hybrid approaches combining classical computer vision with modern deep learning techniques. Develop and optimize production-scale 360° ground truth system processing high-volume sensor data from test vehicle fleets to evaluate and train autonomous driving products.</p>
+
+            <ul>
+              <li> Transformed early-stage system to production deployment, achieving significant accuracy improvements and performance gains through systematic optimization across classical and deep learning pipeline modules</li>
+
+              <li> Provide technical guidance for team of engineers on architecture decisions, model selection, and deployment strategies</li>
+
+              <li> Evaluate and integrate state-of-the-art foundation models with focus on memory optimization, inference speed, and production requirements</li>
+
+              <li> Research and prototype novel approaches for enhancing ground truth system performance, adding new capabilities that enable new products and support additional stakeholders</li>
+
+              <li> Contribute technical expertise across object detection, sensor fusion, and scene understanding projects beyond core ground truth development</li>
+            </ul>
+
+      - position: BEO Expert - Multi-Modal Generative Deep Learning and Deep Learning Based Sensor Perception
+        employment_type: Part-Time
+        location: Leonberg, Germany
+        start_date: Apr 2023
+        end_date: Present
+        description: >
+            <p>Certified BEO Expert (Bosch Expert Organization) through peer nomination — a highly selective distinction awarded to engineers with recognized deep expertise. Provide cross-divisional consulting on advanced AI topics including foundation model optimization, multi-modal architectures, generative models, computer vision, and deep learning techniques for perception systems.</p>
 
       - position: Technical Project Lead for Automotive Radar
         employment_type: Full-Time
@@ -16,8 +36,9 @@ professional_experience:
         start_date: Jan 2019
         end_date: Oct 2022
         description: >
-            Responsible for the development of electronic modules and concepts
-            including µC, MMIC radar ASIC, SystemASIC, radar SoC, hardware architecture, safety, thermal design and EMC for automotive radar.
+            <p>Led technical development of automotive radar electronics deployed globally across multiple platform generations. Managed international teams of 6-18 engineers coordinating design, validation, and integration workstreams. Served as primary technical interface with customers and suppliers.</p>
+
+            <p>Architected electronic modules including microcontrollers, MMIC radar ASICs, System ASICs, and radar SoCs with responsibility for hardware architecture, PCB design and layout, safety, thermal design, EMC compliance, and reliability.</p>
 
       - position: Hardware Engineer Automotive Radar
         employment_type: Full-Time
@@ -25,39 +46,24 @@ professional_experience:
         start_date: Oct 2017
         end_date: Dec 2018
         description: >
-            Design and validation of electronic modules and concepts,
-            considering reliability and safety aspects, for automotive radar sensors.
+            <p>Designed, validated, and tested electronic modules for automotive radar sensors deployed globally. Collaborated with customers and suppliers to develop solutions balancing cost, safety, reliability, and manufacturability for high-volume production.</p>
+
+            <p>Led cross-functional EMC compliance taskforce (10-15 members, 6 months) during pre-release validation crisis. Coordinated technical investigation across hardware, software, and integration teams, implemented corrective design changes, and secured regulatory compliance. Crisis management and technical leadership led to promotion to Technical Project Lead in 2019.</p>
 
     - company_name: IEEE Eta Kappa Nu - Chapter Nu Alpha
       logo: hkn_logo.jpeg
       positions:
-      - position: President
-        employment_type: Volunteer
-        location: Madrid, Spain
-        start_date: Jan 2023
-        end_date: Present
-        description: >
-            The president is responsible for planning the chapter's program and securing its completion. He calls for internal meetings with all members and presents the chapter in external communications.
-            The president further helds the induction ceremony of new members
-      - position: Corresponding Secretary - Chapter Leadership Team
+      - position: President (formerly Corresponding Secretary)
         employment_type: Volunteer
         location: Madrid, Spain
         start_date: Jan 2022
-        end_date: Dec 2022
-        description: >
-            Among other tasks, the corresponding secretary, in general,
-            conducts correspondence with IEEE-HKN Headquarters. It is his/her
-            duty to confer with the president in all matters that concern IEEE-HKN
-            Headquarters to ensure that action is taken and to report back to IEEE-HKN Headquarters without delay.
-      - position: IEEE Eta Kappa Nu Member
-        employment_type: Volunteer
-        location: Madrid, Spain
-        start_date: Jun 2021
         end_date: Present
         description: >
-            IEEE-Eta Kappa Nu (IEEE-HKN), the honor society of IEEE,
-            promotes excellence in the profession and in education with
-            ideals of scholarship, character and attitude.
+            <p>Lead Spain's first IEEE-HKN chapter through 3-year presidential cycle (President-Elect 2023, President 2024, Past President/Consultant 2025). Grew membership from 90 to 110+ members. Chapter earned 3 Key Chapter awards and 1 Outstanding Chapter distinction among 260 global IEEE-HKN chapters.</p>
+
+            <p>Launched strategic initiatives: established GitHub organization and YouTube channel for knowledge sharing, organized inaugural HKN-Talks series featuring expert presentations from academia and industry. All leadership activities conducted in Spanish.</p>
+
+            <p>Roles: Corresponding Secretary (2022), President-Elect/President/Past President (2023-present).</p>
 
 
     - company_name: Grupo de Tratamiento de Imagenes (GTI) at Universidad Politécnica de Madrid
@@ -69,7 +75,9 @@ professional_experience:
         start_date: Apr 2025
         end_date: Present
         description: >
-          Collaborating in the advancement of the Free View Point Video (FVV) Live system for the European project 5G Records at Universidad Politécnica de Madrid.
+          <p>Research collaboration on Free Viewpoint Video (FVV) Live system for European project 5G Records, applying deep learning to enhance multi-view 3D reconstruction and depth estimation for real-time novel view synthesis.</p>
+
+          <p>Investigating metric-scale geometry estimators and generative models (diffusion, flow matching) for depth estimation, focusing on production-ready solutions balancing reconstruction quality with real-time latency constraints.</p>
 
 
     - company_name: Universidad Nacional de Educación a Distancia (UNED)
@@ -81,8 +89,7 @@ professional_experience:
         start_date: Sep 2022
         end_date: Present
         description: >
-          Teaching Colaborator for the subject "Redes neuronales en control industrial" (eng: Neuronal networks in industrial control systems) in the department
-          "Ingeniería Eléctrica, Electrónica, Control, Telemática y Química Aplicada a la Ingeniería" (eng: Electrical engineering, electronics, control engineering, telematics and chemical engineering)
+          <p>Lecturer for Master's-level neural networks course in industrial control systems (20-30 students per semester). Develop learning materials, provide technical mentorship, and conduct tutoring sessions on deep learning theory and practical implementation.</p>
 
 
     - company_name: Volograms
@@ -91,18 +98,12 @@ professional_experience:
       - position: Collaborating Researcher Deep Learning
         employment_type: Freelancer
         location: Dublin, Ireland
-        start_date: Jun 2021
+        start_date: Nov 2020
         end_date: Present
         description: >
-          Investigation and application of machine learning related technologies for AR/VR applications (e.g. mobile applications and metaverse)
-      - position: Master Thesis (Machine Learning)
-        employment_type: Freelancer
-        location: Dublin, Ireland
-        start_date: Nov 2020
-        end_date: Jun 2021
-        description: >
-          Adversarial Domain Adaptation of Synthetic 3D Data to Train a
-          Volumetric Video Generator Model.
+          <p>Multi-year research collaboration (starting with Master's thesis) on deep learning techniques for volumetric video generation and 3D reconstruction in AR/VR applications. Developed novel application of diffusion models for monocular depth estimation, resulting in IEEE Access publication (RGB-D-Fusion, 2023).</p>
+
+          <p>Explored GAN-based domain adaptation (VoloGAN, Master's thesis 2021) to bridge quality gap between photogrammetry and mobile LiDAR depth data. Research contributed to production pipeline for single-view 3D reconstruction.</p>
 
 
     - company_name: Bitifeye Digital Test Solutions GmbH
@@ -114,20 +115,19 @@ professional_experience:
         start_date: Oct 2016
         end_date: Oct 2017
         description: >
-            Development of FPGA designs in VHDL and Verilog.
-            Circuit design and high-speed digital design.
-            Programming of automated pre-compliance tests for
-            high-speed digital standards such as MIPI C-Phy, D-Phy und M-Phy.
-            Firmware programming in C++.
+            <p>Designed FPGA-based test instrumentation (VHDL/Verilog) for high-speed digital standards including Dynamic Sequencing Generator and Analyzer (DSGA) for automated high-speed receiver testing. Developed modular high-bandwidth switching systems (up to 26.5 GHz, 8:1 configuration) and automated pre-compliance test frameworks for MIPI M-PHY and D-PHY standards.</p>
 
-      - position: Copoorate Student Electrical Engineering
+            <p>Contributed to MIPI Alliance as member of physical layer and I3C working groups, participating in Face-to-Face meetings and interoperability plug sessions, contributing to official specifications.</p>
+
+      - position: Corporate Student Electrical Engineering
         employment_type: Full-Time
         location: Böblingen, Germany
         start_date: Oct 2013
         end_date: Oct 2016
         description: >
-            Design and test of electronic circuits. Programming of test software in C#.
-            High-speed digital cable testing using network analyzer.
+            <p>Dual study program combining Bachelor's degree coursework (DHBW Horb) with professional engineering work in high-speed digital test and measurement.</p>
+
+            <p>Designed and validated electronic circuits. Developed C# test automation software using SCPI protocol for remote control of test instrumentation (oscilloscopes, network analyzers, signal generators) for high-speed digital receiver characterization and cable testing.</p>
 
 education:
     - university: Universidad Nacional de Educación a Distancia (UNED)
@@ -135,9 +135,11 @@ education:
       degree: PhD
       specialization: Multi-Modal Generative Deep Learning
       start_date: Oct 2021
-      end_date: Present
+      end_date: 2027
       description: >
-        Researching on 3D reconstruction using multi-modal generative deep learning. Finished 2 publications in the field of GANs and diffusion models. Working on 2 publications concerned with monocular 3D reconstruction using foundation models, and applying Mamba state space models for time-series prediction.
+        <p>PhD research in multi-modal generative deep learning for 3D reconstruction. Focus on diffusion models, flow matching, and state space models for depth estimation in AR/VR applications.</p>
+
+        <p>Expected completion: 2027</p>
       grade: false
       thesis: false
       logo: uned_logo.jpeg
@@ -162,8 +164,7 @@ education:
       start_date: Sep 2013
       end_date: Aug 2016
       description: >
-        Corporate student program with alternating theoretical and practical semesters.
-        Subjects included: signal & system theory, computing, radio frequency technique, electronics.
+        Dual study program (Duales Studium) in partnership with BitifEye Digital Test Solutions GmbH.
       grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
@@ -182,22 +183,30 @@ language_skills:
       logo: flag_spain.png
 
 awards:
+    - award: Key Chapter Award
+      date: 2024
+      initiater: IEEE Eta Kappa Nu (IEEE-HKN)
+      description: Chapter-level recognition for outstanding leadership and program excellence. Awarded to Nu Alpha Chapter (Spain's first IEEE-HKN chapter) under leadership as President. Grew membership from 90 to 110+ members and launched HKN-Talks series.
+
     - award: Technology Award - Unleash GenAI Bosch Hackathon
       date: Nov 2023
       initiater: Robert Bosch GmbH
+      description: One of four winning teams in company-wide generative AI hackathon (15 teams, ~100-120 participants). Advanced radar point cloud generation project using cutting-edge generative AI techniques, bringing together experts from multiple business units.
 
-    - award: Matrícula de honor for „Final Master Thesis“
+    - award: Matrícula de honor for „Final Master Thesis"
       date: Oct 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
+      description: Spain's highest academic distinction for top-performing students. Master's thesis on adversarial domain adaptation for depth estimation in AR/VR applications. Overall Master's grade - 9.4/10.0.
 
-    - award: Matrícula de honor for „Multimedia for Information and Communication Systems“
+    - award: Matrícula de honor for „Multimedia for Information and Communication Systems"
       date: Jun 2021
       initiater: UNED - Universidad Nacional de Educación a Distancia
-
+      description: Highest academic honor for exceptional course performance. Advanced multimedia systems coursework completed while working full-time at Bosch.
 
     - award: Matrícula de honor for "Microprocessor Techniques"
       date: Jun 2020
       initiater: UNED - Universidad Nacional de Educación a Distancia
+      description: Top academic distinction in embedded systems and microprocessor coursework. Part of Master's degree completed while working full-time with young family.
 
 organizations_and_societies:
     - name: IEEE - Eta Kappa Nu
@@ -218,40 +227,36 @@ organizations_and_societies:
 
 
 skills:
-    - category_name: Technology
+    - category_name: AI & Machine Learning
       skills:
-      - skill: Generative Deep Learning
-      - skill: Self-supervised Learning
-      - skill: Unsupervised Learning
+      - skill: Multi-Modal Fusion
       - skill: Foundation Models
-      - skill: Diffusion Models
-      - skill: Generative Adversarial Networks
-      - skill: Autonomous Driving
-      - skill: High-Speed Digital Communication
-      - skill: HW Engineering
-      - skill: SW Engineering
+      - skill: Deep Learning
       - skill: Computer Vision
-      - skill: State Space Models
+      - skill: Generative Neural Networks
       - skill: 3D Reconstruction
-    - category_name: Entrepeneurship
+      - skill: Transformer Architectures
+      - skill: Diffusion Models
+      - skill: Flow Matching
+      - skill: State Space Models
+      - skill: Generative Adversarial Networks (GANs)
+      - skill: Variational Autoencoders (VAEs)
+      - skill: Object Detection
+    - category_name: Hardware & Systems
       skills:
-      - skill: Leadership
-      - skill: Project Management
-      - skill: Coaching
-      - skill: Mentoring
-      - skill: Strategic Planning
-      - skill: Cost Optimization
-      - skill: Customer Satisfaction
-      - skill: Stakeholder Analysis
-      - skill: Risk/Chance Analysis
-    - category_name: Interests
+      - skill: LiDAR
+      - skill: Radar Sensors
+      - skill: Embedded Systems
+      - skill: High Speed Digital
+      - skill: Advanced Driver-Assistance Systems (ADAS)
+      - skill: Parallel Computing
+    - category_name: Leadership & Domain
       skills:
-      - skill: Basketball
-      - skill: Tech
-      - skill: Self-Development
-      - skill: Family Time
-      - skill: Bicycle
-      - skill: DIY Projects
+      - skill: Technical Leadership
+      - skill: Cross-Functional Team Management
+      - skill: Crisis Management
+      - skill: Production System Deployment
+
 
 
 programming:
@@ -263,37 +268,13 @@ programming:
       used_professionally: true
       logo: programming_python.png
 
-    - name: TensorFlow
-      used_professionally: true
-      logo: programming_tensorflow.png
-
     - name: PyTorch
       used_professionally: true
       logo: programming_pytorch.png
 
-    - name: Docker
-      used_professionally: true
-      logo: docker_logo.png
-
     - name: Bash
       used_professionally: true
       logo: bash_logo.png
-
-    - name: Git
-      used_professionally: true
-      logo: git_logo.png
-
-    - name: MATLAB
-      used_professionally: true
-      logo: programming_matlab.png
-
-    - name: C#
-      used_professionally: true
-      logo: programming_csharp.png
-
-    - name: Java
-      used_professionally: false
-      logo: programming_java.png
 
     - name: rust
       used_professionally: false
@@ -303,61 +284,41 @@ programming:
       used_professionally: false
       logo: programming_mojo.png
 
-    - name: JavaScript
-      used_professionally: false
-      logo: programming_javascript.png
-
-    - name: iOS Swift
-      used_professionally: false
-      logo: programming_swift.png
-
-    - name: Verilog
+    - name: CUDA
       used_professionally: true
-      logo: programming_v.png
+      logo: programming_cuda.jpg
+
+    - name: Numba
+      used_professionally: true
+      logo: programming_numba.png
+
+    - name: Open3D
+      used_professionally: true
+      logo: programming_open3d.png
+
+    - name: NetworkX
+      used_professionally: true
+      logo: programming_networkx.png
+
+    - name: OpenCV
+      used_professionally: true
+      logo: programming_opencv.png
+
+    - name: Torch Lightning
+      used_professionally: true
+      logo: programming_lightning.png
+
+    - name: TensorFlow
+      used_professionally: true
+      logo: programming_tensorflow.png
+
+    - name: Docker
+      used_professionally: true
+      logo: docker_logo.png
 
     - name: VHDL
       used_professionally: true
       logo: programming_v.png
-
-    - name: HTML
-      used_professionally: false
-      logo: programming_html.png
-
-    - name: PHP
-      used_professionally: false
-      logo: programming_php.png
-
-    - name: CUDA
-      used_professionally: true
-      logo: false
-
-    - name: Open3D
-      used_professionally: true
-      logo: false
-
-    - name: NetworkX
-      used_professionally: true
-      logo: false
-
-    - name: NumPy
-      used_professionally: true
-      logo: false
-
-    - name: Pandas
-      used_professionally: true
-      logo: false
-
-    - name: Numba
-      used_professionally: true
-      logo: false
-
-    - name: OpenCV
-      used_professionally: true
-      logo: false
-
-    - name: Torch Lightning
-      used_professionally: true
-      logo: false
 
 
 certificates:
