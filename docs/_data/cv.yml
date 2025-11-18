@@ -2,7 +2,7 @@ professional_experience:
     - company_name: Robert Bosch GmbH
       logo: bosch_logo.jpeg
       positions:
-      - position: Expert Deep Learning for Automotive Sensor Perception
+      - position: Expert Deep Learning for Multi-Sensor Perception Systems
         employment_type: Full-Time
         location: Leonberg, Germany
         start_date: Dec 2022
