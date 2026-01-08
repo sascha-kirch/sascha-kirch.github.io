@@ -50,20 +50,6 @@ professional_experience:
 
             <p>Led cross-functional EMC compliance taskforce (10-15 members, 6 months) during pre-release validation crisis. Coordinated technical investigation across hardware, software, and integration teams, implemented corrective design changes, and secured regulatory compliance. Crisis management and technical leadership led to promotion to Technical Project Lead in 2019.</p>
 
-    - company_name: IEEE Eta Kappa Nu - Chapter Nu Alpha
-      logo: hkn_logo.jpeg
-      positions:
-      - position: President (formerly Corresponding Secretary)
-        employment_type: Volunteer
-        location: Madrid, Spain
-        start_date: Jan 2022
-        end_date: Present
-        description: >
-            <p>Lead Spain's first IEEE-HKN chapter through 3-year presidential cycle (President-Elect 2023, President 2024, Past President/Consultant 2025). Grew membership from 90 to 110+ members. Chapter earned 3 Key Chapter awards and 1 Outstanding Chapter distinction among 260 global IEEE-HKN chapters.</p>
-
-            <p>Launched strategic initiatives: established GitHub organization and YouTube channel for knowledge sharing, organized inaugural HKN-Talks series featuring expert presentations from academia and industry. All leadership activities conducted in Spanish.</p>
-
-            <p>Roles: Corresponding Secretary (2022), President-Elect/President/Past President (2023-present).</p>
 
 
     - company_name: Grupo de Tratamiento de Imagenes (GTI) at Universidad Politécnica de Madrid
@@ -168,6 +154,22 @@ education:
       grade: false
       thesis: Development of Methodologies for a MIPI DSI-Device for Demonstration Purposes
       logo: dhbw_logo.jpeg
+
+volunteering:
+    - company_name: IEEE Eta Kappa Nu - Chapter Nu Alpha
+      logo: hkn_logo.jpeg
+      positions:
+      - position: President (formerly Corresponding Secretary)
+        employment_type: Volunteer
+        location: Madrid, Spain
+        start_date: Jan 2022
+        end_date: Dec 2025
+        description: >
+            <p>Lead Spain's first IEEE-HKN chapter through 3-year presidential cycle (President-Elect 2023, President 2024, Past President/Consultant 2025). Grew membership from 90 to 110+ members. Chapter earned 3 Key Chapter awards and 1 Outstanding Chapter distinction among 260 global IEEE-HKN chapters.</p>
+
+            <p>Launched strategic initiatives: established GitHub organization and YouTube channel for knowledge sharing, organized inaugural HKN-Talks series featuring expert presentations from academia and industry. All leadership activities conducted in Spanish.</p>
+
+            <p>Roles: Corresponding Secretary (2022), President-Elect/President/Past President (2023-present).</p>
 
 language_skills:
     - language: German
