@@ -1,0 +1,41 @@
+<div class="columns is-full is-multiline">
+	{% for company in site.data.cv.volunteering %}
+	<div class="column is-full">
+		<div class="box">
+			<!-- First line with company icon and name -->
+			<div class="columns is-full is-mobile is-vcentered">
+				<div class="column is-narrow has-text-centered">
+					<figure class="image is-48x48 is-centered is-inline-block mx-0">
+						<img class="is-rounded"  src="{{site.baseurl}}/assets/images/{{company.logo}}">
+					</figure>
+				</div>
+				<div class="column">
+					<p><b><big>{{company.company_name}}</big></b></p>
+				</div>
+			</div>
+			<!-- Multiple lines with positions and dates -->
+			{% for job in company.positions %}
+			<div class="columns is-full is-multiline">
+				<div class="column pb-0 pt-0">
+					<em><div>
+						<b>{{job.position}}</b>
+						{% if job.location != false %}
+						<span>{{job.location}}</span>
+						{% endif %}
+						{% if job.employment_type != false %}
+						<span>({{job.employment_type}})</span>
+						{% endif %}
+					</div></em>
+				</div>
+				<div class="column is-narrow pt-0 pb-0">
+					<b>{{job.start_date}} - {{job.end_date}}</b>
+				</div>
+				<div class="column is-full pt-0 pb-4 pl-5">
+					{{job.description}}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
