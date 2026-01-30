@@ -1,3 +1,13 @@
+- journal: "Signal, Image and Video Processing"
+  issn:
+    id: 1863-1711
+    link: https://portal.issn.org/resource/ISSN/1863-1711
+  reviews:
+    - date: 2026
+      certificate:
+        id: 6rv65OX8
+        link: https://publons.com/wos-op/review/author/6rv65OX8/
+
 - journal: "IEEE Transactions on Neural Networks and Learning Systems"
   issn:
     id: 2162-2388
@@ -8,7 +18,7 @@
         id: SeUdYaM4
         link: https://publons.com/wos-op/review/author/SeUdYaM4/
 
-- journal: "Scientific Reports by nature"
+- journal: "Scientific Reports"
   issn:
     id: 2045-2322
     link: https://portal.issn.org/resource/ISSN/2045-2322
