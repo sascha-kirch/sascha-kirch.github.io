@@ -1,6 +1,10 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Circles Are Not Gaussians (But Let’s Pretend They Are)
+    kicker: 💻 Code & Coffee with Sascha ☕
+    subtitle: Part 2 of Building a 3D Gaussian Splatting Renderer - Circles, Colors, and Transparency
+    link: https://medium.com/ai-advances/circles-are-not-gaussians-but-lets-pretend-they-are-7bcf6db6efb8?sk=a4a27e16d71f4c1742b8ec6f45550673
   - title: I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose
     kicker: 💻 Code & Coffee with Sascha ☕
     subtitle: Building a deliberately slow, crystal-clear Python renderer to reveal the implementation details that papers skip and GPU kernels hide
