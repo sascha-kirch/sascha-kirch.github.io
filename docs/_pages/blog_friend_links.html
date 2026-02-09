@@ -5,32 +5,33 @@ permalink: /blog_friend_links
 ---
 {% assign medium_data = site.data.medium_blog %}
 
-<p>Hi Friends!🤗</p>
-<p>Bellow is a list of links to all <a href="{{ medium_data.profile }}" target="_blank">my Medium</a> articles so you can access them for free.</p>
-<p>To help me grow, please consider to:
-    <ul>
-        <li>like my articles (up to 50 likes possible)</li>
-        <li>follow me</li>
-        <li>leave comments</li>
-        <li>make notes in the text</li>
-        <li>read the article (at least 30sec)</li>
-        <li>bookmark the articles</li>
-        <li><a href="{{ medium_data.subscription_page }}" target="_blank">Subscribe to my blog</a> to get notified via e-mail when I publish new articles.</li>
-    </ul>
-</p>
+ <p>Thanks for stopping by 👋<br>
+  Here you’ll find a curated collection of my Medium articles — shared through friend links so you can read them without a paywall.</p>
 
-<div class="columns is-multiline">
-    {% for item in medium_data.friend_links %}
-        <div class="column is-half">
-            <a href="{{ item.link }}" target="_blank">
-                <div class="box">
-                    {% if item.kicker %}
-                    <p style="color:gray"><i>{{ item.kicker }}</i></p>
-                    {% endif %}
-                    <p style="margin-bottom: 5px"><b>{{ item.title }}</b></p>
-                    <p style="color:gray"><i>{{ item.subtitle }}</i></p>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
+  <p>If you enjoy the content and want to support my work, a few small actions go a long way:</p>
+
+  <ul>
+    <li>👍 Leave a like or highlight sections you find useful</li>
+    <li>💬 Share your thoughts or questions in the comments</li>
+    <li>🔖 Bookmark articles you want to revisit</li>
+    <li>👤 Follow me on Medium to stay updated</li>
+    <li>📖 Spend a moment reading — thoughtful engagement helps the work reach more people</li>
+    <li>🔗 Share articles with friends or colleagues who might find them helpful</li>
+  </ul>
+
+  <p>Your support helps me continue creating deep, practical content on machine learning, computer vision, and efficient engineering.</p>
+
+<h2>Articles</h2>
+
+<div>
+    <ul>
+        {% for item in medium_data.friend_links %}
+        <li>
+            <span style="margin-bottom: 5px"><b>{{ item.title }}</b></span>
+            <span><a href="{{ item.link }}" target="_blank"><small><i class="fa fa-link"
+                            aria-hidden="true"></i></small></a>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
