@@ -1,6 +1,9 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: The Tricks That Make Production 3DGS Fast (Even If Ours Isn’t)
+    subtitle: Part 4 of Building a 3D Gaussian Splatting Renderer — Understanding the Optimizations That Make Real-Time Rendering Possible
+    link: https://ai.gopubby.com/the-tricks-that-make-production-3dgs-fast-even-if-ours-isnt-6cd9928ec307?sk=0342cf93adb6faf269fd6ecf973915cb
   - title: Splat Your Own Gaussians - From Circles to Ellipses
     subtitle: Part 3 of Building a 3D Gaussian Splatting Renderer — Covariance Matrices, Jacobians, and Proper 2D Projection
     link: https://medium.com/ai-advances/splat-your-own-gaussians-from-circles-to-ellipses-96b69f1e7e3f?sk=cc15df35d8dfbb381eae69a1f44db4f7
