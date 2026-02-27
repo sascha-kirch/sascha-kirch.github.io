@@ -298,3 +298,13 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 	transform: translateY(-2px);
 }
+
+// Project cards
+.project-card {
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+	transform: translateY(-2px);
+}

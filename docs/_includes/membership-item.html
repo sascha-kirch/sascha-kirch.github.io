@@ -14,11 +14,11 @@
 				</p>
 				<div class="tags mb-2">
 					{% if item.grade %}
-						<span class="tag is-success">{{ item.grade }}{% if item.grade_year %} ({{ item.grade_year }}){% endif %}</span>
+						<span class="tag is-success is-light">{{ item.grade }}{% if item.grade_year %} ({{ item.grade_year }}){% endif %}</span>
 					{% endif %}
 					{% if item.roles %}
 						{% for role in item.roles %}
-							<span class="tag is-info">{{ role.role }}{% if role.year %} ({{ role.year }}){% endif %}</span>
+							<span class="tag is-info is-light">{{ role.role }}{% if role.year %} ({{ role.year }}){% endif %}</span>
 						{% endfor %}
 					{% endif %}
 				</div>
