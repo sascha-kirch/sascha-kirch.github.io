@@ -1,32 +1,30 @@
-<article class="media">
-	<div class="media-content">
-		<div class="content">
-			<p class="mb-1">
-			<b>{{ item.title }}</b>,
-			{% if item.journal != false %}
-				<i>{{ item.journal }}</i>,
+<article class="box publication-card">
+	<div class="content">
+		<p class="mb-1">
+		<b>{{ item.title }}</b>,
+		{% if item.journal != false %}
+			<i>{{ item.journal }}</i>,
+		{% endif %}
+		{{ item.year }}.
+		</p>
+		<p class="mb-1">
+		{% for author in item.authors %}
+			{% if author.orcid %}
+				<a class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}" href="https://orcid.org/{{ author.orcid }}" target="_blank">{{ author.name }} <sup><i class="fab fa-orcid"></i></sup></a>
+			{% else %}
+				<span class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}">{{ author.name }}</span>
 			{% endif %}
-			{{ item.year }}.
-			</p>
-			<p class="mb-1">
-			{% for author in item.authors %}
-				{% if author.orcid %}
-					<a class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}" href="https://orcid.org/{{ author.orcid }}" target="_blank">{{ author.name }} <sup><i class="fab fa-orcid"></i></sup></a>
-				{% else %}
-					<span class="tag is-small is-success {% if author.name != site.title %}is-light{% endif %}">{{ author.name }}</span>
-				{% endif %}
+		{% endfor %}
+		</p class="mb-1">
+		{% if item.tags %}
+			<p>
+			{% for tag in item.tags %}
+				<a class="tag is-small is-info is-light" {% if tag.link %}href="{{ tag.link }}" target="_blank"{% endif %}>{{ tag.tag }}</a>
 			{% endfor %}
-			</p class="mb-1">
-			{% if item.tags %}
-				<p>
-				{% for tag in item.tags %}
-					<a class="tag is-small is-info is-light" {% if tag.link %}href="{{ tag.link }}" target="_blank"{% endif %}>{{ tag.tag }}</a>
-				{% endfor %}
-				</p>
-			{% endif %}
-			{% if item.description %}
-			<p>{{ item.description }}</p>
-			{% endif %}
-		</div>
+			</p>
+		{% endif %}
+		{% if item.description %}
+		<p>{{ item.description }}</p>
+		{% endif %}
 	</div>
 </article>

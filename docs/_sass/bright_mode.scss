@@ -283,11 +283,18 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 	margin: 2.5rem 0;
 }
 
-// Improved spacing for publication and review items
-.media {
-	margin-bottom: 1.5rem;
+// Publication and review cards
+.publication-card,
+.review-card {
+	background: #ffffff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+	padding: 1.25rem;
+	margin-bottom: 1.25rem;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.media + .media {
-	margin-top: 1.5rem;
+.publication-card:hover,
+.review-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+	transform: translateY(-2px);
 }

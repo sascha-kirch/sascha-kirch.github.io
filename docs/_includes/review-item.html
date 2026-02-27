@@ -1,19 +1,23 @@
-<article class="media">
-	<div class="media-content">
-		<div class="content">
-			<p class="mb-1">
-			<b>{{ item.journal }}</b>,
-			ISSN: <a href="{{ item.issn.link }}" target="_blank">{{ item.issn.id }}</a>.
-			</p>
-			<ul>
-			{% for review in item.reviews %}
-				<li>
-					<b>Review-ID:</b> {{ review.certificate.id }},
-					<b>Date:</b> {{ review.date }},
-					<a class="tag is-small is-success is-light" href="{{ review.certificate.link }}" target="_blank">Certificate</a>
-				</li>
-			{% endfor %}
-			</ul>
+<article class="box review-card">
+	<div class="content">
+		<p class="mb-2">
+			<b>{{ item.journal }}</b>
+		</p>
+		<p class="mb-2">
+			<span class="tag is-small is-light">ISSN: <a href="{{ item.issn.link }}" target="_blank">{{ item.issn.id }}</a></span>
+		</p>
+		{% for review in item.reviews %}
+		<div class="tags mb-2">
+			<span class="tag is-small is-info is-light">
+				<span class="icon is-small"><i class="fas fa-calendar"></i></span>
+				<span>{{ review.date }}</span>
+			</span>
+			<span class="tag is-small is-warning is-light">Review ID: {{ review.certificate.id }}</span>
+			<a class="tag is-small is-success is-light" href="{{ review.certificate.link }}" target="_blank">
+				<span>View Certificate</span>
+				<span class="icon is-small"><i class="fas fa-external-link-alt"></i></span>
+			</a>
 		</div>
+		{% endfor %}
 	</div>
 </article>
