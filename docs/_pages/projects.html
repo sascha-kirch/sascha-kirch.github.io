@@ -8,18 +8,6 @@ text_width: is-two-thirds
 view_mode: excerpt
 ---
 <div class="content">
-    <p> I build AI systems that bridge research and production deployment—from generative
-        models for 3D reconstruction to multi-sensor perception systems processing
-        high-volume data in real-time. My work spans the full stack: deep learning
-        architectures, classical computer vision, hardware design (FPGA/ASIC), and
-        production system optimization.</p>
-
-    <p>Projects range from published IEEE research (diffusion models, state space models)
-        to production-scale perception systems deployed globally. Each demonstrates
-        technical depth, systems thinking, and the ability to translate cutting-edge AI
-        into real-world solutions under real-time constraints.</p>
-    <hr>
-
     {% assign items = site.projects | sort: 'order' | reverse %}
     {% assign drawn_count = 0 %}
     {% for item in items %}

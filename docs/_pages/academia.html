@@ -16,12 +16,24 @@ nav_id: nav_academia
 		</div>
 	</nav> -->
 
-<h2 is="publications">Publications</h2>
+<h2 id="memberships">Memberships & Recognition</h2>
+
+<div class="columns is-multiline">
+{% for item in site.data.memberships %}
+  {% include membership-item.html %}
+{% endfor %}
+</div>
+
+<hr class="section-divider mt-6 mb-5">
+
+<h2 id="publications">Publications</h2>
 
 {% assign publications = site.data.publications | sort: 'year' | reverse %}
 {% for item in site.data.publications %}
   {% include publication-item.html %}
 {% endfor %}
+
+<hr class="section-divider mt-6 mb-6">
 
 <h2 id="peer-reviews">Peer Reviews</h2>
 

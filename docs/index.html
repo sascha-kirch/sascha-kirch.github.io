@@ -3,36 +3,80 @@ layout: page
 title: Sascha Kirch
 ---
 
-<div class="columns">
-	<div class ="column is-one-quarter content">
-		<figure class="image">
-			<img class="is-rounded" src="{{site.baseurl}}/assets/images/profile_image.png">
-		</figure>
-	</div>
-    <div class="column is-three-quarters">
-		<div class="columns is-multiline">
-			<div class="column is-full">
-				<h2 class="title">About Me</h2>
-<p><b>AI/ML Engineer | Multi-Modal Perception & Generative AI | Foundation Models</b></p>
-				<p>I build deep learning systems for multi-sensor perception and generative AI. Author of 24+ technical articles on foundation models, attention optimization, and state space architectures.</p>
-
-				<p>My career spans hardware design (FPGA, high-speed digital systems, automotive radar deployed in 100M+ vehicles) to leading engineering teams to AI expert. I think in terms of latency, memory bandwidth, and real-time constraints — connecting cutting-edge AI with the hardware it runs on.</p>
-
-				<p>At Bosch, I develop perception systems processing multi-sensor data for autonomous driving. I work with foundation models, classical computer vision, and hybrid approaches — optimizing for production deployment.</p>
-
-				<p>As a PhD researcher, I explore generative AI and 3D reconstruction. Published in IEEE journals on diffusion models and state space models. Completed peer reviews for IEEE Transactions on Neural Networks and Scientific Reports Nature.</p>
-			</div>
+<div class="landing-page">
+	<div class="columns is-vcentered mb-6">
+		<div class="column is-narrow">
+			<figure class="image" style="width: 140px; height: 140px;">
+				<img class="is-rounded" src="{{site.baseurl}}/assets/images/profile_image.png">
+			</figure>
 		</div>
-		<div class="columns is-multiline">
-			<div class="column is-full qt-0 qb-0">
-				<figure class="image is-16by9">
-				{% if site.mode == 'dark' %}
-				<iframe class="has-ratio" src="https://blocks.glass/embed/3477?dropshadow=0" dropshadow="0" frameborder="0" height="100%" width="100%" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true"></iframe>
-				{% else %}
-				<iframe class="has-ratio" src="https://blocks.glass/embed/2181?dropshadow=0" dropshadow="0" frameborder="0" height="100%" width="100%" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true"></iframe>
-				{% endif %}
-				</figure>
-			</div>
+		<div class="column">
+			<h1 class="title is-3 mb-5">Sascha Kirch</h1>
+			<p class="subtitle is-5 mb-4 has-text-weight-normal has-text-grey-dark">Deep Learning Engineer | Generative AI & Multi-Sensor Perception | Production Optimization</p>
+			<p class="has-text-grey">
+				Translating cutting-edge AI research into production-grade systems. Expert in generative AI, foundation models, and multi-sensor perception, with hardware-to-AI background enabling deep systems understanding for performance optimization.
+			</p>
 		</div>
 	</div>
+
+	<hr class="landing-divider">
+
+	<div class="content mb-5">
+		<h2 class="title is-5 mb-4">Technical Focus</h2>
+		<div class="columns is-multiline">
+			<div class="column is-half">
+				<div class="expertise-area">
+					<p class="has-text-weight-semibold">3D Reconstruction & Spatial Computing</p>
+					<p class="is-size-7 has-text-grey">Depth estimation, 3D Gaussian splatting, volumetric video, novel view synthesis</p>
+				</div>
+			</div>
+			<div class="column is-half">
+				<div class="expertise-area">
+					<p class="has-text-weight-semibold">Multi-Modal Perception & Sensor Fusion</p>
+					<p class="is-size-7 has-text-grey">Real-time systems processing camera, LiDAR, radar for autonomous driving</p>
+				</div>
+			</div>
+			<div class="column is-half">
+				<div class="expertise-area">
+					<p class="has-text-weight-semibold">Generative Models</p>
+					<p class="is-size-7 has-text-grey">Diffusion models, flow matching, state space architectures (Mamba), GANs</p>
+				</div>
+			</div>
+			<div class="column is-half">
+				<div class="expertise-area">
+					<p class="has-text-weight-semibold">Production AI Systems</p>
+					<p class="is-size-7 has-text-grey">Research to deployment—profiling, quantization, optimization for real-time constraints</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="landing-nav mb-5">
+		<a href="/projects.html" class="landing-link">
+			<span class="icon is-small"><i class="fas fa-arrow-right"></i></span>
+			<span>View Projects</span>
+		</a>
+		<a href="/academia.html" class="landing-link">
+			<span class="icon is-small"><i class="fas fa-arrow-right"></i></span>
+			<span>Publications & Research</span>
+		</a>
+		<a href="/blog.html" class="landing-link">
+			<span class="icon is-small"><i class="fas fa-arrow-right"></i></span>
+			<span>Technical Writing</span>
+		</a>
+		<a href="/cv.html" class="landing-link">
+			<span class="icon is-small"><i class="fas fa-arrow-right"></i></span>
+			<span>Full CV</span>
+		</a>
+	</div>
+
+	<hr class="landing-divider mt-4 mb-3">
+
+	<figure class="image is-16by9 viz-container">
+	{% if site.mode == 'dark' %}
+	<iframe class="has-ratio" src="https://blocks.glass/embed/3477?dropshadow=0" dropshadow="0" frameborder="0" height="100%" width="100%" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true"></iframe>
+	{% else %}
+	<iframe class="has-ratio" src="https://blocks.glass/embed/2181?dropshadow=0" dropshadow="0" frameborder="0" height="100%" width="100%" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true"></iframe>
+	{% endif %}
+	</figure>
 </div>

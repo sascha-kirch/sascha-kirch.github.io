@@ -1,0 +1,18 @@
+- organization: IEEE
+  grade: Senior Member
+  grade_year: 2026
+  member_since: 2020
+  logo: ieee_logo.jpeg
+
+- organization: IEEE Eta Kappa Nu Nu Alpha
+  grade: Member
+  member_since: 2021
+  logo: hkn_logo.jpeg
+  roles:
+    - role: President
+      year: 2024
+
+- organization: IEEE Computer Society
+  grade: Member
+  member_since: 2023
+  logo: ieee_computer_society_logo.png

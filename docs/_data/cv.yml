@@ -211,6 +211,11 @@ awards:
       description: Top academic distinction in embedded systems and microprocessor coursework. Part of Master's degree completed while working full-time with young family.
 
 organizations_and_societies:
+    - name: IEEE
+      start_date: 2020
+      end_date: Present
+      logo: ieee_logo.jpeg
+      description: Senior Member (elevated 2026). Professional association for advancing technology for humanity.
     - name: IEEE - Eta Kappa Nu
       start_date: 2021
       end_date: Present

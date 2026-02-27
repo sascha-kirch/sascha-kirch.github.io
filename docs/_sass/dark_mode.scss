@@ -249,3 +249,157 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 .app-navbar .navbar-item:focus-visible { outline:2px solid #1fae66; outline-offset:2px; }
 /* Remove text underline globally for nav items that get the helper class */
 .app-navbar .navbar-item.is-underlined { text-decoration: none !important; }
+
+// ---- Academia Page Styles (dark mode) ----
+// Membership cards - horizontal layout with logo on left
+.membership-card {
+	background: hsl(205, 14%, 18%);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	padding: 1rem;
+	height: 100%;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.membership-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	transform: translateY(-2px);
+}
+
+.membership-card-inner {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+
+.membership-logo {
+	flex-shrink: 0;
+}
+
+.membership-logo .image {
+	margin: 0;
+}
+
+.membership-content {
+	flex: 1;
+	min-width: 0;
+}
+
+// Section dividers for visual separation
+.section-divider {
+	border: none;
+	border-top: 1px solid hsl(205, 14%, 28%);
+	margin: 2.5rem 0;
+}
+
+// Publication and review cards
+.publication-card,
+.review-card {
+	background: hsl(205, 14%, 18%);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	padding: 1.25rem;
+	margin-bottom: 1.25rem;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.publication-card:hover,
+.review-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	transform: translateY(-2px);
+}
+
+// Project cards
+.project-card {
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	transform: translateY(-2px);
+}
+
+// Blog cards
+.blog-card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.blog-card {
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.blog-card-link:hover .blog-card {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	transform: translateY(-2px);
+}
+
+// Landing page - Professional, minimal style
+.landing-page {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.landing-divider {
+	border: none;
+	border-top: 1px solid hsl(205, 14%, 28%);
+	margin: 2rem 0;
+}
+
+.expertise-area {
+	padding: 0.75rem 0;
+	border-left: 2px solid transparent;
+	padding-left: 0;
+	transition: border-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.expertise-area:hover {
+	border-left-color: #1fae66;
+	padding-left: 0.75rem;
+}
+
+.landing-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.landing-link {
+	color: $text;
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: color 0.2s ease, transform 0.2s ease;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 0.25rem;
+}
+
+.landing-link:hover {
+	color: #1fae66;
+	border-bottom-color: #1fae66;
+	transform: translateX(4px);
+}
+
+.landing-link .icon {
+	transition: transform 0.2s ease;
+}
+
+.landing-link:hover .icon {
+	transform: translateX(2px);
+}
+
+.viz-container {
+	margin-top: -5rem;
+	margin-bottom: 0;
+	position: relative;
+	top: -5rem;
+}
+
+@media (max-width: 768px) {
+	.viz-container {
+		top: -4rem;
+	}
+
+}
