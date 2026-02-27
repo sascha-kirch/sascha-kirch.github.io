@@ -324,3 +324,68 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 	transform: translateY(-2px);
 }
+
+// Landing page - Professional, minimal style
+.landing-page {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.landing-divider {
+	border: none;
+	border-top: 1px solid #e5e9f2;
+	margin: 2rem 0;
+}
+
+.expertise-area {
+	padding: 0.75rem 0;
+	border-left: 2px solid transparent;
+	padding-left: 0;
+	transition: border-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.expertise-area:hover {
+	border-left-color: #1fae66;
+	padding-left: 0.75rem;
+}
+
+.landing-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.landing-link {
+	color: #363636;
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: color 0.2s ease, transform 0.2s ease;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 0.25rem;
+}
+
+.landing-link:hover {
+	color: #1fae66;
+	border-bottom-color: #1fae66;
+	transform: translateX(4px);
+}
+
+.landing-link .icon {
+	transition: transform 0.2s ease;
+}
+
+.landing-link:hover .icon {
+	transform: translateX(2px);
+}
+
+.viz-container {
+	margin-top: -5rem;
+	margin-bottom: 0;
+	position: relative;
+	top: -5rem;
+
+}
