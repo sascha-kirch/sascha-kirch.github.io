@@ -44,34 +44,34 @@ function updateMediumBlogPosts(responseText){
 		const img_path = extractFirstImageLink(item.content);
 
 		object_string += "<div class=\"column is-half\">"
-		object_string += "<div class=\"box\">"
+		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" class=\"blog-card-link\">"
+		object_string += "<div class=\"box blog-card\">"
 
 		//Image Column
 		object_string += "<div>"
-		object_string += "<a href=\""+item.guid+"\" target=\"_blank\" >"
 		object_string += "<figure class=\"image\" style=\"margin-left: 0px;margin-right: 0px; margin-bottom: 20px;\">"
 		object_string += "<img src=\""+img_path+"\" alt=\"Placeholder image\" style=\"border-radius: 5px;\">"
 		object_string += "</figure>"
-		object_string += "</a>"
 		object_string += "</div>"
 
 		// Content Column
 		object_string += "<div>"
 		object_string += "<p align=\"left\" class=\"title is-5\">"+item.title+"</p>"
-		object_string += "<p align=\"left\" class=\"subtitle is-7\"><br>by <a href=\""+profileLink+"\" target=\"_blank\">"+item.author+"</a> "
 		dateTime = item.pubDate.split(" ")
-		object_string += "<time><span>, "+dateTime[0]+"</span></time></p>"
+		object_string += "<p align=\"left\" class=\"subtitle is-7 has-text-grey-light mt-3\">"
+		object_string += "<span class=\"icon is-small\"><i class=\"fas fa-calendar\"></i></span>"
+		object_string += "<time><span>"+dateTime[0]+"</span></time></p>"
 		object_string += "<div class=\"content\">"
 		object_string += "<p>"
 		for (const category of item.categories){
-			object_string += "<span class=\"tag is-small is-success is-light mr-1\">"+category+"</span>"
+			object_string += "<span class=\"tag is-small is-light mr-1\">"+category+"</span>"
 		}
 		object_string += "</p>"
-		object_string += "<p><a href=\""+item.guid+"\" target=\"_blank\" >Read full post</a></p>"
 		object_string += "</div>"
 		object_string += "</div>"
 
 		object_string += "</div>"
+		object_string += "</a>"
 		object_string += "</div>"
 
 		i++;

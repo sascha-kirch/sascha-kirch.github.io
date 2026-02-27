@@ -308,3 +308,19 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 	transform: translateY(-2px);
 }
+
+// Blog cards
+.blog-card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.blog-card {
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.blog-card-link:hover .blog-card {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+	transform: translateY(-2px);
+}
