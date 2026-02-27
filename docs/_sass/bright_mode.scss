@@ -387,5 +387,10 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 	margin-bottom: 0;
 	position: relative;
 	top: -5rem;
+}
 
+@media (max-width: 768px) {
+	.viz-container {
+		top: -4rem;
+	}
 }
