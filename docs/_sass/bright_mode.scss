@@ -241,3 +241,53 @@ body.cv-page .hero-body > .container.is-max-desktop { max-width: 960px; }
 .app-navbar .navbar-item:focus-visible { outline:2px solid #1fae66; outline-offset:2px; }
 /* Remove text underline globally for nav items that get the helper class */
 .app-navbar .navbar-item.is-underlined { text-decoration: none !important; }
+
+// ---- Academia Page Styles (bright mode) ----
+// Membership cards - horizontal layout with logo on left
+.membership-card {
+	background: #ffffff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+	padding: 1rem;
+	height: 100%;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.membership-card:hover {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+	transform: translateY(-2px);
+}
+
+.membership-card-inner {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+
+.membership-logo {
+	flex-shrink: 0;
+}
+
+.membership-logo .image {
+	margin: 0;
+}
+
+.membership-content {
+	flex: 1;
+	min-width: 0;
+}
+
+// Section dividers for visual separation
+.section-divider {
+	border: none;
+	border-top: 1px solid #e5e9f2;
+	margin: 2.5rem 0;
+}
+
+// Improved spacing for publication and review items
+.media {
+	margin-bottom: 1.5rem;
+}
+
+.media + .media {
+	margin-top: 1.5rem;
+}

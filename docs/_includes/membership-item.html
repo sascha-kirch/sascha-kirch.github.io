@@ -1,0 +1,33 @@
+<div class="column">
+	<article class="box membership-card">
+		<div class="membership-card-inner">
+			{% if item.logo %}
+			<div class="membership-logo">
+				<figure class="image is-64x64">
+					<img class="is-rounded" src="/assets/images/{{ item.logo }}" alt="{{ item.organization }} logo">
+				</figure>
+			</div>
+			{% endif %}
+			<div class="membership-content">
+				<p class="mb-2">
+					<strong class="is-size-6">{{ item.organization }}</strong>
+				</p>
+				<div class="tags mb-2">
+					{% if item.grade %}
+						<span class="tag is-success">{{ item.grade }}{% if item.grade_year %} ({{ item.grade_year }}){% endif %}</span>
+					{% endif %}
+					{% if item.roles %}
+						{% for role in item.roles %}
+							<span class="tag is-info">{{ role.role }}{% if role.year %} ({{ role.year }}){% endif %}</span>
+						{% endfor %}
+					{% endif %}
+				</div>
+				{% if item.member_since %}
+				<p class="is-size-7 has-text-grey-light">
+					Member since {{ item.member_since }}
+				</p>
+				{% endif %}
+			</div>
+		</div>
+	</article>
+</div>
