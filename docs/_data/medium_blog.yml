@@ -1,6 +1,9 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Inside the CUDA Kernel - The GPU Implementation of 3D Gaussian Splatting
+    subtitle: Bonus Part - How Flat Arrays, Radix Sort, and Shared Memory Turn Conceptual Tiling Into 100+ FPS Rendering
+    link: https://medium.com/ai-advances/inside-the-cuda-kernel-the-gpu-implementation-of-3d-gaussian-splatting-74c3261ed721?sk=e59e2f0f8ff732e09e33b1169ee6d619
   - title: The Tricks That Make Production 3DGS Fast (Even If Ours Isn’t)
     subtitle: Part 4 of Building a 3D Gaussian Splatting Renderer — Understanding the Optimizations That Make Real-Time Rendering Possible
     link: https://medium.com/ai-advances/the-tricks-that-make-production-3dgs-fast-even-if-ours-isnt-6cd9928ec307?sk=0342cf93adb6faf269fd6ecf973915cb
