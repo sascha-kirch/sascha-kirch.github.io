@@ -1,6 +1,9 @@
 profile: https://medium.com/@SaschaKirch
 subscription_page: https://medium.com/@SaschaKirch/subscribe
 friend_links:
+  - title: Making SAM3 8x Faster - What the Profiler Actually Showed
+    subtitle: What profiling a state-of-the-art segmentation model teaches you about running research code efficiently
+    link: https://medium.com/ai-advances/we-made-sam3-8x-faster-for-production-heres-what-the-profiler-actually-showed-b3b05f7472cb?sk=7b98ffc090f6ce4951a168c5d2d86b8f
   - title: Inside the CUDA Kernel - The GPU Implementation of 3D Gaussian Splatting
     subtitle: Bonus Part - How Flat Arrays, Radix Sort, and Shared Memory Turn Conceptual Tiling Into 100+ FPS Rendering
     link: https://medium.com/ai-advances/inside-the-cuda-kernel-the-gpu-implementation-of-3d-gaussian-splatting-74c3261ed721?sk=e59e2f0f8ff732e09e33b1169ee6d619
