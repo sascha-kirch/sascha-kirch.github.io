@@ -58,12 +58,12 @@ professional_experience:
       - position: Collaborating Researcher
         employment_type: false
         location: Madrid, Spain
-        start_date: Apr 2025
-        end_date: Present
+        start_date: Mar 2025
+        end_date: Sep 2025
         description: >
           <p>Research collaboration on Free Viewpoint Video (FVV) Live system for European project 5G Records, applying deep learning to enhance multi-view 3D reconstruction and depth estimation for real-time novel view synthesis.</p>
 
-          <p>Investigating metric-scale geometry estimators and generative models (diffusion, flow matching) for depth estimation, focusing on production-ready solutions balancing reconstruction quality with real-time latency constraints.</p>
+          <p>Investigating metric-scale geometry estimators (VGGT and MoGe-2) and generative models (diffusion, flow matching) for depth estimation, focusing on production-ready solutions balancing reconstruction quality with real-time latency constraints.</p>
 
 
     - company_name: Universidad Nacional de Educación a Distancia (UNED)
