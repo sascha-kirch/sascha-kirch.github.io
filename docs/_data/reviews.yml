@@ -1,12 +1,16 @@
-- journal: "Signal, Image and Video Processing"
+- journal: "Scientific Reports"
   issn:
-    id: 1863-1711
-    link: https://portal.issn.org/resource/ISSN/1863-1711
+    id: 2045-2322
+    link: https://portal.issn.org/resource/ISSN/2045-2322
   reviews:
     - date: 2026
       certificate:
-        id: 6rv65OX8
-        link: https://publons.com/wos-op/review/author/6rv65OX8/
+        id: TBD
+        link: false
+    - date: 2025
+      certificate:
+        id: eDRaaAaw
+        link: https://publons.com/wos-op/review/author/eDRaaAaw/
 
 - journal: "IEEE Transactions on Neural Networks and Learning Systems"
   issn:
@@ -22,12 +26,22 @@
         id: SeUdYaM4
         link: https://publons.com/wos-op/review/author/SeUdYaM4/
 
-- journal: "Scientific Reports"
+- journal: "Signal, Image and Video Processing"
   issn:
-    id: 2045-2322
-    link: https://portal.issn.org/resource/ISSN/2045-2322
+    id: 1863-1711
+    link: https://portal.issn.org/resource/ISSN/1863-1711
   reviews:
-    - date: 2025
+    - date: 2026
       certificate:
-        id: eDRaaAaw
-        link: https://publons.com/wos-op/review/author/eDRaaAaw/
+        id: 6rv65OX8
+        link: https://publons.com/wos-op/review/author/6rv65OX8/
+
+- journal: "Journal of King Saud University. Computer and information sciences"
+  issn:
+    id: 2213-1248
+    link: https://portal.issn.org/resource/ISSN/2213-1248
+  reviews:
+    - date: 2026
+      certificate:
+        id: 9ec909e0-a3cb-11f1-adf3-ad230a046d00
+        link: false

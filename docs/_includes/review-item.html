@@ -1,4 +1,4 @@
-<article class="box review-card">
+<article class="box review-card pt-2 pb-2">
 	<div class="content">
 		<p class="mb-2">
 			<b>{{ item.journal }}</b>
@@ -7,16 +7,18 @@
 			<span class="tag is-small is-light">ISSN: <a href="{{ item.issn.link }}" target="_blank">{{ item.issn.id }}</a></span>
 		</p>
 		{% for review in item.reviews %}
-		<div class="tags mb-2">
-			<span class="tag is-small is-info is-light">
+		<div class="tags mb-1">
+			<span class="tag is-small is-info is-light mb-1">
 				<span class="icon is-small"><i class="fas fa-calendar"></i></span>
 				<span>{{ review.date }}</span>
 			</span>
-			<span class="tag is-small is-warning is-light">Review ID: {{ review.certificate.id }}</span>
-			<a class="tag is-small is-success is-light" href="{{ review.certificate.link }}" target="_blank">
+			<span class="tag is-small is-warning is-light mb-1">Review ID: {{ review.certificate.id }}</span>
+			{% if review.certificate.link %}
+			<a class="tag is-small is-success is-light mb-1" href="{{ review.certificate.link }}" target="_blank">
 				<span>View Certificate</span>
 				<span class="icon is-small"><i class="fas fa-external-link-alt"></i></span>
 			</a>
+			{% endif %}
 		</div>
 		{% endfor %}
 	</div>
